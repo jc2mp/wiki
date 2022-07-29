@@ -1,0 +1,12 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player:GetAimTarget() |
+}}
+
+Returns a table containing:
+* [[Lua/Shared/Vector3|Vector3]] position
+* object entity
+
+==See also==
+
+[[Lua/Tutorials/Reference/GetAimTarget]]

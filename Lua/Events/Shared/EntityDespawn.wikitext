@@ -1,0 +1,30 @@
+{{Lua/Event |
+  arguments = object {{Arg|entity}}
+}}
+
+==Description==
+
+{{Arg|entity}} can be one of:
+* Player
+* Vehicle
+* Checkpoint
+* StaticObject
+* ClientStaticObject
+* ClientEffect
+* ClientSound
+
+To get the type, use ''args.entity.__type''.
+
+Vehicles count as despawned when they automatically respawn.
+
+On the client, when objects are streamed out, they fire the event as well, not just when they are removed.
+
+==Example==
+
+<syntaxhighlight>
+function Foo(args)
+	print("A "..args.entity.__type.." just despawned.")
+end
+
+Events:Subscribe("EntityDespawn", Foo)
+</syntaxhighlight>

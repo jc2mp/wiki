@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = Transform2 |
+  prototype = Transform2:Rotate(number {{arg|rotation}}) |
+  description = Rotates the transform by the specified angle in radians.
+}}
+
+==Additional Notes==
+*This operation '''does not''' yield a new transform object, the returned object and the subject are the same.
+
+==See Also==
+*[http://en.wikipedia.org/wiki/Rotation_(geometry) Wikipedia article on rotation]

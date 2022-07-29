@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Vehicle:SetAngularVelocity([[Lua/Shared/Vector3|Vector3]]) |
+}}

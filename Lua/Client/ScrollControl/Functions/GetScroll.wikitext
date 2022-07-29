@@ -1,0 +1,6 @@
+{{Lua/Deprecated | version = 0.1.3}}
+
+{{Lua/Function |
+  returns = boolean, boolean|
+  prototype = ScrollControl:GetScroll() |
+}}

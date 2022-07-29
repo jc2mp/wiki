@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = ClientSound.Play([[Lua/Client/AssetLocation|AssetLocation]], table) |
+  description = Creates a ClientSound using the same arguments as [[Lua/Client/ClientSound/Static Functions/Create|Create]].
+}}
+
+==Notes==
+
+* There is an extra argument, {{Arg|timeout}}, which removes the sound after the specified seconds.
+* If {{Arg|timeout}} is not specified, it defaults to 5 seconds.

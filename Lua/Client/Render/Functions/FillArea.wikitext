@@ -1,0 +1,17 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:FillArea([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, [[Lua/Shared/Vector2|Vector2]] {{arg|size}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a rect at the given position with the given size and color in 2D space.
+}}
+
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:FillArea([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, [[Lua/Shared/Vector3|Vector3]] {{arg|size}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a rect at the given position with the given size and color in 2D space.
+}}
+
+==Additional Notes==
+*The area drawn is aligned at its top left corner.

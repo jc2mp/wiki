@@ -1,0 +1,31 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player.Match(string) |
+}}
+
+==Description==
+
+This returns an array of Players whose name contains the string. It is case insensitive and sorts by name length; the first element is always the shortest.
+
+==Example==
+
+In this example, if Rico Rodriguez is in the server, typing ''/findplayers rodriguez'' will print out ''Found Rico Rodriguez''.
+
+<syntaxhighlight>
+function PlayerChat(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 and words[1] == "/findplayers" then
+		local results = Player.Match(words[2])
+		for index, player in ipairs(results) do
+			print("Found "..player:GetName())
+		end
+		
+		return false
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>

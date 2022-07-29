@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = Base |
+  prototype = BaseWindow:FindChildByName(string, boolean {{Arg|recursive}}) |
+}}
+
+{{Lua/Function |
+  returns = Base |
+  prototype = BaseWindow:FindChildByName(string) |
+}}

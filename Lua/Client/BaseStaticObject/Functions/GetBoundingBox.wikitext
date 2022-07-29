@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]] |
+  prototype = BaseStaticObject:GetBoundingBox()
+}}
+
+==Description==
+
+Returns the corners of the object's axis aligned bounding box (AABB) in world space. For example, in a simplified case, it may return ''(-4, 220, 7)'' and ''(1, 225, 10)''.

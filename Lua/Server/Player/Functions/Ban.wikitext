@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Player:Ban() |
+}}
+
+{{Lua/Function |
+  prototype = Player:Ban(string) |
+}}

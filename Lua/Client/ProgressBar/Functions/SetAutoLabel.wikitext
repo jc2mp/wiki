@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = ProgressBar:SetAutoLabel(boolean) |
+  description = Sets auto labeling of the progress bar. If this is set to true, label will point to the current value, like 50%. If set to false, label can be set using [[Lua/Client/Label/Functions/SetText|ProgerssBar:SetText]].
+}}

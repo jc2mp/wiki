@@ -1,0 +1,21 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Vehicle|Vehicle]] attacker, [[Lua/Server/Vehicle|Vehicle]] vehicle, [[Lua/Server/Player|Player]] player
+}}
+
+==Description==
+
+Fired when a vehicle collides with either a player or another vehicle. ''attacker'' is always a valid vehicle. Only one of ''vehicle'' or ''player'' is used, not both.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.vehicle then
+		print(args.attacker:GetName().." collided with "..args.vehicle:GetName())
+	elseif args.player then
+		print(args.attacker:GetName().." collided with "..args.player:GetName())
+	end
+end
+
+Events:Subscribe("VehicleCollide", Foo)
+</syntaxhighlight>

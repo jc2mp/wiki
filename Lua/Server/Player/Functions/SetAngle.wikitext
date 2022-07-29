@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = Player:SetAngle([[Lua/Shared/Angle|Angle]] {{arg|angle}}) |
+}}
+
+==Description==
+Sets the player's angle to {{arg|angle}}.
+
+==See also==
+* [[Lua/Server/Player/Functions/SetPosition|Player:SetPosition]]

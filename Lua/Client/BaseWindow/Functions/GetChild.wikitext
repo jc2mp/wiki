@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = BaseWindow |
+  prototype = BaseWindow:GetChild(number) |
+}}

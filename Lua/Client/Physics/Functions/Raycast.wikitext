@@ -1,0 +1,26 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Physics:Raycast([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, [[Lua/Shared/Vector3|Vector3]] {{arg|direction}}, number {{arg|minDistance}}, number {{arg|maxDistance}}) |
+}}
+
+==Description==
+
+Casts a ray at {{arg|position}}, fired in direction {{arg|direction}}. A raycast is like shooting a bullet from a gun; it returns information about the point at which the ray collides with the world or an object. If nothing is encountered when the ray's length reaches {{arg|maxDistance}}, the point at {{arg|maxDistance}} is returned instead, which will be a point in midair. If the ray hits a JC2-MP object, it will be returned as part of the result.
+
+{{arg|direction}} is a normalized [[Lua/Shared/Vector3|Vector3]]; for example, <syntaxhighlight>Camera:GetAngle() * Vector3.Forward</syntaxhighlight> will create a direction vector that aims forward from the camera.
+
+The result is similar to [[Lua/Tutorials/Reference/GetAimTarget|GetAimTarget]].
+
+Bug: The ray seems to ignore everything if {{arg|maxDistance}} is high enough (1000 is safe, 5000 is too long).
+
+----
+
+The table returned may contain the following elements:
+* number {{Arg|distance}}: the distance, in metres, that the final position is from the origin.
+* [[Lua/Shared/Vector3|Vector3]] {{Arg|position}}: the position hit by the ray; if the ray failed to hit anything, this will be equal to {{arg|position}} + {{arg|direction}} * {{arg|maxDistance}}.
+* [[Lua/Shared/Vector3|Vector3]] {{Arg|normal}}: the vector perpendicular to the surface, also known as the normal, hit by the raycast.
+* object {{Arg|entity}}: the JC2-MP entity the ray hit, if it hit one.
+
+==See also==
+
+GetAimTarget returns a similar result: [[Lua/Tutorials/Reference/GetAimTarget]]

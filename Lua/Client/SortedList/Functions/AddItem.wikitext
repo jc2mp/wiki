@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Client/TableRow|TableRow]] |
+  prototype = SortedList:AddItem(string {{Arg|label}}, string {{Arg|name}}) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/TableRow|TableRow]] |
+  prototype = SortedList:AddItem(string {{Arg|label}}) |
+}}

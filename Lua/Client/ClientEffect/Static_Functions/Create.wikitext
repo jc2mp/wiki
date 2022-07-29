@@ -1,0 +1,63 @@
+{{Lua/Function |
+  returns = [[Lua/Client/ClientEffect|ClientEffect]] |
+  prototype = ClientEffect.Create(table {{arg|arguments}}) |
+}}
+
+==Argument table==
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="150" | Name
+!width="480" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| [[Lua/Shared/Angle|Angle]]
+| angle
+| 
+|-
+| number
+| effect_id
+| From '''0''' to '''467'''. Use [https://github.com/Jman100/jc2mp-effectsbrowser this effects browser] to find effect ids.
+|} {{Lua/Table_Suffix}}
+
+==Examples==
+
+====Create an explosion where you click====
+
+<syntaxhighlight line highlight="15-19">
+effects = {}
+
+Events:Subscribe("MouseDown", function(args)
+	if args.button ~= 1 then
+		return
+	end
+	
+	local result = Physics:Raycast(
+		Camera:GetPosition(),
+		Camera:GetAngle() * Vector3.Forward,
+		0,
+		100
+	)
+	
+	local effect = ClientEffect.Create{
+		position = result.position + result.normal * 0.25,
+		angle = Angle(),
+		effect_id = 35,
+	}
+	
+	table.insert(effects, effect)
+end)
+
+-- Make sure to clean up everything on ModuleUnload.
+Events:Subscribe("ModuleUnload", function()
+	for index, effect in ipairs(effects) do
+		effect:Remove()
+	end
+end)
+</syntaxhighlight>

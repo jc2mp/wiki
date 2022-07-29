@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = World |
+  prototype = World.Create() |
+}}

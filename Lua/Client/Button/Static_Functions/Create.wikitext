@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Button |
+  prototype = Button.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Button |
+  prototype = Button.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Button |
+  prototype = Button.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Button |
+  prototype = Button.Create() |
+}}

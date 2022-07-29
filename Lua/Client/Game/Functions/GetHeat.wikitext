@@ -1,0 +1,10 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Game:GetHeat() |
+  description = Returns the current heat level and heat percent.
+}}
+
+==Return table==
+
+* [[Lua/Client/HeatLevel|HeatLevel]] {{Arg|level}}
+* number {{Arg|fill_level}}

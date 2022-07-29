@@ -1,0 +1,1 @@
+#REDIRECT [[Lua/Tutorials/Reference/Weather]]

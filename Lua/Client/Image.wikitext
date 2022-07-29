@@ -1,0 +1,63 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Image
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Static Functions/Create|Create]]([[Lua/Client/AssetLocation|AssetLocation]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Image
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Static Functions/Create|Create]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Static Functions/IsSupported|IsSupported]](string)
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/Draw|Draw]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/Draw|Draw]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetAlpha|GetAlpha]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetFailed|GetFailed]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetPixelSize|GetPixelSize]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetSize|GetSize]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/GetUV|GetUV]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Color|Color]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/Sample|Sample]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/SetAlpha|SetAlpha]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/SetPosition|SetPosition]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/SetSize|SetSize]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Image/Functions/SetUV|SetUV]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|} {{Lua/Table_Suffix}}

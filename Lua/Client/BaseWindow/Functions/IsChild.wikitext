@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = BaseWindow:IsChild(BaseWindow) |
+}}

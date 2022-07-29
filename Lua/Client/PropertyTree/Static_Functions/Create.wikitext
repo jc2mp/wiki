@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = PropertyTree |
+  prototype = PropertyTree.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = PropertyTree |
+  prototype = PropertyTree.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = PropertyTree |
+  prototype = PropertyTree.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = PropertyTree |
+  prototype = PropertyTree.Create() |
+}}

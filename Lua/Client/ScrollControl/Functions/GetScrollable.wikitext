@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = boolean {{arg|horizontal}}, boolean {{arg|vertical}} |
+  prototype = ScrollControl:GetScrollable() |
+  description = Gets whether the control should allow horizontal and vertical scrolling.
+}}

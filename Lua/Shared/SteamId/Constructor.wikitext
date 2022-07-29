@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = SteamId(string) |
+}}
+
+==Example==
+
+<syntaxhighlight>
+id1 = SteamId("STEAM_0:1:23456789")
+id2 = SteamId("12345678910111213")
+</syntaxhighlight>

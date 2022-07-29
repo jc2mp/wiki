@@ -1,0 +1,14 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Vehicle:GetOccupants() |
+  description = Returns a table of [[Lua/Client/Player|Player]]s that are inside of the vehicle.
+}}
+
+==Partial example==
+
+<syntaxhighlight>
+local occupants = vehicle:GetOccupants()
+for index, player in ipairs(occupants) do
+	print(player)
+end
+</syntaxhighlight>

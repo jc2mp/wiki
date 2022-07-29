@@ -1,0 +1,19 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] attacker, number damage|
+  return = Return false to block damage.
+}}
+
+==Description==
+
+Fired when you're hit by a bullet. ''attacker'' is not guaranteed to exist.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = tostring(args.attacker).." shot you for "..tostring(args.damage).." damage!"
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerBulletHit", Foo)
+</syntaxhighlight>

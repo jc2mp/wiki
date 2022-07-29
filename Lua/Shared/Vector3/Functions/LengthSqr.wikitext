@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3:LengthSqr() |
+  description = Returns the squared length of the vector.
+}}
+
+==Additional Notes==
+*This function is faster than [[Lua/Shared/Vector3/Functions/Length|Vector:Length()]], as no square root is required.

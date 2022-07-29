@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = ComboBox:RemoveItem([[Lua/Client/MenuItem|MenuItem]]) |
+}}

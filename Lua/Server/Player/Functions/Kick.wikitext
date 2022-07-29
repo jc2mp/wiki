@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Player:Kick(string {{Arg|reason}}) |
+}}
+
+{{Lua/Function |
+  prototype = Player:Kick() |
+}}

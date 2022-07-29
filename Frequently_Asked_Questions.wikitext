@@ -1,0 +1,110 @@
+== General FAQ ==
+
+===== What version of the game do I need to play the mod? =====
+
+Only the purchased Steam version is supported.
+
+Please see [[Game_Version|this page]] for more information.
+
+
+===== Are pirated copies supported? =====
+
+No, pirated copies are not supported.
+
+
+===== Is Steam Family Sharing supported? =====
+
+No, you must own Just Cause 2 on your own account.
+
+
+===== Does the demo work? =====
+
+No, you can not play the mod with the Just Cause 2 demo.
+
+
+===== Are there AI / NPCs? =====
+
+No, and they are very unlikely to be added, at least not in the same sense as singleplayer.
+
+
+===== Will 64 or 32-bit installs work? =====
+
+Yes. It makes no difference.
+
+
+===== Does this work on PS3/Xbox 360? =====
+
+No, and it won't. Ever.
+
+
+===== Will JC2-MP affect my single-player game? =====
+
+No, the mod does not affect your game saves in any way.
+
+
+===== Is JC2-MP free to play? =====
+
+Yes, the mod is completely free to download and play.
+
+
+===== How do you chat? =====
+
+Press 'T'.
+
+
+===== Can I use mods while playing JC2-MP? =====
+
+Mods from singleplayer cannot be used in multiplayer. Period. However, in some cases, similar functionality can be scripted using the [[Lua|Lua API]].
+
+
+===== How do I open the map? =====
+
+Press F1.
+
+
+===== How do I hide the chat? =====
+
+Press F3.
+
+
+===== How often do vehicles respawn? =====
+
+By default, vehicles respawn after 45 seconds of unuse. If a vehicle explodes, it will respawn within 8 seconds. These can be changed in the server config.
+
+It is also worth noting that vehicles can only be damaged when there's a player driving them.
+
+
+===== Can I access the black market? =====
+
+No. The black market from singleplayer will not be in the mod. Its functionality will be scriptable using Lua.
+
+In fact, [https://github.com/Philpax/jc2mp-buymenu the buy menu script] is a perfect example of a black market replacement.
+
+
+===== Is the JC2-MP team accepting donations? =====
+
+Yes, we are currently accepting donations to cover hosting costs. [http://www.jc-mp.com/donate/ You can donate here.]
+
+
+== Server Hosting FAQ ==
+
+===== Can LAN-only servers be hosted? =====
+
+Yes, servers can be hosted on a LAN network. Unless your server is exposed to the internet, then it is already LAN-only.
+
+Please note that the LAN tab in the server browser in-game is currently not working properly and you will need to use quick connect.
+
+
+===== How do servers handle DLC? =====
+
+It is up to server owners themselves whether to require players to own DLC or not.
+
+
+===== Which resources does the server need? =====
+
+Please see [[Server/Requirements|this page]] for more information.
+
+
+===== What are "highlighted servers"? =====
+
+Highlighted servers are servers that are on the top of the server list as chosen by the jcmp staff. For more information, please see the [http://www.jc-mp.com/forums/index.php/topic,4445.0.html Highlighted Server Requests] forum topic.

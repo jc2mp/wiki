@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Table:GetRowCount(number) |
+}}

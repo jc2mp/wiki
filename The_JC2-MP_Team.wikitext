@@ -1,0 +1,66 @@
+
+=== Developers ===
+
+===== Trix =====
+* Lead Programmer
+* Reverse Engineering
+
+===== jaxm =====
+* Gameplay Design
+* Reverse Engineering
+
+===== Woet =====
+* Web Developer
+* Hosting Infrastructure
+
+===== NVX =====
+* Client / Server Security
+
+===== [[User:Philpax|Philpax]] =====
+* Lua API Developer
+* UI Developer
+
+===== [[User:Dreadmullet|dreadmullet]] =====
+* Documentation
+* Extensive Lua testing
+* Scripting
+
+=== Notable Contributors ===
+
+===== Rick (gibbed)===== 
+* Creator of many great tools for modding Just Cause 2, vital to the success of JC2-MP.
+* Extensive support and assistance with modding the game.
+* Technical Support
+
+===== ToMo =====
+* Designer of the JC2-MP website.
+
+=== Beta Team ===
+* [DRuG]Jeff
+* Ahrotahntee
+* FabioGNR
+* F430
+* Fkids
+* Jman100
+* [[User:JaTochNietDan|JaTochNietDan]]
+* Mike
+* Namidairo
+* Patawic
+* [[User:RedCat|RedCat]]
+* [[User:Rick|Rick]]
+* SK83RJOSH
+* Tazm
+* tb2571989
+* ToMo
+* [[User:Tycoonman500|Tycoonman500]]
+
+=== Inactive ===
+* [DRuG]NikT
+* damospiderman
+* EliteTek
+* Gingie
+* GrishR
+* mandella644
+* Oz
+* PlantCorn
+* Ydrool

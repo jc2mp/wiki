@@ -1,0 +1,13 @@
+{{Lua/Function |
+  prototype = io.createdir(string {{arg|name}}) |
+  description = Creates the directory with the specified name.
+}}
+
+==Example==
+
+<syntaxhighlight>
+io.createdir("Test/")
+</syntaxhighlight>
+
+==Additional Notes==
+*The path is relative to the module directory.

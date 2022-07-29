@@ -1,0 +1,18 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Vehicle|Vehicle]] vehicle
+}}
+
+==Description==
+
+Fired when you exit a vehicle.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "You exited a "..args.vehicle:GetName()
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerExitVehicle", Foo)
+</syntaxhighlight>

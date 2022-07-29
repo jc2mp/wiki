@@ -1,0 +1,57 @@
+{{Lua/Event |
+  arguments = [[Lua/Server/Player|Player]] {{Arg|player}}, string {{Arg|key}}, object {{Arg|value}}
+}}
+
+==Description==
+
+Fired when [[Lua/Server/Player/Functions/SetNetworkValue|Player:SetNetworkValue]] is called from any module on the server. It is '''not''' fired by calling Player:SetValue.
+
+==Example==
+
+====Server====
+
+Use '/set playername key value' to set players' values on both server and client.
+
+<syntaxhighlight>
+function Foo(args)
+	print(tostring(args.player).."'s "..args.key.." was set to "..tostring(args.value))
+end
+
+Events:Subscribe("PlayerNetworkValueChange", Foo)
+
+function ConsoleSet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 3 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			player:SetNetworkValue(words[2], words[3])
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+
+Console:Subscribe("set", ConsoleSet)
+</syntaxhighlight>
+
+====Client====
+
+Prints any value changes to the chat. Used in combination with the server script above.
+
+<syntaxhighlight>
+function Foo(args)
+	Chat:Print(
+		tostring(args.player).."'s "..args.key.." was set to "..tostring(args.value),
+		Color.Yellow
+	)
+end
+
+Events:Subscribe("PlayerNetworkValueChange", Foo)
+</syntaxhighlight>
+
+==See also==
+
+* [[Lua/Tutorials/Player values|Player values tutorial]]

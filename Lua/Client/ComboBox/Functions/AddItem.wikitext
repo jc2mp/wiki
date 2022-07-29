@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Client/MenuItem|MenuItem]] |
+  prototype = ComboBox:AddItem(string {{Arg|label}}, string {{Arg|name}}) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/MenuItem|MenuItem]] |
+  prototype = ComboBox:AddItem(string {{Arg|label}}) |
+}}

@@ -1,0 +1,126 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Static Functions/Distance|Distance]](Vector2, Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Static Functions/DistanceSqr|DistanceSqr]](Vector2, Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Static Functions/Dot|Dot]](Vector2, Vector2)
+|} {{Lua/Table_Suffix}}
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Vector2/Constructor|Vector2]](number, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Vector2/Constructor|Vector2]]()
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/Distance|Distance]](Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/DistanceSqr|DistanceSqr]](Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/Dot|Dot]](Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/Length|Length]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/LengthSqr|LengthSqr]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/Normalize|Normalize]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Vector2/Functions/Normalized|Normalized]]()
+|} {{Lua/Table_Suffix}}
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | Vector2 + Vector2
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | Vector2 / number
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | Vector2 == Vector2
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | Vector2 * number
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | number * Vector2
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | Vector2 - Vector2
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | tostring(Vector2)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vector2
+|{{Lua/Cell_Style/Prototype_List}} | -Vector2
+|} {{Lua/Table_Suffix}}
+
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Vector2/Properties/x|x]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Vector2/Properties/y|y]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|} {{Lua/Table_Suffix}}
+
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="80" | Name
+!width="160" | Value
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | Zero
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(0, 0)
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | One
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(1, 1)
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | Up
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(0, -1)
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | Down
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(0, 1)
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | Left
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(-1, 0)
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | Right
+|{{Lua/Cell_Style/Property_List_Type}} | Vector2(1, 0)
+|-
+|} {{Lua/Table_Suffix}}

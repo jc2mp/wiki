@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Angle|Angle]] |
+  prototype = Camera:GetAngle() |
+  description = Returns the current orientation of the camera.
+}}

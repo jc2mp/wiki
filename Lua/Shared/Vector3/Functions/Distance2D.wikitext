@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3:Distance2D(Vector3 {{arg|b}}) |
+  description = Calculates the 2D distance between the subject and {{arg|b}} ignoring their y-axis value.
+}}

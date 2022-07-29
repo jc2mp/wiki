@@ -1,0 +1,6 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Player:GetModelId() |
+}}
+
+See [[Character Models]] for a list of usable models.

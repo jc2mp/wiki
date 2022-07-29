@@ -1,0 +1,1 @@
+This can happen if you have Steam installed on a drive other than C:/. Exit Steam and then run it as an administrator.

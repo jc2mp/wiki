@@ -1,0 +1,6 @@
+Before you start scripting in JC2-MP, it is recommended that you have a basic understanding of Lua. Those who have a lot of previous programming experience may be able to get by looking at examples, but for beginners, there are great resources out there that anyone can learn from.
+
+* [http://lua-users.org/wiki/TutorialDirectory This series covers all features and is great for beginners]
+* [http://www.lua.org/manual/5.2/contents.html This official manual is probably too comprehensive for learning the language]
+* [http://www.lua.org/cgi-bin/demo An online interpreter, really useful for trying things out]
+* [http://www.lua.org/pil/ If you prefer detailed textbooks, Programming in Lua often receives great praise]

@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Server/Vehicle|Vehicle]] vehicle
+}}
+
+==Description==
+
+Fired when a player enters stunt position on a vehicle.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." entered stunt position on "..args.vehicle:GetName())
+end
+
+Events:Subscribe("PlayerEnterStunt", Foo)
+</syntaxhighlight>

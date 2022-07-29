@@ -1,0 +1,41 @@
+The only way to communicate from server to client or vice versa is using the [[Lua/Shared/Network|Network]] class.
+
+==Example==
+
+This simple example will print a message on any client that joins. We will use the functions Network:Send and Network:Subscribe.
+
+=====Client=====
+
+<syntaxhighlight>
+message = "Default message"
+function RenderMessage()
+	Render:DrawText(Render.Size / 2, message, Color(255, 255, 255))
+end
+Events:Subscribe("Render", RenderMessage)
+
+function ClientFunction(sentMessage)
+	message = sentMessage
+end
+-- Subscribe ClientFunction to the network event "Test".
+Network:Subscribe("Test", ClientFunction)
+</syntaxhighlight>
+
+=====Server=====
+
+<syntaxhighlight>
+function ServerFunction(args)
+	-- Call the network event "Test" for this player. The argument is a string.
+	Network:Send(args.player, "Test", "Hello, client!")
+end
+Events:Subscribe("ClientModuleLoad", ServerFunction)
+</syntaxhighlight>
+
+The [[Lua/Events/Server/ClientModuleLoad|ClientModuleLoad]] event is called on the server when all of a client's scripts are loaded, usually right after they join (or when a module is reloaded). This is a good time to send the client network messages. Otherwise, if you try to use Network:Send on the PlayerJoin event, their scripts may not have subscribed to the network event yet, and nothing will appear to happen.
+
+==More information==
+
+The client can use Network:Send just like the server can, it works exactly the same. With one difference: server functions that are subscribed to a network event have a second argument, the Player who sent the network event.
+
+==See also==
+
+[[Lua/Tutorials/Intermediate/A tank that shoots tanks]]

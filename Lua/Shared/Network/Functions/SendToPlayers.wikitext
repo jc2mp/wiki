@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Network:SendToPlayers(table {{Arg|players}}, string {{Arg|name}}) |
+}}
+
+{{Lua/Function |
+  prototype = Network:SendToPlayers(table {{Arg|players}}, string {{Arg|name}}, object {{Arg|argument}}) |
+}}

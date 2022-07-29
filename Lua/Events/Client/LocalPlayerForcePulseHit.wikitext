@@ -1,0 +1,19 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] attacker, number damage|
+  return = Return false to block the effect.
+}}
+
+==Description==
+
+Fired when you're hit a force pulse effect (currently only the air propulsion gun). ''attacker'' is not guaranteed to exist.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = tostring(args.attacker).." blew you for "..tostring(args.damage).." damage!"
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerForcePulseHit", Foo)
+</syntaxhighlight>

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Tutorials/Intermediate/Iterators|iterator]] |
+  prototype = Client:GetPlayers() |
+}}

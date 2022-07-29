@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = Player:HasVehicleDLC([[Lua/Shared/VehicleId|VehicleId]]) |
+}}

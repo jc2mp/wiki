@@ -1,0 +1,114 @@
+'''SQL''' (Structured Query Language) is the language for accessing databases. The tutorial will teach you how to use SQL to access and manipulate data. It's more efficient than using files to save data.
+
+'''Note''': If you don't know anything about databases and database management systems (DBMSs) then please read [http://en.wikipedia.org/wiki/Database Database] first.
+
+'''Note''': This tutorial assumes you know what SQL is, if you don't, you should read a basic tutorial, like the one at [http://www.w3schools.com/sql/default.asp W3Schools]
+
+'''Note''': SQL functions are currently only available on the server. As of version 0.1.2, there is no form of persistent client-side storage available. 
+
+The only DBMS available in JC-MP is '''SQLite'''. (Though you can use an external Lua module like [http://keplerproject.org/luasql/manual.html LuaSQL])
+
+
+
+==Queries==
+
+A '''query''' is a statement or a command you send to the database to access and manipulate it or the data inside of it. In JC-MP, there are several ways which you can use to execute a query, we'll explore each in details.
+
+====SQL:Execute====
+
+This is the easiest way as it doesn't return anything, it only sends a query to execute. You can't bind parameters to it. It's useful for cases like creating/dropping a table.
+
+'''Syntax''': <syntaxhighlight>SQL:Execute(string)</syntaxhighlight>
+
+'''Example''':
+<syntaxhighlight>
+-- SQL:Execute('CREATE TABLE IF NOT EXISTS tableName (column1 type, column2 type, ...)')
+-- SQL:Execute('DROP TABLE IF EXISTS tableName')
+SQL:Execute('CREATE TABLE IF NOT EXISTS players (steamID VARCHAR UNIQUE, money INTEGER, modelID INTEGER)')
+SQL:Execute('DROP TABLE IF EXISTS players')
+</syntaxhighlight>
+
+'''Note''': UNIQUE means that steamID must have a unique value, no two records can store the same steamID. You can also read about [http://en.wikipedia.org/wiki/Varchar VARCHAR here]. 'IF EXISTS' and 'IF NOT EXISTS' are optional clauses, they suppress the error that would normally result if the table does (CREATE TABLE) or does not (DROP TABLE) exist.
+
+====SQL:Command====
+
+You can use a command to execute a query where it needs be bound with parameters, but you don't want any returned values. It's useful in cases of inserting and updating, where you need to bind parameters but don't need any returned values.
+
+'''Syntax''': <syntaxhighlight>object SQL:Command(string)</syntaxhighlight>
+
+'''Example''':
+<syntaxhighlight>
+-- local command = SQL:Command('INSERT INTO tableName (column1, column2) VALUES (?, ?)')
+-- command:Bind(1, 'value1')
+-- command:Bind(2, 'value2')
+-- command:Execute()
+-- local command = SQL:Command('UPDATE tableName SET column1 = ?, column2 = ? WHERE column1 = ?')
+-- command:Bind(1, 'value1')
+-- command:Bind(2, 'value2')
+-- command:Bind(3, 'value1_condition')
+-- command:Execute()
+
+local command = SQL:Command('INSERT INTO players (steamID, money, modelID) VALUES (?, ?, ?)')
+local command = SQL:Command('INSERT INTO players VALUES (?, ?, ?)') -- You can also skip typing the columns if you're providing a value for each column and not skipping any, so this is equivalent to the above one
+local command = SQL:Command('INSERT INTO players (steamID, money) VALUES (?, ?)') -- Here we're only providing values for steamID and money but leaving modelID to its default value, null
+
+command:Bind(1, steam_id) -- The steamID column's value
+command:Bind(2, 10000) -- The money column's value
+
+local command = SQL:Command('UPDATE players SET money = ?, modelID = ? WHERE steamID = ?') -- UPDATE
+command:Bind(1, 1000000) -- money
+command:Bind(2, 10) -- modelID
+command:Bind(3, steam_id) -- steamID
+
+command:Execute() -- After binding all the parameters, we execute our command, this returns nil
+</syntaxhighlight>
+
+'''Note''': '''?''' represents a parameter, you then must use command:Bind to bind the parameter.
+
+'''A quote from Philpax on the forum''': ''Binding is far superior to using string formatting. Please do not use string formatting under any circumstances. Binding has the SQL engine automatically insert the parameters properly without relying on poor escaping mechanisms or other problematic systems. SQL injection is the result of using string formatting and/or concatenation to form your statement. Please, I beg of you: bind your parameters, do not use string formatting!''
+
+====SQL:Query====
+
+You use this when you need to bind parameters and need to return a value. This is useful for cases like selecting from a table.
+
+'''Syntax''': <syntaxhighlight>object SQL:Query(string)</syntaxhighlight>
+
+'''Example''':
+<syntaxhighlight>
+-- local result = SQL:Query('SELECT * FROM tableName'):Execute()
+-- local result = SQL:Query('SELECT column1, column2 FROM tableName'):Execute()
+-- local query = SQL:Query('SELECT column1, column2 FROM tableName WHERE column1 = ?')
+-- local query = SQL:Query('SELECT column1, column2 FROM tableName WHERE column1 = ? AND column2 = ?')
+-- query:Bind(1, 'value1')
+-- query:Bind(1, 'value2')
+-- local result = query:Execute()
+-- result[row].column
+
+local result = SQL:Query('SELECT * FROM players'):Execute() -- Since we don't need to bind anything, we can call Execute() right away which will return the result
+local query = SQL:Query('SELECT money, modelID FROM players WHERE steamID = ? LIMIT 1')
+query:Bind(1, steam_id)
+local result = query:Execute()
+local money = result[1].money -- 1 is the row, money is the name of the column
+</syntaxhighlight>
+
+'''Note''': * is the wild card character, it means we want to select all the columns in the table. Appending LIMIT 1 to the end of our query means that we only want it to return one row/record. That's the use of LIMIT, it limits the returned data to a certain number of records. You should use LIMIT whenever possible, so that it will stop looping the database once it has 1 result. This can majorly improve performance.
+
+==SQL:Transaction==
+
+A transaction is a unit of work that is performed against a database. If a transaction is successful, all of the modifications made to the database during the transaction are committed. If a transaction encounters errors and must be canceled, then all of the data modifications are rolled back
+
+'''Syntax''': <syntaxhighlight>object SQL:Transaction()</syntaxhighlight>
+
+'''Example''':
+<syntaxhighlight>
+local transaction = SQL:Transaction()
+
+for i = 1, 5 do
+	local command = SQL:Command('INSERT INTO tableName VALUES (?, ?)')
+	command:Bind(1, 'value1')
+	command:Bind(2, 'value2')
+	command:Execute()
+end
+
+transaction:Commit()
+</syntaxhighlight>

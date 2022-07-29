@@ -1,0 +1,65 @@
+{{Lua/Function |
+  returns = [[Lua/Client/ClientParticleSystem|ClientParticleSystem]] |
+  prototype = ClientParticleSystem.Create(table {{arg|arguments}}) |
+}}
+
+==Argument table==
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="150" | Name
+!width="480" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| [[Lua/Shared/Angle|Angle]]
+| angle
+| 
+|-
+| string
+| path
+| [https://github.com/Jman100/jc2mp-particlesystembrowser/blob/master/client/cParticleSystemBrowser.lua#L7 See here for the complete list of paths]
+|} {{Lua/Table_Suffix}}
+
+==Examples==
+
+====Create an explosion where you click====
+
+<syntaxhighlight line highlight="20">
+particleSystems = {}
+
+Events:Subscribe("MouseDown", function(args)
+	if args.button ~= 1 then
+		return
+	end
+	
+	local result = Physics:Raycast(
+		Camera:GetPosition(),
+		Camera:GetAngle() * Vector3.Forward,
+		0,
+		100
+	)
+	
+	local spawnArgs = {
+		position = result.position + result.normal * 0.25,
+		angle = Angle(),
+		path = "fx_exp_grenade_01.psm",
+	}
+	local particleSystem = ClientParticleSystem.Create(AssetLocation.Game, spawnArgs)
+	
+	table.insert(particleSystems, particleSystem)
+end)
+
+-- Make sure to clean up everything on ModuleUnload.
+Events:Subscribe("ModuleUnload", function()
+	for index, particleSystem in ipairs(particleSystems) do
+		particleSystem:Remove()
+	end
+end)
+
+</syntaxhighlight>

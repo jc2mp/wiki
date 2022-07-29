@@ -1,0 +1,9 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired on module unload. This can happen when the module is unloaded or reloaded, including:
+* The ''unload'' console command
+* The ''reload'' console command
+* (Server) Shutdown
+* (Client) Disconnecting or quitting

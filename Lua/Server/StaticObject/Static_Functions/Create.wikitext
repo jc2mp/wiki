@@ -1,0 +1,154 @@
+__NOTOC__
+
+{{Lua/Function |
+  returns = StaticObject |
+  prototype = StaticObject.Create([[Lua/Shared/Vector3|Vector3]] {{Arg|position}}, [[Lua/Shared/Angle|Angle]] {{Arg|angle}}, string {{Arg|model}}) |
+  description = Spawns a StaticObject with the specified {{Arg|model}} at {{Arg|position}} and {{Arg|angle}}. |
+}}
+
+==Examples==
+
+====Spawn a barrel model at the player====
+
+<syntaxhighlight>
+function PlayerChat(args)
+	if args.text == "/barrel" then
+		local path = "34x09.flz/go001-a.lod"
+		StaticObject.Create(args.player:GetPosition(), Angle(0, 0, 0), path)
+		
+		return false
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>
+
+
+
+
+
+
+{{Lua/Function |
+  returns = StaticObject |
+  prototype = StaticObject.Create(table) |
+}}
+
+==Description==
+
+Spawns a StaticObject using an argument table.
+
+The following arguments are supported:
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="70" | Name
+!width="570" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| [[Lua/Shared/Angle|Angle]]
+| angle
+| 
+|-
+| string
+| model
+| Path to the model file. See [https://github.com/Philpax/jc2mp-model-viewer/blob/master/client/models.lua#L6 the model viewer] for the full list.
+|} {{Lua/Table_Suffix}}
+
+====Optional values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="90" | Name
+!width="75" | Default
+!width="495" | Notes
+|-
+| string
+| collision
+| ""
+| Path to the collision file. See [https://github.com/Philpax/jc2mp-model-viewer/blob/master/client/models.lua#L6 the model viewer] for the full list.
+|-
+| [[Lua/Server/World|World]]
+| world
+| DefaultWorld
+| 
+|-
+| boolean
+| enabled
+| true
+| 
+|-
+| boolean
+| fixed
+| true
+| If false, the object will move smoothly and players can be transported while standing on it.
+|} {{Lua/Table_Suffix}}
+
+====Notes====
+
+* If {{Arg|collision}} isn't provided, or is invalid, the object will have no collision.
+* If {{Arg|fixed}} is false, you must provide a {{Arg|collision}} argument.
+
+==Examples==
+
+====Create a ramp in front of you when the horn button is pressed====
+
+=====Server=====
+
+<syntaxhighlight>
+function SpawnRamp(arg, player)
+	local vehicle = player:GetVehicle()
+	
+	-- Make sure they're in a vehicle
+	if vehicle == nil then
+		return
+	end
+	
+	Chat:Broadcast("Spawning ramp for "..tostring(player), Color(255, 255, 255))
+	
+	local angle = vehicle:GetAngle()
+	local direction = angle * Vector3.Forward
+	-- Compensate for latency using velocity.
+	local distance = 30 + vehicle:GetLinearVelocity():Length() * 0.5
+	local position = vehicle:GetPosition() + direction * distance
+	angle = angle * Angle(math.pi * -0.5, 0, 0)
+	
+	spawnArgs = {}
+	spawnArgs.position = position
+	spawnArgs.angle = angle
+	spawnArgs.model = "17x48.fl/go666-b.lod"
+	spawnArgs.collision = "17x48.fl/go666_lod1-b_col.pfx"
+	spawnArgs.world = vehicle:GetWorld()
+	
+	StaticObject.Create(spawnArgs)
+end
+
+Network:Subscribe("SpawnRamp", SpawnRamp)
+</syntaxhighlight>
+
+=====Client=====
+
+<syntaxhighlight>
+pressed = false
+
+function PreTick()
+	local currentlyPressed = Input:GetValue(Action.SoundHornSiren) > 0
+	if currentlyPressed then
+		if pressed == false then
+			Network:Send("SpawnRamp")
+		end
+	end
+	
+	pressed = currentlyPressed
+end
+
+Events:Subscribe("PreTick", PreTick)
+</syntaxhighlight>

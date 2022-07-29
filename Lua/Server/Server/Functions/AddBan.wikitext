@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Server:AddBan([[Lua/Shared/SteamId|SteamId]]) |
+}}

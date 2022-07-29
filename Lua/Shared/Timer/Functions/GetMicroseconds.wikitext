@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Timer:GetMicroseconds() |
+  description = Returns the microseconds passed since the creation or the last reset of the timer.
+}}

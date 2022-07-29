@@ -1,0 +1,102 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+[[Lua/Client/MenuItem/Events/Checked|Checked]]
+
+[[Lua/Client/MenuItem/Events/CheckChanged|CheckChanged]]
+
+[[Lua/Client/MenuItem/Events/MenuItemSelected|MenuItemSelected]]
+
+[[Lua/Client/MenuItem/Events/UnChecked|UnChecked]]
+
+===Events inherited from [[Lua/Client/Button|Button]]===
+
+{{Lua/Client/Button/Events}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | MenuItem
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | MenuItem
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | MenuItem
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | MenuItem
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/CloseMenu|CloseMenu]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/GetChecked|GetChecked]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Menu|Menu]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/GetMenu|GetMenu]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/GetMenuOpen|GetMenuOpen]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/GetOnStrip|GetOnStrip]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/OpenMenu|OpenMenu]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/SetCheckable|SetCheckable]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/SetChecked|SetChecked]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/SetOnStrip|SetOnStrip]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/MenuItem/Functions/ToggleMenu|ToggleMenu]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/Button|Button]]===
+
+{{Lua/Client/Button/Functions}}
+
+===Functions inherited from [[Lua/Client/Label|Label]]===
+
+{{Lua/Client/Label/Functions}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | MenuItem == MenuItem
+|} {{Lua/Table_Suffix}}

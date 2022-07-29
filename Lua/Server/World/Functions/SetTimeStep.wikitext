@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = World:SetTimeStep(number) |
+  Sets the rate that time advances, in game minutes per second.
+}}

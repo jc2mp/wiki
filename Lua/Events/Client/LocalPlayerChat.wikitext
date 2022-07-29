@@ -1,0 +1,28 @@
+{{Lua/Event|
+  arguments = string text|
+  return = Return false to block the message
+}}
+
+==Description==
+
+Fired when you send a chat message.
+
+If false is returned, the message is not sent to the server.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.text == "Block this message!" then
+		return false
+	else
+		return true
+	end
+end
+
+Events:Subscribe("LocalPlayerChat", Foo)
+</syntaxhighlight>
+
+==See also==
+
+[[Lua/Events/Shared/PlayerChat|PlayerChat]]

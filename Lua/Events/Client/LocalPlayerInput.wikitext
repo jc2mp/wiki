@@ -1,0 +1,60 @@
+{{Lua/Event|
+  arguments = [[Lua/Client/Action|Action]] input, number state|
+  return = Return false to block the action.
+}}
+
+==Description==
+
+Fired when you use a game action. The 'input' argument is an [[Lua/Client/Action|Action]], while the 'state' argument is a number from 0 to 1 which describes the amount with which the input was triggered (i.e. moving an analog stick to 50% would result in a state of 0.5).
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.input == Action.FireRight then
+		-- This runs every frame that you press the fire button.
+		Chat:Print("pow pow", Color(255, 255, 255))
+	end
+end
+
+Events:Subscribe("LocalPlayerInput", Foo)
+</syntaxhighlight>
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.input == Action.LookRight then
+		-- This runs every frame that you rotate your view to the right.
+		Chat:Print(tostring(args.state), Color(255, 255, 255))
+	end
+end
+
+Events:Subscribe("LocalPlayerInput", Foo)
+</syntaxhighlight>
+
+====Disabling the grappling hook and parachute====
+
+<syntaxhighlight>
+blacklist = {
+	Action.FireGrapple,
+	Action.ParachuteOpenClose
+}
+
+Foo = function(args)
+	-- If the blacklist contains this action, block it.
+	for index, action in ipairs(blacklist) do
+		if action == args.input then
+			return false
+		end
+	end
+	
+	return true
+end
+
+Events:Subscribe("LocalPlayerInput", Foo)
+</syntaxhighlight>
+
+Note: There is another way to disable the grappling hook and parachute, see [[Lua/Client/Game/Functions/FireEvent|Game:FireEvent]] for more details.
+
+''Game:FireEvent("ply.grappling.disable")'' will disable the grappling hook as well as removing the crosshair that indicates you are able to grapple.
+
+''Game:FireEvent("ply.parachute.disable")'' will disable the parachute.

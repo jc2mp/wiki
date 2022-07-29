@@ -1,0 +1,26 @@
+{{Lua/Event |
+  arguments = object {{Arg|entity}}
+}}
+
+==Description==
+
+{{Arg|entity}} can be one of:
+* Player
+* Vehicle
+* Checkpoint
+* StaticObject
+* ClientStaticObject
+* ClientEffect
+* ClientSound
+
+To get the type, use ''args.entity.__type''.
+
+==Example==
+
+<syntaxhighlight>
+function Foo(args)
+	print("A "..args.entity.__type.." was just removed.")
+end
+
+Events:Subscribe("EntityRemove", Foo)
+</syntaxhighlight>

@@ -1,0 +1,33 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired before JC2-MP game/server logic is run.
+
+====Server====
+
+The rate varies depending on server load and network. When the network usage is idle, it will aim for a maximum of 100 ticks per second to save CPU. When the network becomes more saturated, the server will run it as fast as it can.
+
+====Client====
+
+This is ran once every frame.
+
+==Examples==
+
+====Print the tickrate once per second====
+
+<syntaxhighlight>
+timer = Timer()
+numTicks = 0
+
+function Foo(args)
+	numTicks = numTicks + 1
+	if timer:GetSeconds() > 1 then
+		print(numTicks.." ticks per second")
+		timer:Restart()
+		numTicks = 0
+	end
+end
+
+Events:Subscribe("PreTick", Foo)
+</syntaxhighlight>

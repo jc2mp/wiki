@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/Properties|Properties]] |
+  prototype = PropertyTree:Add(string) |
+}}

@@ -1,0 +1,19 @@
+{{Lua/Event|
+  arguments = number old_money, number new_money
+}}
+
+==Description==
+
+Fired when your money changes.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Your money changed from $"..tostring(args.old_money)..
+		" to $"..tostring(args.new_money)
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerMoneyChange", Foo)
+</syntaxhighlight>

@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector3|Vector3]] |
+  prototype = Camera:GetPosition() |
+  description = Returns the current position of the camera.
+}}

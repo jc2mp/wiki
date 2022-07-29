@@ -1,0 +1,8 @@
+{{Lua/Function |
+  prototype = Input:SetValue([[Lua/Client/Action|Action]], number {{Arg|value}}) |
+}}
+
+{{Lua/Function |
+  prototype = Input:SetValue([[Lua/Client/Action|Action]], number {{Arg|value}}, boolean {{Arg|fire_event}}) |
+  description = fire_event is whether to fire the LocalPlayerInput event; default is false.
+}}

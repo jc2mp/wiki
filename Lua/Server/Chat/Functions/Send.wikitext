@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Chat:Send([[Lua/Server/Player|Player]], string, [[Lua/Shared/Color|Color]]) |
+}}

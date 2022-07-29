@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Config:SetValue(string category, string value, object) |
+}}

@@ -1,0 +1,6 @@
+{{Lua/Function |
+  prototype = UDPSocket:Close() |
+}}
+
+==Description==
+Closes an UDPSocket

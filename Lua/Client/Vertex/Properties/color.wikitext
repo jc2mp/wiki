@@ -1,0 +1,4 @@
+{{Lua/Property |
+  type = [[Lua/Shared/Color|Color]] |
+  prototype = Vertex.color |
+}}

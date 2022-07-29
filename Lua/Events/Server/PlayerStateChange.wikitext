@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Shared/PlayerState|PlayerState]] old_state, [[Lua/Shared/PlayerState|PlayerState]] new_state
+}}
+
+==Description==
+
+Fired when a player's state changes.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().."'s state changed from "..args.old_state.." to "..args.new_state)
+end
+
+Events:Subscribe("PlayerStateChange", Foo)
+</syntaxhighlight>

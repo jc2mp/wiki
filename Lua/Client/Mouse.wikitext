@@ -1,0 +1,19 @@
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Mouse/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Mouse/Functions/GetVisible|GetVisible]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Mouse/Functions/SetPosition|SetPosition]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Mouse/Functions/SetVisible|SetVisible]](boolean)
+|} {{Lua/Table_Suffix}}

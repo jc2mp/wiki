@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector2:Dot(Vector2 {{arg|b}}) |
+  description = Calculates the dot product of the subject and {{arg|b}}.
+}}

@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = Vector3 |
+  prototype = Vector3.Cross(Vector3, Vector3) |
+  description = Calculates the cross product of the given vectors.
+}}

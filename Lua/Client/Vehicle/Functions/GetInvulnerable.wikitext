@@ -1,0 +1,4 @@
+{{Lua/Function |
+  return = boolean |
+  prototype = Vehicle:GetInvulnerable()
+}}

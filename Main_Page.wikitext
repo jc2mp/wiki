@@ -1,0 +1,78 @@
+{{Warning Box|
+  text = Please note: This documentation is a major work in progress.<br>Expect it to be greatly improved over time.
+}}
+
+
+<div id="hauptseite">
+{| width="100%" cellspacing="0" cellpadding="2"
+| colspan="2" |
+
+<div id="hauptseite-willkommen" class="hauptseite-oben">
+<h2><span class="mw-headline">JC2-MP Documentation</span></h2>
+<div class="inhalt" style="text-align:center">
+Welcome to JC2-MP, a modification for [http://en.wikipedia.org/wiki/Just_Cause_2 Just Cause 2]! 
+
+Through a combination of reverse engineering and programming, we've brought a multiplayer experience to the game. 
+</div>
+</div>
+
+|-
+| width="50%" style="vertical-align:top;" |
+<div class="hauptseite-links">
+<h2><span class="mw-headline">Information</span></h2>
+<div class="inhalt">
+* '''[[Frequently Asked Questions|<span style="color:red;">Frequently Asked Questions</span>]]'''
+* '''[[Troubleshooting|<span style="color:red;">Troubleshooting</span>]]'''
+* [[Feature Overview]]
+* [[Changelog]]
+* [[Development roadmap]]
+* [[Where to Buy]]
+* [[The_JC2-MP_Team|The Team]]
+* [[Client/Console|Console commands]]
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+| width="50%" style="vertical-align:top;" |
+<div class="hauptseite-rechts">
+<h2><span class="mw-headline">[[Lua|Lua scripting]]</span></h2>
+<div class="inhalt">
+* [[Lua/Tutorials|Tutorials]]
+* [[Lua/Frequently Asked Questions|Scripting FAQ]]
+* [[Lua/Server|Server reference]]
+* [[Lua/Client|Client reference]]
+* [[Lua/Shared|Shared reference]]
+* [[Model_ID|List of ids]]
+* [[Character Models|List of character models]]
+</div>
+</div>
+
+<div class="hauptseite-rechts">
+<h2><span class="mw-headline">[[Server]]</span></h2>
+<div class="inhalt">
+* [[Server/Getting_started/Windows Server|Windows (Using the Steam client)]]
+* [[Server/Getting_started/Windows Server/SteamCMD|Windows (Using SteamCMD)]]
+* [[Server/Getting_started/Linux Server|Linux]]
+* [[Server/Getting_started/FreeBSD Server|FreeBSD]]
+* [[Server/Console|Console commands]]
+* [[Server/Requirements|Requirements]]
+* [[Server/Installing scripts|Installing scripts]]
+* [[Server/Hosts|Server Hosts]]
+</div>
+</div>
+
+|}
+</div>
+
+__NOTOC__ __NOTITLE__

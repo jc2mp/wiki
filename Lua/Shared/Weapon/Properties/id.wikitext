@@ -1,0 +1,5 @@
+{{Lua/Property |
+  type = number |
+  prototype = Weapon.id |
+  description = The weapon id of this particular weapon; a list can be found [[Model_ID#Weapon_model_IDs|here]].
+}}

@@ -1,0 +1,34 @@
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Client/Vertex/Constructor|Vertex]]([[Lua/Shared/Vector3|Vector3]])
+|} {{Lua/Table_Suffix}}
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Vertex/Properties/color|color]]
+|{{Lua/Cell_Style/Property_List_Type}} | [[Lua/Shared/Color|Color]]
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Vertex/Properties/position|position]]
+|{{Lua/Cell_Style/Property_List_Type}} | [[Lua/Shared/Vector3|Vector3]]
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Vertex/Properties/texcoord|texcoord]]
+|{{Lua/Cell_Style/Property_List_Type}} | [[Lua/Shared/Vector2|Vector2]]
+|} {{Lua/Table_Suffix}}

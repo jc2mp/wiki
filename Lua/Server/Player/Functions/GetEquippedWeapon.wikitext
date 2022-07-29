@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Weapon|Weapon]] |
+  prototype = Player:GetEquippedWeapon() |
+}}
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetEquippedSlot|Player:GetEquippedSlot]]

@@ -1,0 +1,32 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player:GetInventory() |
+  description = Returns the player's inventory as a table of [[Lua/Shared/Weapon|Weapon]]s.
+}}
+
+==Example==
+
+====Print your inventory when you type 'inventory' in console====
+
+<syntaxhighlight line highlight="2">
+function PrintInventory()
+	local inventory = LocalPlayer:GetInventory()
+	print("You are carrying "..table.count(inventory).." weapons:")
+	for slot, weapon in pairs(inventory) do
+		print("\tSlot "..slot..": "..weapon.id)
+	end
+end
+
+Console:Subscribe("inventory", PrintInventory)
+</syntaxhighlight>
+
+====Example output====
+
+<syntaxhighlight lang="text">
+17:08:45 | [info ] | [sandbox] You are carrying 2 weapons:
+17:08:45 | [info ] | [sandbox] 	Slot 0: 2
+17:08:45 | [info ] | [sandbox] 	Slot 2: 14
+</syntaxhighlight>
+
+==See also==
+[[Lua/Server/Player/Functions/GetInventory|Player:GetInventory (server)]]

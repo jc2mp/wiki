@@ -1,0 +1,11 @@
+{{Lua/Function |
+  prototype = Player:SetWeatherSeverity(number) |
+}}
+
+==Description==
+
+Changes the weather for one specific player. Values are between 0 and 2. 
+
+==See also==
+
+[[Lua/Tutorials/Intermediate/Weather|Weather tutorial]]

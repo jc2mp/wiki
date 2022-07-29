@@ -1,0 +1,11 @@
+{|
+!width="120" align="right"|<font size="3">Type</font> &nbsp;&nbsp;
+|<font size="3">{{{type}}}</font>
+|-
+!width="120" align="right"|<font size="3">Prototype</font> &nbsp;&nbsp;
+|<font size="3">{{{prototype}}}</font>
+|-
+!width="120" align="right"|<font size="3">Description</font> &nbsp;&nbsp;
+|<font size="3">{{{description|No description}}}</font>
+|}
+<br/>

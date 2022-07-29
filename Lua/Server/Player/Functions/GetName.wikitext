@@ -1,0 +1,7 @@
+{{Lua/Function |
+  returns = string |
+  prototype = Player:GetName() |
+}}
+
+==Description==
+Returns the player's in-game name. Currently, names are truncated to 20 characters.

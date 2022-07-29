@@ -1,0 +1,12 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = Chat:GetEnabled() |
+}}
+
+==Description==
+Returns whether the chat is shown. Works differently from using F3 to toggle the chat. Returns false only if the chat was hidden using [[Lua/Client/Chat/Functions/SetEnabled|SetEnabled(false)]]. If the user hid the chat with F3, this function will still return true.
+
+==See also==
+
+* [[Lua/Client/Chat/Functions/SetEnabled|Chat:SetEnabled]]
+* [[Lua/Client/Chat/Functions/GetActive|Chat:GetActive]]

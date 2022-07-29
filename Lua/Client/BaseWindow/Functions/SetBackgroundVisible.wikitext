@@ -1,0 +1,17 @@
+{{Lua/Function |
+  prototype = BaseWindow:SetBackgroundVisible(boolean) |
+}}
+
+==Description==
+
+Sets whether the background is visible. It is set to true by default. This only applies to a few types; for most types, it is useless.
+
+The following types are affected:
+* [[Lua/Client/Button|Button]] - Removes the button part, so it looks like a [[Lua/Client/LabelClickable|LabelClickable]]
+* [[Lua/Client/ComboBox|ComboBox]]
+* [[Lua/Client/TextBox|TextBox]]
+* [[Lua/Client/TextBoxMultiline|TextBoxMultiline]]
+* [[Lua/Client/Tree|Tree]]
+
+==See also==
+* [[Lua/Client/BaseWindow/Functions/GetBackgroundVisible]]

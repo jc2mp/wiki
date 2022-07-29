@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = RadioButtonController |
+  prototype = RadioButtonController.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = RadioButtonController |
+  prototype = RadioButtonController.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = RadioButtonController |
+  prototype = RadioButtonController.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = RadioButtonController |
+  prototype = RadioButtonController.Create() |
+}}

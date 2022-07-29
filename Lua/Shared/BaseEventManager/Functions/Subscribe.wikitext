@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Event|Event]] |
+  prototype = BaseEventManager:Subscribe(string {{arg|event_name}}, function {{arg|callback}}) |
+  description = Subscribe to the specified event.
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Shared/Event|Event]] |
+  prototype = BaseEventManager:Subscribe(string {{arg|event_name}}, object {{arg|instance}}, function {{arg|callback}}) |
+  description = Subscribe to the specified event with the given object.
+}}

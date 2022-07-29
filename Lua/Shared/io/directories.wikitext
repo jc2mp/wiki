@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = table |
+  prototype = io.directories(string {{arg|path}}) |
+  description = Returns the list of directories in the specified directory.
+}}
+
+==Additional Notes==
+*The path is relative to the module directory.

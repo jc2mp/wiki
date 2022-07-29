@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = World:SetTime(number) |
+  description = Sets the time in hours.
+}}

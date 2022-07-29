@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns =  |
+  prototype = StaticObject:Teleport([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Angle|Angle]]) |
+  description = Teleports the specified StaticObject to {{Arg|position}} and {{Arg|angle}}.
+}}

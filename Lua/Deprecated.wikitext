@@ -1,0 +1,6 @@
+[[Category:Deprecated]]
+[[Category:Deprecated ({{{version}}})]]
+
+{{Warning Box|
+  text = This is deprecated as of {{{version}}}.
+}}

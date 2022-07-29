@@ -1,0 +1,15 @@
+==Getting started==
+
+* [[Server/Getting_started/Windows Server|Windows (Using the Steam client)]]
+* [[Server/Getting_started/Windows Server/SteamCMD|Windows (Using SteamCMD)]]
+* [[Server/Getting_started/Linux Server|Linux]]
+* [[Server/Getting_started/FreeBSD Server|FreeBSD]]
+
+==Information==
+
+* [[Server/Console|Console commands]]
+* [[Server/Requirements|Requirements]]
+
+==Hosts==
+
+* [[Server/Hosts|Server Hosts]]

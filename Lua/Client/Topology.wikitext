@@ -1,0 +1,25 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LineList
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LineStrip
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PointList
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | TriangleList
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | TriangleStrip
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Undefined
+|{{Lua/Cell_Style/Enum_List_Value}} | 0
+|} {{Lua/Table_Suffix}}

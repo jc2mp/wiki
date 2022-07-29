@@ -1,0 +1,14 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:DrawLine([[Lua/Shared/Vector2|Vector2]] {{arg|point1}}, [[Lua/Shared/Vector2|Vector2]] {{arg|point2}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a one-pixel thick line from {{arg|point1}} to {{arg|point2}} in the given color in 2D space.
+}}
+
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:DrawLine([[Lua/Shared/Vector3|Vector3]] {{arg|point1}}, [[Lua/Shared/Vector3|Vector3]] {{arg|point2}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a one-pixel thick line from {{arg|point1}} to {{arg|point2}} in the given color in 3D space.
+}}

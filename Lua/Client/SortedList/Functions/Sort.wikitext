@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = SortedList:Sort() |
+}}
+
+{{Lua/Function |
+  prototype = SortedList:Sort(number {{Arg|column}}) |
+}}

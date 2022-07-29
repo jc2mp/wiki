@@ -1,0 +1,29 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Server/Vehicle|Vehicle]] vehicle, boolean is_driver, [[Lua/Server/Player|Player]] old_driver
+}}
+
+==Description==
+
+Fired when a player enters a vehicle. Jumping onto stunt position does not count; they must be physically in the vehicle. [[Lua/Server/Player/Functions/EnterVehicle|Player:EnterVehicle]] will also fire the event.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	print(args.player:GetName().." entered a "..args.vehicle:GetName())
+end
+
+Events:Subscribe("PlayerEnterVehicle", Foo)
+</syntaxhighlight>
+
+====Detecting vehicle theft====
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.is_driver and args.old_driver then
+		print(args.player:GetName().." stole a vehicle from "..args.old_driver:GetName())
+	end
+end
+
+Events:Subscribe("PlayerEnterVehicle", Foo)
+</syntaxhighlight>

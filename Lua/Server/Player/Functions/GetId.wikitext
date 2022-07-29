@@ -1,0 +1,10 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Player:GetId() |
+}}
+
+==Description==
+Returns the player's ID. This is not the player's [[Lua/Server/Player/Functions/GetSteamId|Steam ID]].
+
+==See also==
+* [[Lua/Server/Player/Static_Functions/GetById|Player:GetById]]

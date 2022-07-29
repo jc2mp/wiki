@@ -1,0 +1,23 @@
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Angle|Angle]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/GetAngle|GetAngle]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/GetBoundingBox|GetBoundingBox]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/GetCollision|GetCollision]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/GetModel|GetModel]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseStaticObject/Functions/IsValid|IsValid]]()
+|} {{Lua/Table_Suffix}}

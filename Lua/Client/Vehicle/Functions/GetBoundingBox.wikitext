@@ -1,0 +1,5 @@
+{{Lua/Function
+ | returns = [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]]
+ | prototype = Vehicle:GetBoundingBox()
+ | description = Returns the min and max of the bounding box.
+}}

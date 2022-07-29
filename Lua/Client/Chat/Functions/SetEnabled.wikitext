@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = Chat:SetEnabled(boolean) |
+}}
+==Description==
+Hides or shows the chat. Works separately from using the F3 key to show/hide the chat. If you hide the chat using this function, the player will not be able to see it even by hitting F3.
+
+==See also==
+
+* [[Lua/Client/Chat/Functions/GetEnabled|Chat:GetEnabled]]
+* [[Lua/Client/Chat/Functions/SetActive|Chat:SetActive]]

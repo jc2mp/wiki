@@ -1,0 +1,7 @@
+[[Lua/Client/TextBox/Events/EscPressed|EscPressed]]
+
+[[Lua/Client/TextBox/Events/ReturnPressed|ReturnPressed]]
+
+[[Lua/Client/TextBox/Events/TabPressed|TabPressed]]
+
+[[Lua/Client/TextBox/Events/TextChanged|TextChanged]]

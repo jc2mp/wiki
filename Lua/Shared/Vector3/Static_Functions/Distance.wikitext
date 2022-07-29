@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3.Distance(Vector3, Vector3) |
+  description = Calculates the distance between the given vectors.
+}}

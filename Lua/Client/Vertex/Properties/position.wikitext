@@ -1,0 +1,4 @@
+{{Lua/Property |
+  type = [[Lua/Shared/Vector3|Vector3]] |
+  prototype = Vertex.position |
+}}

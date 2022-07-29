@@ -1,0 +1,34 @@
+====Server startup====
+
+When the server starts, it iterates through each directory inside of ''scripts/'' and loads it as a module. The module's name is the directory name. If the module's name contains ''disabled'', it is not loaded. After all modules are loaded, the ServerStart event is called and the [[Lua/Events/Shared/ModulesLoad|ModulesLoad]] event is called.
+
+====Module loading====
+
+When a module, such as ''MyModule'', is loaded on the server, script files in ''scripts/MyModule/server/'' are automatically ran:
+# Any files named ''_init.lua'' are ran, including subdirectories.
+# Any files with the ''.lua'' extension are ran, including subdirectories.
+# The [[Lua/Events/Shared/ModuleLoad|ModuleLoad]] event is fired.
+# If this is the last module loaded, (at server startup, or using the ''load'' or ''reload'' commands), the [[Lua/Events/Shared/ModulesLoad|ModulesLoad]] event is fired.
+
+Clients are sent any scripts in ''scripts/MyModule/client/'', and the same process happens as above, with one difference: after a module is loaded, the client tells the server to fire the [[Lua/Events/Server/ClientModuleLoad|ClientModuleLoad]] event. It is important to note that the client does not store the scripts anywhere.
+
+There is also a ''shared'' directory. Scripts in here are ran before ''server'' and ''client''.
+
+Individual script files in a module can interact with each other just fine. There is no need to ''require'' anything. However, scripts in two different modules can only interact in a few ways. See [[Lua/Tutorials/Beginner/Cross-module communication|Cross-module communication]].
+
+The order in which scripts are loaded is undefined. It seems to be alphabetical order, but you should not depend on it.
+
+====Module unloading====
+
+When a module is unloaded, either on server shutdown, client disconnect, or the ''reload'' or ''unload'' server console commands, the [[Lua/Events/Shared/ModuleUnload|ModuleUnload]] event is called.
+
+==lua/autorun/ directory==
+
+If IKnowWhatImDoing is enabled in the server's config.lua, script files in the ''lua/autorun/'' directory will be loaded before every module. The directory is in the root of the server. It follows a similar server/client/shared directory structure. Example: 'MyJcmpServer/lua/autorun/client/MyScript.lua'
+
+==See also==
+
+* [[Lua/Events/Shared/ModuleLoad|ModuleLoad]]
+* [[Lua/Events/Shared/ModuleUnload|ModuleUnload]]
+* [[Lua/Events/Server/ServerStart|ServerStart]]
+* [[Lua/Events/Server/ClientModuleLoad|ClientModuleLoad]]

@@ -1,0 +1,18 @@
+{{Lua/Event|
+  arguments = [[Lua/Shared/Vector2|Vector2]] position
+}}
+
+==Description==
+
+Fired when the mouse is moved. (0,0) is the top-left of the screen, with the bottom-right being the size of the window.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Mouse position: "..args.position
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("MouseMove", Foo)
+</syntaxhighlight>

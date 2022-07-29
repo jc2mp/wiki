@@ -1,0 +1,13 @@
+[[Lua/Client/BaseWindow/Events/Blur|Blur]]
+
+[[Lua/Client/BaseWindow/Events/Focus|Focus]]
+
+[[Lua/Client/BaseWindow/Events/HoverEnter|HoverEnter]]
+
+[[Lua/Client/BaseWindow/Events/HoverLeave|HoverLeave]]
+
+[[Lua/Client/BaseWindow/Events/PostRender|PostRender]]
+
+[[Lua/Client/BaseWindow/Events/PreRender|PreRender]]
+
+[[Lua/Client/BaseWindow/Events/Render|Render]]

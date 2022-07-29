@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = CollapsibleCategory:SetList([[Lua/Client/CollapsibleList|CollapsibleList]]) |
+}}

@@ -1,0 +1,478 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Accelerate
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ActivateBlackMarketBeacon
+|{{Lua/Cell_Style/Enum_List_Value}} | 150
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ActivateExtractionBeacon
+|{{Lua/Cell_Style/Enum_List_Value}} | 151
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ActivateParachuteThrusters
+|{{Lua/Cell_Style/Enum_List_Value}} | 152
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BikeTiltBackward
+|{{Lua/Cell_Style/Enum_List_Value}} | 48
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BikeTiltForward
+|{{Lua/Cell_Style/Enum_List_Value}} | 47
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BoatBackward
+|{{Lua/Cell_Style/Enum_List_Value}} | 67
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BoatForward
+|{{Lua/Cell_Style/Enum_List_Value}} | 66
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BoatTurnLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 68
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BoatTurnRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 69
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Crouch
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Dash
+|{{Lua/Cell_Style/Enum_List_Value}} | 118
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DebugDecree
+|{{Lua/Cell_Style/Enum_List_Value}} | 143
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DebugIncree
+|{{Lua/Cell_Style/Enum_List_Value}} | 142
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DebugModeCombo1
+|{{Lua/Cell_Style/Enum_List_Value}} | 103
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DebugModeCombo2
+|{{Lua/Cell_Style/Enum_List_Value}} | 104
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DecGrappleDistance
+|{{Lua/Cell_Style/Enum_List_Value}} | 79
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DeployParachuteWhileReelingAction
+|{{Lua/Cell_Style/Enum_List_Value}} | 146
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DetachGrapple
+|{{Lua/Cell_Style/Enum_List_Value}} | 80
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Dive
+|{{Lua/Cell_Style/Enum_List_Value}} | 76
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | DropWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 19
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EndMovie
+|{{Lua/Cell_Style/Enum_List_Value}} | 106
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EnterVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 37
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipBlackMarketBeacon
+|{{Lua/Cell_Style/Enum_List_Value}} | 149
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipDual
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipExplosive
+|{{Lua/Cell_Style/Enum_List_Value}} | 113
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipLeftSlot
+|{{Lua/Cell_Style/Enum_List_Value}} | 115
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipRightSlot
+|{{Lua/Cell_Style/Enum_List_Value}} | 114
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EquipTwohanded
+|{{Lua/Cell_Style/Enum_List_Value}} | 117
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Evade
+|{{Lua/Cell_Style/Enum_List_Value}} | 129
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ExitToStuntposParachute
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ExitVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Fire
+|{{Lua/Cell_Style/Enum_List_Value}} | 11
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FireGrapple
+|{{Lua/Cell_Style/Enum_List_Value}} | 81
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FireLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 12
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FireRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FireVehicleWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 14
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GrapplingAction
+|{{Lua/Cell_Style/Enum_List_Value}} | 82
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiAnalogDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 154
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiAnalogLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 155
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiAnalogRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 156
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiAnalogUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 153
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiBack
+|{{Lua/Cell_Style/Enum_List_Value}} | 92
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiCancel
+|{{Lua/Cell_Style/Enum_List_Value}} | 86
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiCreate
+|{{Lua/Cell_Style/Enum_List_Value}} | 109
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiDatabase
+|{{Lua/Cell_Style/Enum_List_Value}} | 131
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiDefault
+|{{Lua/Cell_Style/Enum_List_Value}} | 111
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiDelete
+|{{Lua/Cell_Style/Enum_List_Value}} | 110
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 88
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiIconLegend
+|{{Lua/Cell_Style/Enum_List_Value}} | 130
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 89
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiLoad
+|{{Lua/Cell_Style/Enum_List_Value}} | 107
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiNext
+|{{Lua/Cell_Style/Enum_List_Value}} | 91
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiOk
+|{{Lua/Cell_Style/Enum_List_Value}} | 85
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPDA
+|{{Lua/Cell_Style/Enum_List_Value}} | 120
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPDAExtraction
+|{{Lua/Cell_Style/Enum_List_Value}} | 123
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPDAToggleAOI
+|{{Lua/Cell_Style/Enum_List_Value}} | 121
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPDAZoomIn
+|{{Lua/Cell_Style/Enum_List_Value}} | 122
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPause
+|{{Lua/Cell_Style/Enum_List_Value}} | 94
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiPdaZoomOut
+|{{Lua/Cell_Style/Enum_List_Value}} | 93
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 90
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiSave
+|{{Lua/Cell_Style/Enum_List_Value}} | 108
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GuiUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 87
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Handbrake
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliAITargetAltitude
+|{{Lua/Cell_Style/Enum_List_Value}} | 57
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliAiAutoRoll
+|{{Lua/Cell_Style/Enum_List_Value}} | 132
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliBackward
+|{{Lua/Cell_Style/Enum_List_Value}} | 50
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliDecAltitude
+|{{Lua/Cell_Style/Enum_List_Value}} | 56
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliForward
+|{{Lua/Cell_Style/Enum_List_Value}} | 49
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliIncAltitude
+|{{Lua/Cell_Style/Enum_List_Value}} | 55
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliRollLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 53
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliRollRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 54
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliTurnLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 51
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeliTurnRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 52
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | IncGrappleDistance
+|{{Lua/Cell_Style/Enum_List_Value}} | 78
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Jump
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Kick
+|{{Lua/Cell_Style/Enum_List_Value}} | 124
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LookDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LookLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LookRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LookUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Map
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapScrollDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 98
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapScrollLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 99
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapScrollRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 100
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapScrollUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 97
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapZoomIn
+|{{Lua/Cell_Style/Enum_List_Value}} | 101
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MapZoomOut
+|{{Lua/Cell_Style/Enum_List_Value}} | 102
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | McFire
+|{{Lua/Cell_Style/Enum_List_Value}} | 137
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MoveBackward
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MoveForward
+|{{Lua/Cell_Style/Enum_List_Value}} | 30
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MoveLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MoveRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MoveToDriversSeat
+|{{Lua/Cell_Style/Enum_List_Value}} | 70
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | NextWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Objectives
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ParachuteLandOnVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 72
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ParachuteOpenClose
+|{{Lua/Cell_Style/Enum_List_Value}} | 71
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Pause
+|{{Lua/Cell_Style/Enum_List_Value}} | 0
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PickupWithLeftHand
+|{{Lua/Cell_Style/Enum_List_Value}} | 147
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PickupWithRightHand
+|{{Lua/Cell_Style/Enum_List_Value}} | 148
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneDecTrust
+|{{Lua/Cell_Style/Enum_List_Value}} | 65
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneIncTrust
+|{{Lua/Cell_Style/Enum_List_Value}} | 64
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlanePitchDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 59
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlanePitchUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 58
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneRollLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 62
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneRollRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 63
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneTurnLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 60
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PlaneTurnRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 61
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PrevWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | QuickLoad
+|{{Lua/Cell_Style/Enum_List_Value}} | 141
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | QuickSave
+|{{Lua/Cell_Style/Enum_List_Value}} | 140
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ReeledInJumpAction
+|{{Lua/Cell_Style/Enum_List_Value}} | 144
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ReeledInReleaseAction
+|{{Lua/Cell_Style/Enum_List_Value}} | 145
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Reload
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ResetCamera
+|{{Lua/Cell_Style/Enum_List_Value}} | 7
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Reverse
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SequenceButton1
+|{{Lua/Cell_Style/Enum_List_Value}} | 133
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SequenceButton2
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SequenceButton3
+|{{Lua/Cell_Style/Enum_List_Value}} | 135
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SequenceButton4
+|{{Lua/Cell_Style/Enum_List_Value}} | 136
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ShoulderCam
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SidestepLeftBreakLof
+|{{Lua/Cell_Style/Enum_List_Value}} | 126
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SidestepLeftGainLof
+|{{Lua/Cell_Style/Enum_List_Value}} | 125
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SidestepRightBreakLof
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SidestepRightGainLof
+|{{Lua/Cell_Style/Enum_List_Value}} | 127
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SkipTutorial
+|{{Lua/Cell_Style/Enum_List_Value}} | 112
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SoundHornSiren
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | StuntJump
+|{{Lua/Cell_Style/Enum_List_Value}} | 119
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | StuntposEnterVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 75
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | StuntposJumpOff
+|{{Lua/Cell_Style/Enum_List_Value}} | 73
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | StuntposToParachute
+|{{Lua/Cell_Style/Enum_List_Value}} | 74
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Swim
+|{{Lua/Cell_Style/Enum_List_Value}} | 77
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SwitchTarget
+|{{Lua/Cell_Style/Enum_List_Value}} | 10
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SwitchWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 105
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ThrowGrenade
+|{{Lua/Cell_Style/Enum_List_Value}} | 15
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | TurnLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 41
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | TurnRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 42
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | UseItem
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VehicleCam
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VehicleFireLeft
+|{{Lua/Cell_Style/Enum_List_Value}} | 138
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VehicleFireRight
+|{{Lua/Cell_Style/Enum_List_Value}} | 139
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Walk
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon0
+|{{Lua/Cell_Style/Enum_List_Value}} | 29
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon1
+|{{Lua/Cell_Style/Enum_List_Value}} | 20
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon2
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon3
+|{{Lua/Cell_Style/Enum_List_Value}} | 22
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon4
+|{{Lua/Cell_Style/Enum_List_Value}} | 23
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon5
+|{{Lua/Cell_Style/Enum_List_Value}} | 24
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon6
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon7
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon8
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Weapon9
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XliveAponline
+|{{Lua/Cell_Style/Enum_List_Value}} | 96
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XliveLogout
+|{{Lua/Cell_Style/Enum_List_Value}} | 95
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ZoomIn
+|{{Lua/Cell_Style/Enum_List_Value}} | 83
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ZoomOut
+|{{Lua/Cell_Style/Enum_List_Value}} | 84
+|} {{Lua/Table_Suffix}}

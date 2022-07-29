@@ -1,0 +1,12 @@
+{{Lua/Function |
+  returns = UDPSocket |
+  prototype = UDPSocket.Create() |
+}}
+
+{{Lua/Function |
+  returns = UDPSocket |
+  prototype = UDPSocket.Create(number {{arg|port}}) |
+}}
+
+==Description==
+Creates a new UDPSocket (bound to the given port)

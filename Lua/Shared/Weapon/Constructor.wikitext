@@ -1,0 +1,11 @@
+{{Lua/Function |
+  prototype = Weapon(WeaponId, number ammo_clip, number ammo_reserve) |
+}}
+
+{{Lua/Function |
+  prototype = Weapon(WeaponId, number ammo_clip) |
+}}
+
+{{Lua/Function |
+  prototype = Weapon(WeaponId) |
+}}

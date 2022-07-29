@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = Player |
+  prototype = Player.GetById(number {{arg|id}}) |
+}}
+
+==Description==
+Returns the player with the given player ID, or nil if no player was found with the given ID.
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetId|Player:GetId]]

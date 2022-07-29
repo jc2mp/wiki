@@ -1,0 +1,183 @@
+Values can be stored on players. These values can be accessed cross-module, and it's easy to sync them across server and client. They are persistent until the player disconnects. There are also events for when player values change.
+
+==Example scenarios where storing values on players is useful==
+
+* Players can choose their nickname when they join, which is done in one module; what if some other module wants to get their nickname, such as a nametags script?
+
+* Each player can be part of a faction; if a client aims at a player, it should show whether they're on the same faction or not.
+
+* Players can have hats; client scripts must place the appropriate ClientStaticObjects on players' heads, but client scripts must know what hat model each player has, and must know when their hat changes.
+
+These can all be solved using various other methods, but the player value system makes it so much easier.
+
+==Relevant functions and events==
+
+* Functions
+** Player:GetValue ([[Lua/Server/Player/Functions/GetValue|server]] and [[Lua/Client/Player/Functions/GetValue|client]])
+** Player:SetValue ([[Lua/Server/Player/Functions/SetValue|server]] and [[Lua/Client/Player/Functions/SetValue|client]])
+** [[Lua/Server/Player/Functions/SetNetworkValue|Player:SetNetworkValue]] (server-only)
+* Events
+** [[Lua/Events/Shared/PlayerValueChange|PlayerValueChange]] event
+** [[Lua/Events/Shared/PlayerNetworkValueChange|PlayerNetworkValueChange]] event
+
+==How it works==
+
+An internal key-value map is kept on each player. Server and client maintain their own independent set of players and thus maps.
+* Server-side: When a player joins, their map is empty.
+* Client-side: When you join a server, each player's map is empty.
+
+Player:SetValue can alter a player's map, and Player:GetValue can be used to get a value from their map. Note how these relate to server and client: Player:SetValue on the server will not affect the result of Player:GetValue on the client, and vice versa.
+
+Player:SetNetworkValue is a server-only function that alters players both on the server and on every client. It is equivalent to running Player:SetValue on the server and having every client run Player:SetValue.
+
+The [[Lua/Events/Shared/PlayerValueChange|PlayerValueChange]] event is fired when Player:SetValue is called.
+
+The [[Lua/Events/Shared/PlayerNetworkValueChange|PlayerNetworkValueChange]] event is fired on both client and server when Player:SetNetworkValue is called.
+
+==Examples==
+
+====The simplist example (client)====
+
+<syntaxhighlight>
+print("MyKey:", LocalPlayer:GetValue("MyKey"))
+
+LocalPlayer:SetValue("MyKey", "I'm a value")
+
+print("MyKey:", LocalPlayer:GetValue("MyKey"))
+</syntaxhighlight>
+
+This should output "nil" and "I'm a value" the first time it is run. If you reload the module, it will output "I'm a value" twice (player storage is persistent). If you reconnect, the value will be deleted and you will get the first result again.
+
+====Console command to get/set values====
+
+Use 'set playername key value' and 'get playername key' with the console to test it. You can use 'set playername key' (no value argument) to remove values.
+
+This can be used as either a client or server script. If you use it as both, you will notice that setting a player value on the server has no affect on any client and vice versa.
+
+<syntaxhighlight line highlight="12,28">
+function PlayerValueChange(args)
+	print(tostring(args.player).."'s "..args.key.." was set to "..tostring(args.value))
+end
+Events:Subscribe("PlayerValueChange", PlayerValueChange)
+
+function ConsoleSet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 or #words == 3 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			player:SetValue(words[2], words[3])
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("set", ConsoleSet)
+
+function ConsoleGet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			local value = player:GetValue(words[2])
+			print(player:GetName().."'s "..words[2].." is currently "..tostring(value))
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("get", ConsoleGet)
+</syntaxhighlight>
+
+====SetNetworkValue====
+
+This is similar to above, but the server-side uses SetNetworkValue. If you set a value on the server, it propagates for all clients.
+
+Note that you can set a value on the client-side, which will result in the server and client disagreeing with each other.
+
+'''Server'''
+
+<syntaxhighlight line highlight="7,23">
+function ConsoleSetNetwork(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 or #words == 3 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			player:SetNetworkValue(words[2], words[3])
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("set", ConsoleSetNetwork)
+
+function ConsoleGet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			local value = player:GetValue(words[2])
+			print(player:GetName().."'s "..words[2].." is currently "..tostring(value))
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("get", ConsoleGet)
+</syntaxhighlight>
+
+'''Client'''
+
+<syntaxhighlight line highlight="7,23">
+function ConsoleSet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 or #words == 3 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			player:SetValue(words[2], words[3])
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("set", ConsoleSet)
+
+function ConsoleGet(args)
+	local words = args.text:split(" ")
+	
+	if #words == 2 then
+		local player = Player.Match(words[1])[1]
+		if player then
+			local value = player:GetValue(words[2])
+			print(player:GetName().."'s "..words[2].." is currently "..tostring(value))
+		else
+			print("Player not found!")
+		end
+	else
+		print("Invalid arguments!")
+	end
+end
+Console:Subscribe("get", ConsoleGet)
+</syntaxhighlight>
+
+==Notes==
+
+* As of 0.1.4, you can only store strings, numbers, and booleans.
+* You can set values to nil: ''player:SetValue("MyKey", nil)'' (or ''player:SetValue("MyKey")'')
+* You can subscribe the same function to both PlayerValueChange and PlayerValueNetworkChange, which is useful for knowing when a value changes without caring what changed it.
+* Keep in mind that the server and each individual client can all have differing values for each player.
+* It is not recommended to set values on player variables directly. Something like ''player.myVariable = "blar"'' can result in strange, undefined behaviour, and will only apply to that Lua module. Similar results apply to other classes, such as Vehicle or World. This is one of the motivations for the player value system.

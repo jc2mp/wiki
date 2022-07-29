@@ -1,0 +1,14 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:FillTriangle([[Lua/Shared/Vector2|Vector2]] {{arg|point1}}, [[Lua/Shared/Vector2|Vector2]] {{arg|point2}}, [[Lua/Shared/Vector2|Vector2]] {{arg|point3}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Fills the triangle area defined by the 3 points with the specified color in 2D space.
+}}
+
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:FillTriangle([[Lua/Shared/Vector3|Vector3]] {{arg|point1}}, [[Lua/Shared/Vector3|Vector3]] {{arg|point2}}, [[Lua/Shared/Vector3|Vector3]] {{arg|point3}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Fills the triangle area defined by the 3 points with the specified color in 3D space.
+}}

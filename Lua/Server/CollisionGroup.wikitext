@@ -1,0 +1,13 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Player
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Vehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|} {{Lua/Table_Suffix}}

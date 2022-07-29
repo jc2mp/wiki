@@ -1,0 +1,10 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]], boolean |
+  prototype = Render:WorldToMinimap([[Lua/Shared/Vector3|Vector3]] position) |
+  description = Transforms a world position to a position on the minimap.
+}}
+
+==Additional Notes==
+*The minimap radius is 512m.
+*The boolean is '''true''' if the position is within the visible minimap and '''false''' if it would be outside of the minimap.
+*The position is always clamped to the radius of the map, meaning this function will never return a position that is not on the minimap.

@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = UDPSocket:Receive(object {{arg|class}}, function {{arg|callback}}) |
+}}
+
+{{Lua/Function |
+  prototype = UDPSocket:Receive(function {{arg|callback}}) |
+}}
+
+==Description==
+Executes the given callback, when a packet is received

@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3.DistanceSqr(Vector3, Vector3) |
+  description = Calculates the squared distance of the given vectors.
+}}
+
+==Additional Notes==
+*This function is faster than [[Lua/Shared/Vector3/Static_Functions/Distance|Vector.Distance()]], as no square root is required.

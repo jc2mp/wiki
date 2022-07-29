@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = TableRow:SetCellContents(number {{Arg|column}}, [[Lua/Client/BaseWindow|BaseWindow]] {{Arg|contents}}, boolean {{Arg|mouse_input_enabled}}) |
+}}
+
+{{Lua/Function |
+  prototype = TableRow:SetCellContents(number{{Arg|column}}, [[Lua/Client/BaseWindow|BaseWindow]] {{Arg|contents}}) |
+}}

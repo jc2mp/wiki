@@ -1,0 +1,203 @@
+Classes are used everywhere in the JC2-MP API. [[Lua/Server/Player|Player]] is a class, as is [[Lua/Server/Vehicle|Vehicle]] and [[Lua/Shared/Vector3|Vector3]]. You can also define your own classes, which is covered in this tutorial.
+
+Classes are not a standard language feature of Lua. However, because Lua is a simple and extendable language, you can create your own class system. There are various class systems you can find out there, but JC2-MP helpfully provides all the features of a class system for you.
+
+==Features==
+
+Classes can have the following features:
+* Static variables
+* Static functions
+* Member variables
+* Member functions
+** A constructor
+** Operators
+
+==Constructors==
+
+In order to create an instance of a class, you '''must''' define a constructor. This is done by defining a member function called ''__init''.
+
+<syntaxhighlight>
+-- Declare a class called MyClass.
+class("MyClass")
+
+-- Define the constructor for MyClass. Note how ':' is used.
+function MyClass:__init()
+    print("Hello")
+end
+
+-- Create an instance of MyClass.
+instance = MyClass()
+</syntaxhighlight>
+
+This will print "Hello".
+
+==Member variables==
+
+Class instances can have variables. In this respect, classes work a little similarly to tables.
+
+While inside of a class function, the ''self'' keyword refers to the current instance of the class.
+
+<syntaxhighlight>
+class("Person")
+
+function Person:__init()
+    self.name = "Unnamed"
+end
+
+instance = Person()
+print(instance.name)
+instance.name = "Fredward"
+print(instance.name)
+</syntaxhighlight>
+
+This will print "Unnamed" and then "Fredward".
+
+==Member functions==
+
+Note how you must use '':'' to declare and call member functions.
+
+<syntaxhighlight>
+class("MyClass")
+
+function MyClass:__init()
+    self.value = 1
+end
+
+function MyClass:DoubleValue()
+    self.value = self.value * 2
+end
+
+function MyClass:SetValue(newValue)
+    self.value = newValue
+end
+
+function MyClass:PrintValue()
+    print("My value is "..tostring(self.value))
+end
+
+instance = MyClass()
+instance:PrintValue()
+instance:SetValue(32)
+instance:DoubleValue()
+instance:PrintValue()
+</syntaxhighlight>
+
+The results will be 1 and 64.
+
+''Remember: variables use '.', while functions use ':'.''
+
+<syntaxhighlight>
+instance.myVariable = 123
+instance:DoSomething()
+</syntaxhighlight>
+
+==Using events==
+
+To subscribe to an event using a class function, you must use the Events:Subscribe function which takes a class function and a class instance.
+
+This example is self-explanatory; a DelayedPrint waits for a specified time and then prints. Note how the event subscription is kept track of and removed later.
+
+<syntaxhighlight>
+class("DelayedPrint")
+
+function DelayedPrint:__init(message, delay)
+    self.message = message
+    self.delay = delay
+    self.timer = Timer()
+    self.event = Events:Subscribe("PreTick", self, self.PreTickFunction)
+end
+
+function DelayedPrint:PreTickFunction()
+    if self.timer:GetSeconds() > self.delay then
+        print(self.message)
+        Events:Unsubscribe(self.event)
+    end
+end
+
+DelayedPrint("This will print after 5 seconds", 5)
+DelayedPrint("This will print after 1 second", 1)
+
+</syntaxhighlight>
+
+Note the differences between how Events:Subscribe is used in previous tutorials:
+
+<syntaxhighlight>
+-- Regular function:
+Events:Subscribe("PreTick", MyFunction)
+-- Class function:
+Events:Subscribe("PreTick", self, self.MyFunction)
+</syntaxhighlight>
+
+Classes can be a powerful feature. The DelayedPrint example could be done without using classes. You would have the global variables ''timer'' and ''event''. But what if you want to create two delayed prints? You would have to create more variables, or store them in tables, which can get messy very quickly. However, using a class, you can very easily create as many as you want without worry.
+
+A practical example would be a client script that allows you to fire rockets where you're aiming. You could have a Rocket class, which is given an initial position and velocity in its constructor and travels along until it hits something, using [[Lua/Client/Physics/Functions/Raycast|raycasts]]. Like with the DelayedPrint example, Rocket would subscribe to PreTick and, when it hits something, unsubscribe from the event and explode. The glory of classes comes in when you quickly fire rockets everywhere and have all these class instances doing their thing, having their own events run and checking their own raycasts, and the code for it is very easy to work with and understand.
+
+==Static variables and functions==
+
+These don't require instances of classes. They are very similar to tables in this way, so their usefulness is limited.
+
+When classes are constructed, they inherit any static variables and functions.
+
+<syntaxhighlight>
+class("MyClass")
+
+MyClass.myStaticVariable = "I'm a static variable"
+
+function MyClass.MyStaticFunction()
+    print(MyClass.myStaticVariable)
+end
+
+function MyClass:__init()
+    self.MyStaticFunction()
+end
+
+instance = MyClass()
+instance.MyStaticFunction()
+</syntaxhighlight>
+
+This will print "I'm a static variable" twice.
+
+==Additional notes==
+
+====Member function declarations====
+
+With ''function MyClass:MyFunction() end'', the ':' automatically adds a ''self'' variable as the first arg.
+
+When you do something like:
+
+<syntaxhighlight>
+function MyClass:MyFunction(arg1, arg2)
+end
+</syntaxhighlight>
+
+It's the same as writing it as:
+
+<syntaxhighlight>
+function MyClass.MyFunction(self, arg1, arg2)
+end
+</syntaxhighlight>
+
+====Calling member functions====
+
+When doing ''myInstance:MyFunction(1, 2)'', it's the same as doing ''MyClass.MyFunction(myInstance, 1, 2)''
+
+====Events:Subscribe====
+
+There are many ways to use Events:Subscribe. All of this is valid:
+
+<syntaxhighlight>
+class("MyClass")
+
+function MyClass:__init()
+    Events:Subscribe("SomeEvent", self, self.MyFunction)
+    Events:Subscribe("SomeEvent", self, MyClass.MyFunction)
+end
+
+function MyClass:MyFunction()
+    
+end
+
+instance = MyClass()
+Events:Subscribe("SomeEvent", instance, instance.MyFunction)
+Events:Subscribe("SomeEvent", instance, MyClass.MyFunction)
+</syntaxhighlight>

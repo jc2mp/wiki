@@ -1,0 +1,33 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player|
+  return = Return false to block default spawn
+}}
+
+==Description==
+
+Fired when a player spawns. Players can spawn after they join and after they die.
+
+By default, players spawn at the default position set in config.lua. If you want to provide your own spawn position, you must return false. If you return false but don't set their position, they respawn at the same place they died.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." spawned at "..tostring(args.player:GetPosition()))
+end
+
+Events:Subscribe("PlayerSpawn", Foo)
+</syntaxhighlight>
+
+====Overriding the default spawn====
+
+<syntaxhighlight>
+function Foo(args)
+	-- Respawn them 2km above Origin Town.
+	args.player:SetPosition(Vector3(0, 2200, 0))
+	
+	return false
+end
+
+Events:Subscribe("PlayerSpawn", Foo)
+</syntaxhighlight>

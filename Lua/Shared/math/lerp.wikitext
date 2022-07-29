@@ -1,0 +1,72 @@
+{{Lua/Function |
+  returns = number |
+  prototype = math.lerp(number {{Arg|start}}, number {{Arg|end}}, number {{Arg|fraction}}) |
+  description = Performs a linear interpolation between {{Arg|start}} and {{Arg|end}} using {{Arg|fraction}}.
+}}
+{{Lua/Function |
+  returns = Angle |
+  prototype = math.lerp(Angle {{Arg|start}}, Angle {{Arg|end}}, Angle {{Arg|fraction}}) |
+  description = Performs a linear interpolation between {{Arg|start}} and {{Arg|end}} using {{Arg|fraction}}.
+}}
+{{Lua/Function |
+  returns = Color |
+  prototype = math.lerp(Color {{Arg|start}}, Color {{Arg|end}}, Color {{Arg|fraction}}) |
+  description = Performs a linear interpolation between {{Arg|start}} and {{Arg|end}} using {{Arg|fraction}}.
+}}
+{{Lua/Function |
+  returns = Vector2 |
+  prototype = math.lerp(Vector2 {{Arg|start}}, Vector2 {{Arg|end}}, Vector2 {{Arg|fraction}}) |
+  description = Performs a linear interpolation between {{Arg|start}} and {{Arg|end}} using {{Arg|fraction}}.
+}}
+{{Lua/Function |
+  returns = Vector3 |
+  prototype = math.lerp(Vector3 {{Arg|start}}, Vector3 {{Arg|end}}, Vector3 {{Arg|fraction}}) |
+  description = Performs a linear interpolation between {{Arg|start}} and {{Arg|end}} using {{Arg|fraction}}.
+}}
+
+==Examples==
+
+===Bouncy ball example===
+Creates a red circle that bounces back and forth on your screen
+<syntaxhighlight>
+local timer = Timer()
+Events:Subscribe("Render", function()
+	local frac = math.sin(timer:GetSeconds()) * 0.5 + 0.5 -- X will pass between 0 and 1
+
+	local x = math.lerp(0, Render.Width, frac) -- Interpolate X between 0 and our screen width
+
+	Render:FillCircle(Vector2(x, 50), 5, Color(255,0,0))
+end)
+</syntaxhighlight>
+
+===Vector3 example===
+Will draw a circle between you and the last vehicle you sat in.
+<syntaxhighlight>
+local lastvehicle
+Events:Subscribe("LocalPlayerExitVehicle", function(args)
+	local veh = args.vehicle
+	
+	lastvehicle = veh
+end)
+
+local transform
+local angle = Angle(0,math.pi/2,0) -- Rotation for the transform for it to look up
+local function DrawGroundCircle(pos, radius, color)
+ transform = Transform3()
+ transform:Translate(pos):Rotate(angle)
+ 
+ Render:SetTransform(transform)
+ Render:FillCircle(Vector3(0,0.05,0), radius, Color(0,0,0))
+ Render:FillCircle(Vector3(0,0.05,0), radius*0.9, color)
+ Render:ResetTransform()
+end
+
+Events:Subscribe("Render", function()
+	if IsValid(lastvehicle) then
+		local plypos = LocalPlayer:GetPosition()
+		local vehpos = lastvehicle:GetPosition()
+		local middlepos = math.lerp(plypos, vehpos, 0.5) -- Interpolate the vectors and grab the middle.
+		DrawGroundCircle(middlepos, 0.5, Color(255,0,0))
+	end
+end)
+</syntaxhighlight>

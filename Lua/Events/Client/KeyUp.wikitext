@@ -1,0 +1,22 @@
+{{Lua/Event|
+  arguments = [[Lua/Client/Key|Key]] key
+}}
+
+==Description==
+
+Fired when a key is released.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Key released: "..args.key
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("KeyUp", Foo)
+</syntaxhighlight>
+
+==See also==
+
+[[Lua/Events/Client/KeyDown|KeyDown]]

@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Player:DisableCollision([[Lua/Server/CollisionGroup|CollisionGroup]]) |
+}}

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/MenuItem|MenuItem]] |
+  prototype = Menu:AddItem(string) |
+}}

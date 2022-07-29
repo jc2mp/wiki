@@ -1,0 +1,84 @@
+{{Lua/Function |
+  returns = Vehicle |
+  prototype = Vehicle.Create(number, [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Angle|Angle]]) |
+}}
+
+==Description==
+
+Spawns a vehicle with a [[Model_ID|model id]] at a position and angle.
+
+==Example==
+
+<syntaxhighlight>
+function PlayerChat(args)
+	if args.text == "/spawn" then
+		-- Spawn a Cavallo at the player.
+		Vehicle.Create(2, args.player:GetPosition(), Angle(0, 0, 0))
+		return false
+	end
+	return true
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>
+
+
+
+
+
+
+{{Lua/Function |
+  returns = Vehicle |
+  prototype = Vehicle.Create(table) |
+}}
+
+==Description==
+
+Spawns a vehicle using an argument table.
+
+The following arguments are supported:
+
+* number model_id
+* [[Lua/Shared/Vector3|Vector3]] position
+* [[Lua/Shared/Angle|Angle]] angle
+* string template (List can be found [[Lua/Server/Vehicle/Functions/GetTemplate|here]])
+* string decal (List can be found [[Lua/Server/Vehicle/Functions/GetDecal|here]])
+* number health
+* [[Lua/Shared/Color|Color]] tone1
+* [[Lua/Shared/Color|Color]] tone2
+* boolean enabled
+* [[Lua/Server/World|World]] world
+* number mass
+* [[Lua/Shared/Vector3|Vector3]] linear_velocity
+* [[Lua/Shared/Vector3|Vector3]] angular_velocity
+* boolean invulnerable
+
+==Example==
+
+<syntaxhighlight line highlight="14">
+PlayerChat = function(args)
+	local words = args.text:split(" ")
+	
+	if words[1] == "/spawn" then
+		if words[2] then
+			local spawnArgs = {}
+			spawnArgs.position = args.player:GetPosition()
+			spawnArgs.angle = args.player:GetAngle()
+			spawnArgs.model_id = tonumber(words[2])
+			spawnArgs.world = args.player:GetWorld()
+			spawnArgs.tone1 = Color(255, 80, 80)
+			spawnArgs.tone2 = Color(200, 100, 100)
+			
+			Vehicle.Create(spawnArgs)
+		else
+			args.player:SendChatMessage("Use: /spawn modelid", Color(200, 100, 100))
+		end
+		
+		return false
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>

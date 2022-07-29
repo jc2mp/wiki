@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = SortedList:SelectByString(string, boolean {{Arg|clear_selection}}) |
+}}
+
+{{Lua/Function |
+  prototype = SortedList:SelectByString(string) |
+}}

@@ -1,0 +1,11 @@
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CheckBox/Functions/GetChecked|GetChecked]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CheckBox/Functions/SetChecked|SetChecked]](boolean)
+|} {{Lua/Table_Suffix}}

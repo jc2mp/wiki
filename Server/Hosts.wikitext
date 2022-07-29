@@ -1,0 +1,66 @@
+==Server hosts==
+
+This page will list hosts that you can use for JC2-MP hosting. Please note this is merely a list, we do not vouch for any of these hosts.
+
+====How to add a host====
+
+Simply login into this wiki by using the "Click here to login with your JC2-MP account" link at the right top and edit this page. If you offer both gameservers and VPSes / Dedicated servers, you can add your host to both tables. Please do not remove any hosts you do not know, open a forum topic to do this instead. Hosts need to at least have a website and fixed pricing to be listed here. Using any referral URLs is not allowed unless it goes to JC2-MP to cover our server costs. '''The server hosts are sorted by alphabetical order, so add your host at the correct place in the table. Please use preview to make sure it looks properly before saving.'''
+
+==Gameserver hosts==
+The hosts listed here offer gameserver hosting, which means they manage the servers and run the JC2-MP server for you. This means you do not have to worry about the servers, networking, firewalls, updates and generally get access to a control panel that allows you to easily manage your JC2-MP server. Please note that the features listed previously are usually the case but not guaranteed, contact a host if you want to make sure about certain features you need.
+
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Host
+! scope="col" | Price per slot
+! scope="col" | Min. slots
+! scope="col" | Max. slots
+! scope="col" | Setup time
+! scope="col" | Locations
+! scope="col" | Notes
+|-
+| [https://allgamer.net/justcause2 AllGamer, LLC] || 0.16 USD || 50 || 1500 || < 24 hours || US || Pay less per-slot when you buy bigger servers, custom control panel ([http://xylona.allgamer.net/demand/ Free 36-hour server trial])
+|-
+| [http://cjserverhosting.com/purchase/justcause.html CJServerHosting] || 0.13 GBP || 20 || 1000 || < 24 Hours || FR || Hosted in France with High Speed Connection, Giving you a lag free experience!!
+|-
+| [https://www.cthosted.com/en/game-servers/just-cause-2-multiplayer/ CTHosted] || 0.13 EUR || 25 || 1000 || Instantly || NL || High quality Game Servers hosted in The Netherlands
+|-
+| [http://www.gameservers.com/ GameServers.com] || 0.24 USD || 20 || 1000 || Instantly || NL, DE, UK, FR, IT, ES, US, JP, ZA, AU || Discount for paying long term
+|-
+| [https://jestservers.com/panel/cart.php?gid=110 JestServers.com] || 0.22 USD || 20 || 1000 || Instantly || US, UK, EU || Pure SSD dedicated servers. Award winning support and reliability.  DDoS protection and mitigation.  Special deals for large orders.  11 Locations.
+|-
+| [http://www.myarena.ru/game_jc2.html MyArena.ru] || 3 RUB || 20 || 1000 || Instantly || RU || MyArena.ru - Reliable and fast-growing hosting game servers. Our clients has a convenient multi-functional control panel to configure their server and web.
+|-
+| [http://meisterhost.tk MeisterHost] || 0 USD || 20 || 1000 || < 24 hours || DE, US || Free JC2MP Servers sponsored by ads! Cool Webinterface and 24/7 online.
+|-
+| [http://www.nitrado.net/ Nitrado.net] || 0,16 EUR || 40 || 2000 || Instantly || DE || The server starts with the shown slots on the webpage * 10
+|-
+| [http://www.pingperfect.com/ Pingperfect.com] || 0.05 GBP || 50 || 1000 || Instantly || FR, US, UK || Free webhosting for customers, free MYSQL database. Promotional code 50% off first month : U0JE40GDX8. DDoS mitigation on the France Node.
+|-
+| [http://www.pingservers.com/ PingServers.com] || 0.15 USD || 50 || 1500 || Instant || US || Powerful dedicated game and voice servers on low ping gaming optimized networks. ([http://pingservers.com/game_servers/just-cause-2-multiplayer-mod Just Cause 2 Server Page])
+|}
+
+==VPS / Dedicated server hosts==
+The hosts listed here offer VPSes and/or dedicated servers, which are unmanaged machines that need to be configured, updated and maintained by you using SSH/RDP. They do not come with a control panel and it's entirely up to you to install the JC2-MP server and requirements. Please note that the features listed previously are usually the case but not guaranteed, contact a host if you want to make sure about certain features you need.
+
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Host
+! scope="col" | VPS
+! scope="col" | Dedicated
+! scope="col" | Setup time
+! scope="col" | Locations
+! scope="col" | Notes
+|-
+| [https://allgamer.net AllGamer, LLC] || Yes || Yes || Instantly || US || Setup time for dedicated servers is < 24 hours, personal instance of custom control panel available on request
+|-
+| [https://creeperhost.net CreeperHost] || Yes || Yes || Instantly || UK / US (various) / NZ / HK || VPS are instant, Dedi's vary by location. There is a one click install for JC2-MP and Server Console support in our Control Panel.
+|-
+| [https://www.cthosted.com/en/dedicated-servers/ CTHosted] || Yes || Yes || Instantly || NL || VPS servers are deployed instantly, setup time for dedicated servers is < 48 hours.
+|-
+| [https://www.digitalocean.com/?refcode=c053cdfd84c5 DigitalOcean] || Yes || No || Instantly || US, NL, Singapore || Billed per hour
+|-
+| [http://www.nodejungle.com NodeJungle] || Yes || No || Instantly || US || Use coupon code jcmpdeal at checkout to receive 25% off
+|-
+| [http://www.ramnode.com Ramnode] || Yes || No || Instantly || US, NL || 
+|}

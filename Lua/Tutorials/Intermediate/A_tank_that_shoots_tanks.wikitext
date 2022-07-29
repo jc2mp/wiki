@@ -1,0 +1,94 @@
+In this tutorial, we'll explore uses for network events and vehicle spawning. Also, a tank that shoots tanks. Who doesn't love metatanks?
+
+====Server====
+
+<syntaxhighlight>
+function PlayerChat(args)
+	-- Spawn a tank and put them inside it.
+	if args.text == "/metatank" then
+		spawnArgs = {}
+		spawnArgs.model_id = 56 -- Razorback
+		spawnArgs.position = args.player:GetPosition()
+		spawnArgs.angle = args.player:GetAngle()
+		
+		local vehicle = Vehicle.Create(spawnArgs)
+		args.player:EnterVehicle(vehicle, VehicleSeat.Driver)
+		
+		return false
+	end
+	
+	return true
+end
+Events:Subscribe("PlayerChat", PlayerChat)
+
+function SpawnTankBullet(args, player)
+	-- Make sure their vehicle still exists.
+	local vehicle = player:GetVehicle()
+	if not IsValid(vehicle) then
+		return
+	end
+	
+	spawnArgs = {}
+	spawnArgs.model_id = 56
+	spawnArgs.position = vehicle:GetPosition() + Vector3(0, 2, 0) + args.direction * 15
+	spawnArgs.angle = args.angle
+	spawnArgs.linear_velocity = args.direction * 100
+	
+	Vehicle.Create(spawnArgs)
+end
+Network:Subscribe("FireTank", SpawnTankBullet)
+</syntaxhighlight>
+
+====Client====
+
+<syntaxhighlight>
+timer = nil
+fireInterval = 1
+
+function Fire()
+	local args = {}
+	args.angle = Camera:GetAngle()
+	args.direction = args.angle * Vector3(0, 0, -1)
+	
+	Network:Send("FireTank", args)
+end
+
+function TryToFire()
+	-- Make sure we only fire once every fireInterval. Otherwise, it would try to spam network
+	-- messages every frame. That is not good.
+	if timer then
+		if timer:GetSeconds() >= fireInterval then
+			timer = nil
+		end
+	else
+		Fire()
+		timer = Timer()
+	end
+end
+
+function LocalPlayerInput(args)
+	-- We only want the Razorback tank.
+	local vehicle = LocalPlayer:GetVehicle()
+	if vehicle == nil or vehicle:GetModelId() ~= 56 then
+		return true
+	end
+	-- Replace the vehicle fire actions with our own implementation.
+	if args.input == Action.VehicleFireRight or args.input == Action.VehicleFireLeft then
+		TryToFire()
+		return false
+	else
+		return true
+	end
+end
+Events:Subscribe("LocalPlayerInput", LocalPlayerInput)
+</syntaxhighlight>
+
+As you can see, the client uses Network:Send with a table as its second argument. The server receives the event with the table, and the player who sent the network event.
+
+==Flaws==
+
+This is just a simple example and can be improved upon greatly:
+* The tanks do not despawn.
+* Any Razerback tank will work, not just ones you create.
+* The firing limit is imposed on the client, not the server.
+** Never trust the client. It's possible they could cheat and fire dozens of tanks per second at any position they wish.

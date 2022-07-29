@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Game:GetTime() |
+  description = Returns the time of the current [[Lua/Server/World|World]], in hours.
+}}

@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Menu |
+  prototype = Menu.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Menu |
+  prototype = Menu.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Menu |
+  prototype = Menu.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Menu |
+  prototype = Menu.Create() |
+}}

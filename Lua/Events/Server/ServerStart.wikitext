@@ -1,0 +1,5 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired after all modules have been loaded on server startup.

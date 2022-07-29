@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector3|Vector3]], boolean |
+  prototype = Waypoint:GetPosition() |
+}}
+
+==Description==
+
+Returns the position of the waypoint, usually set in the map screen. The boolean is whether the waypoint is set or not.

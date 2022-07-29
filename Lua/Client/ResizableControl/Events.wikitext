@@ -1,0 +1,1 @@
+[[Lua/Client/ResizableControl/Events/Resize|Resize]]

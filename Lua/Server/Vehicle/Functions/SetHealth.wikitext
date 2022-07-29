@@ -1,0 +1,12 @@
+{{Lua/Function |
+  prototype = Vehicle:SetHealth(number) |
+}}
+
+==Description==
+
+Sets a vehicle's health. The range is from 0 to 1.
+
+==Notes==
+
+* Setting a vehicle's health to 1 removes any smoke and broken wheels.
+* Vehicles start flaming at 0.2 health.

@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player
+}}
+
+==Description==
+
+Fired when a player leaves the server in any way, including being kicked, banned, or losing connection.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." left the server")
+end
+
+Events:Subscribe("PlayerQuit", Foo)
+</syntaxhighlight>

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = Vehicle |
+  prototype = Vehicle.GetById(number) |
+}}

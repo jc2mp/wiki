@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = Player:SetHealth(number {{arg|health}}) |
+}}
+
+==Description==
+Sets the player's health, as a decimal number somewhere between 0 and 1. If the player's maximum health has been increased, such as by firing the "ply.armorpart.add" [[Lua/Client/Game/Functions/FireEvent|Game Event]], 1 corresponds to the new maximum, not the default maximum.
+
+==See also==
+* [[Lua/Server/Player/Functions/GetHealth|Player:GetHealth]]

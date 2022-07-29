@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = Console:Print(string {{arg|message}}) |
+  description = Prints a message to the console.
+}}
+
+{{Lua/Function |
+  prototype = Console:Print(string {{arg|message}}, [[Lua/Shared/Color|Color]] {{arg|message_color}}) |
+  description = Prints a colored message to the console.
+}}

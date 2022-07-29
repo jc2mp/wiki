@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = ClientEffect.Play(table {{arg|arguments}}) |
+  description = Creates a ClientEffect using the same arguments as [[Lua/Client/ClientEffect/Static Functions/Create|Create]].
+}}
+
+==Notes==
+
+* There is an extra argument, {{Arg|timeout}}, which removes the effect after the specified seconds.
+* If {{Arg|timeout}} is not specified, it defaults to 5 seconds.

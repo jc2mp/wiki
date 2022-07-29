@@ -1,0 +1,66 @@
+__NOTOC__
+
+This function is available for the Player class, on both the server and client.
+
+Each version returns a table containing the following:
+* [[Lua/Shared/Vector3|Vector3]] {{Arg|position}}
+* object {{Arg|entity}}
+
+
+{{Arg|entity}} can be one of the following types:
+* Player
+* Vehicle
+* StaticObject
+
+
+To get the type of {{Arg|entity}}, you can use ''entity.__type'', which returns a string, such as "Player".
+
+==Example==
+
+====Server: Print player Bob's results of GetAimTarget every second====
+
+<syntaxhighlight>
+timer = Timer()
+
+function Foo()
+	if timer:GetSeconds() > 1 then
+		timer:Restart()
+		
+		local results = Player.Match("Bob")[1]:GetAimTarget()
+		print("position: "..tostring(results.position))
+		print("entity: "..tostring(results.entity))
+	end
+end
+
+Events:Subscribe("PostTick", Foo)
+</syntaxhighlight>
+
+====Client: Print what you're aiming at when you hold fire====
+
+<syntaxhighlight>
+function Foo(args)
+	if args.input == Action.FireRight then
+		local results = LocalPlayer:GetAimTarget()
+		if results.entity then
+			local entityType = results.entity.__type
+			Chat:Print("You are aiming at a "..entityType..": "..tostring(results.entity), Color(255, 255, 255))
+		end
+	end
+end
+
+Events:Subscribe("LocalPlayerInput", Foo)
+</syntaxhighlight>
+
+==Update history==
+
+====0.1.2====
+
+The {{Arg|player}} and {{Arg|vehicle}} table variables are deprecated in favor of a single {{Arg|entity}} variable. They both still work, however.
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetAimTarget]]
+
+* [[Lua/Client/Player/Functions/GetAimTarget]]
+
+* [[Lua/Client/LocalPlayer/Functions/GetAimTarget]]

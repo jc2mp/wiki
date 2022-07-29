@@ -1,0 +1,41 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player:GetInventory() |
+  description = Returns the player's inventory as a table of [[Lua/Shared/Weapon|Weapon]]s.
+}}
+
+==Example==
+
+====Report a player's inventory to them when they type '/inventory'====
+
+<syntaxhighlight line highlight="2">
+function PlayerChat(args)
+	if args.text == "/inventory" then
+		PrintInventory(args.player)
+	end
+end
+
+function PrintInventory(player)
+	local inventory = player:GetInventory()
+	Chat:Send(player, "You are carrying "..table.count(inventory).." weapons:", Color.PeachPuff)
+	for slot, weapon in pairs(inventory) do
+		Chat:Send(player, "\tSlot "..slot..": "..weapon.id, Color.MintCream)
+	end
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>
+
+====Example output====
+
+<syntaxhighlight lang="text">
+You are carrying 2 weapons:
+	Slot 0: 2
+	Slot 2: 14
+</syntaxhighlight>
+
+==See also==
+
+* [[Lua/Client/Player/Functions/GetInventory|Player:GetInventory (client)]]
+* [[Lua/Server/Player/Functions/GiveWeapon|Player:GiveWeapon]]
+* [[Lua/Server/Player/Functions/ClearInventory|Player:ClearInventory]]

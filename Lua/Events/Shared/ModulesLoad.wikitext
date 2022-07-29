@@ -1,0 +1,7 @@
+{{Lua/Event}}
+
+==Description==
+
+Fires:
+* On [[Lua/Events/Server/ServerStart|Server startup]] (after all modules have loaded)
+* When any module is loaded or reloaded

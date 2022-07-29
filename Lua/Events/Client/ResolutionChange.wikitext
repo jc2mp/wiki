@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Shared/Vector2|Vector2]] size
+}}
+
+==Description==
+
+Fired when the game's resolution changes. Render.Size is the previous resolution while in this event.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	print("Resolution changed from "..tostring(Render.Size).." to "..tostring(args.size))
+end
+
+Events:Subscribe("ResolutionChange", Foo)
+</syntaxhighlight>

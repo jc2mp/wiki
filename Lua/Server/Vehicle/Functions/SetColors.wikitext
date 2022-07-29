@@ -1,0 +1,25 @@
+{{Lua/Function |
+  prototype = Vehicle:SetColors([[Lua/Shared/Color|Color]] {{arg|color1}}, [[Lua/Shared/Color|Color]] {{arg|color2}}) |
+  description = Sets a vehicle's colors immediately.
+}}
+
+== Examples ==
+<syntaxhighlight>
+function PlayerChat(e)
+	if e.text == "/random" and e.player:InVehicle() then
+		-- Generate a color for the vehicle, using a hue from 0 to 360,
+		-- and a random saturation and value from 0.5 to 0.7
+		local color = Color.FromHSV( 
+			math.random( 0, 360 ), 
+			math.random() * 0.2 + 0.5, 
+			math.random() * 0.2 + 0.5 )
+		e.player:GetVehicle():SetColors( color, color )
+	end
+end
+
+Events:Subscribe( "PlayerChat", PlayerChat )
+</syntaxhighlight>
+
+==Additional Notes==
+*Each color corresponds to a different tone
+*Vehicles in Just Cause 2 use a two-tone system for colors which can be used to emulate effects such as pearlescent coating.

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/SteamId|SteamId]] |
+  prototype = Player:GetSteamId() |
+}}

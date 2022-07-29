@@ -1,0 +1,4 @@
+{{Lua/Property |
+  type = [[Lua/Shared/Vector2|Vector2]] |
+  prototype = Render.Size |
+}}

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Angle|Angle]] |
+  prototype = Vehicle:GetAngle() |
+}}

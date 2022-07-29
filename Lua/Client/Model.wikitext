@@ -1,0 +1,53 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Model
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Static Functions/Create|Create]](object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Model
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Static Functions/Create|Create]](number)
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/Draw|Draw]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/Get2D|Get2D]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Image|Image]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/GetTexture|GetTexture]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/GetTextureAlpha|GetTextureAlpha]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Topology|Topology]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/GetTopology|GetTopology]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/ResetTexture|ResetTexture]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/Set2D|Set2D]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/SetTexture|SetTexture]]([[Lua/Client/Image|Image]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/SetTextureAlpha|SetTextureAlpha]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/SetTopology|SetTopology]]([[Lua/Client/Topology|Topology]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Model/Functions/Update|Update]](object)
+|} {{Lua/Table_Suffix}}

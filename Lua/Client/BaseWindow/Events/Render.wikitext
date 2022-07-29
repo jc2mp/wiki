@@ -1,0 +1,6 @@
+{{Lua/GUIEvent
+ | description = Called before the window is rendered.
+}}
+
+==Additional Notes==
+*This is called after the the internal painting was performed.

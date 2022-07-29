@@ -1,0 +1,2 @@
+This happens when you do not have enough memory to start the Just Cause 2 game.
+Please use your task manager and check whether there are any processes using a high amount of memory you can quit.

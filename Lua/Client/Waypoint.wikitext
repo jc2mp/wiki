@@ -1,0 +1,16 @@
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]], boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Waypoint/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Waypoint/Functions/Remove|Remove]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Waypoint/Functions/SetPosition|SetPosition]]([[Lua/Shared/Vector3|Vector3]])
+|} {{Lua/Table_Suffix}}

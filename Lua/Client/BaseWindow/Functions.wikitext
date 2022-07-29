@@ -1,0 +1,203 @@
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/AbsoluteToRelative|AbsoluteToRelative]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Blur|Blur]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/BringToFront|BringToFront]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/FindChildByName|FindChildByName]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/FindChildByName|FindChildByName]](string, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Focus|Focus]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetBackgroundVisible|GetBackgroundVisible]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | BaseWindow
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetChild|GetChild]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetChildren|GetChildren]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetDataBool|GetDataBool]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetDataNumber|GetDataNumber]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetDataObject|GetDataObject]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetDataString|GetDataString]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetDock|GetDock]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetEnabled|GetEnabled]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetFocused|GetFocused]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetHeight|GetHeight]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetHovered|GetHovered]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetMargin|GetMargin]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetName|GetName]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetNumChildren|GetNumChildren]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetOnTop|GetOnTop]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetPadding|GetPadding]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | BaseWindow
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetParent|GetParent]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetPositionRel|GetPositionRel]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetSize|GetSize]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetSizeRel|GetSizeRel]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetTabNavigation|GetTabNavigation]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | BaseWindow
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetToolTip|GetToolTip]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetType|GetType]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetVisible|GetVisible]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/GetWidth|GetWidth]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Hide|Hide]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/IsChild|IsChild]](BaseWindow)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/RelativeToAbsolute|RelativeToAbsolute]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Remove|Remove]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/RemoveAllChildren|RemoveAllChildren]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SendToBack|SendToBack]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetBackgroundVisible|SetBackgroundVisible]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetDataBool|SetDataBool]](string, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetDataNumber|SetDataNumber]](string, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetDataObject|SetDataObject]](string, object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetDataString|SetDataString]](string, string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetDock|SetDock]]([[Lua/Client/GwenPosition|GwenPosition]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetEnabled|SetEnabled]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetHeight|SetHeight]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetMargin|SetMargin]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetName|SetName]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetPadding|SetPadding]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetParent|SetParent]](BaseWindow)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetPosition|SetPosition]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetPositionRel|SetPositionRel]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetSize|SetSize]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetSizeRel|SetSizeRel]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetTabNavigation|SetTabNavigation]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetToolTip|SetToolTip]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetVisible|SetVisible]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SetWidth|SetWidth]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Show|Show]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SizeToChildren|SizeToChildren]](boolean, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/SizeToChildren|SizeToChildren]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Event|Event]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Subscribe|Subscribe]](string, object, object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Event|Event]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Subscribe|Subscribe]](string, object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Touch|Touch]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Functions/Unsubscribe|Unsubscribe]]([[Lua/Shared/Event|Event]])
+|} {{Lua/Table_Suffix}}

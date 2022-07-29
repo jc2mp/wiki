@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/TabButton|TabButton]] |
+  prototype = TabControl:GetCurrentTab() |
+}}

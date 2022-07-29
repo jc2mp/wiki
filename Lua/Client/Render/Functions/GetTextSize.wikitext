@@ -1,0 +1,14 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]] |
+  prototype = Render:GetTextSize(string text, number fontsize, number scale) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]] |
+  prototype = Render:GetTextSize(string text, number fontsize) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]] |
+  prototype = Render:GetTextSize(string text) |
+}}

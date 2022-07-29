@@ -1,0 +1,171 @@
+Welcome to the beginner's JC2-MP Lua tutorial. This will explain the very basics of scripting in JC2-MP. We will be making a simple script that teleports you 3km into the sky when you type "/skydive" into the chat.
+
+This tutorial assumes you have an understanding of a few basic features of Lua. I strongly encourage you to learn these features for this tutorial:
+* [http://lua-users.org/wiki/LuaTypesTutorial Types]
+* [http://lua-users.org/wiki/ControlStructureTutorial Control structures]
+** This tutorial only uses the 'if' statement.
+* [http://lua-users.org/wiki/TablesTutorial Tables]
+** Tables can get complex, but this tutorial uses a simple case.
+* [http://lua-users.org/wiki/FunctionsTutorial Functions]
+* [http://lua-users.org/wiki/ScopeTutorial Scope]
+
+You can find more resources for learning the language at [[Lua/Tutorials/Beginner/Learning Lua|Learning Lua]].
+
+This tutorial assumes you have a Windows server set up correctly. See [[Server/Getting started/Windows Server|Getting started on Windows]]. Your server should look like this, if there are no scripts installed:
+
+[[File:Lua Tutorials Beginner Server_Console 1.png|frame|center]]
+
+==Setting up the Lua module==
+
+First, we need to set up the directories on the server for a new Lua module. Add a ''Skydive'' directory to the server's ''scripts'' directory.
+
+Inside a module's directory, there are three directory names that are recognised:
+* server - Server-side scripts.
+* client - Client-side scripts.
+* shared - Loaded by both client and server.
+
+As this is a purely server-sided script, we'll use ''server''. When the module is loaded (either when the server starts or by manually loading it using the [[Server/Console | server console]]), any files that end in ".lua" will be loaded.
+
+Inside ''scripts/Skydive/server'', create ''Skydive.lua'' (The name doesn't matter).
+
+[[File:Lua Tutorials Beginner Creating_Directories.png|frame|center]]
+
+
+Try loading the ''Skydive'' module to make sure it works (type ''load Skydive'' into the server console). The server should say that it was loaded.
+
+[[File:Lua Tutorials Beginner Server_Console 2-2.png|frame|center]]
+
+
+I'm sure there's some confusion about the difference between scripts and modules, so let me clarify:
+* ''script'' - A single lua file, such as "Skydive.lua". People may also use it to refer to an entire module, confusingly.
+* ''module'' - All lua files located in one directory that the server loads at once, such as ''scripts/Skydive/''. In our case, the module is called Skydive.
+
+==Writing the script==
+
+Finally, we can begin the fun part. Open up Skydive.lua in your text editor of choice ([http://notepad-plus-plus.org/ Notepad++] is free and includes syntax highlighting). Using Lua's built-in ''print'' function, we'll make it output "Hello, Panau!" when the module is loaded:
+
+<syntaxhighlight>
+print("Hello, Panau!")
+</syntaxhighlight>
+
+This will print to the server console, and also server.log.
+
+[[File:Lua Tutorials Beginner Server_Console 3.png|frame|center]]
+
+==Using the JC2-MP API==
+
+[[Lua/Server]] lists all of the classes specific to the server, and [[Lua/Shared]] lists classes available on both the server and client. They can be divided into a few categories:
+* Classes: These are classes that there can be instances of; functions are called like, ''somePlayerInstance:GetName()''
+** [[Lua/Server/Player|Player]], [[Lua/Server/Vehicle|Vehicle]], [[Lua/Server/World|World]], [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Timer|Timer]]
+* Global classes: These have functions you can call like, ''Class:Function()''
+** [[Lua/Server/Server|Server]], [[Lua/Server/Chat|Chat]]
+* Enums: These are, in a way, lists of values. Used like, ''WeaponSlot.Primary''
+** [[Lua/Server/CollisionGroup|CollisionGroup]], [[Lua/Shared/AnimationState|AnimationState]], [[Lua/Shared/WeaponSlot|WeaponSlot]]
+
+
+<syntaxhighlight>
+-- Print the number of players in the server.
+print(Server:GetPlayerCount())
+</syntaxhighlight>
+
+==Using events==
+
+Events are an extremely important feature of scripting in JC2-MP. They allow you to run code when something happens in the game, such as a player chatting, dying, or joining the server. You can find the full list of server events [[Lua/Server#Events|here]]. Generally, 99% of script code will run inside of an event somewhere.
+
+To use events, it is very simple. You create a function, then you ''subscribe'' that function to an ''event''. When JC2-MP fires the event for you, your function is called. Here is our Hello Panau program using the PlayerChat event:
+
+<syntaxhighlight>
+-- Define the function.
+function Hello()
+	print("Hello, Panau!")
+end
+-- Subscribe our function to the PlayerChat event.
+Events:Subscribe("PlayerChat", Hello)
+</syntaxhighlight>
+
+When a player sends any chat message, the server will print "Hello, Panau!". Now we're getting somewhere, but we want to know what their chat message was, right? Every event function is given an argument table; for the PlayerChat event, this table includes ''text'' and ''player'':
+
+<syntaxhighlight>
+-- You can name the argument table anything; 'args' is commonly used.
+function OnPlayerChat(args)
+	print(args.player, args.text)
+end
+
+Events:Subscribe("PlayerChat", OnPlayerChat)
+</syntaxhighlight>
+
+The output in the server console should be something like, ''[Skydive] Rico&nbsp;&nbsp;&nbsp;&nbsp;Some day, they'll write books about all of this.''
+
+You can unsubscribe from events using ''Events:Unsubscribe'':
+
+<syntaxhighlight>
+eventSubscription = Events:Subscribe("PreTick", function() end)
+Events:Unsubscribe(eventSubscription)
+</syntaxhighlight>
+
+One last thing about events: some events allow you to return true or false. In the case of the PlayerChat event, returning true lets the message through (which is the default), returning false blocks it. This will come in handy later when we don't want the "/skydive" message to show up in the chat.
+
+<syntaxhighlight>
+function OnPlayerChat(args)
+	if args.text == "Block this message!" then
+		return false
+	else
+		return true
+	end
+end
+
+Events:Subscribe("PlayerChat", OnPlayerChat)
+</syntaxhighlight>
+
+==Vectors==
+
+[[Lua/Shared/Vector3|Vectors]] are also a critical part of scripting. Players and vehicles have 3D positions in the world, represented as Vectors. You can read more about Vectors [[Lua/Tutorials/Vectors|here]]. In short, positive X is east, positive Y is up, and positive Z is south. Vector3(0, 200, 0) is the center of Panau at water level. Here are a few ways to use them:
+
+<syntaxhighlight>
+-- Create a Vector3.
+local vec = Vector3(1, 2, 3)
+-- Add another vector3 to it.
+vec = vec + Vector3(4, 5, 6)
+-- Scale it by half.
+vec = vec * 0.5
+-- Print it.
+print(vec) -- [Skydive] 2.500000, 3.500000, 4.500000
+</syntaxhighlight>
+
+==Player functions==
+
+''Player'' is a class. If you have an instance of a Player, you can call functions on it. You can find a list of all the Player functions [[Lua/Server/Player|here]]. Note how you must use ''''':''''' to call it.
+
+<syntaxhighlight>
+function OnPlayerChat(args)
+	if args.text == "Kill me!" then
+		args.player:SetHealth(0)
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", OnPlayerChat)
+</syntaxhighlight>
+
+==Putting it all together==
+
+<syntaxhighlight>
+function OnPlayerChat(args)
+	if args.text == "/skydive" then
+		local currentPosition = args.player:GetPosition()
+		local newPosition = currentPosition + Vector3(0, 3000, 0)
+		args.player:SetPosition(newPosition)
+		
+		return false
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", OnPlayerChat)
+</syntaxhighlight>
+
+And that's all there is to it. I hope you've gained a solid grasp of how JC2-MP scripting works.
+
+[[File:Lua Tutorials Beginner Skydive.jpg|frame|center]]

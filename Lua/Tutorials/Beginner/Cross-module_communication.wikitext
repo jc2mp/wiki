@@ -1,0 +1,15 @@
+There are two suggested ways to allow Lua modules to interact: firing events and SQL databases.
+
+==Using Events==
+
+[[Lua/Shared/BaseEventManager/Functions/Subscribe|Events:Subscribe]] and [[Lua/Shared/Events/Functions/Fire|Events:Fire]] work between modules. Using them is simple: Module A uses ''Events:Subscribe'' as normal, but, instead of subscribing to one of the event names the API provides, use your own name. When Module B uses ''Events:Fire'' with the same event name, Module A receives it.
+
+=====Module A=====
+<syntaxhighlight>
+Events:Subscribe("Banana", MyFunction)
+</syntaxhighlight>
+
+=====Module B=====
+<syntaxhighlight>
+Events:Fire("Banana")
+</syntaxhighlight>

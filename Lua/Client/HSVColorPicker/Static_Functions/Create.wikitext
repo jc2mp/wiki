@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = HSVColorPicker |
+  prototype = HSVColorPicker.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = HSVColorPicker |
+  prototype = HSVColorPicker.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = HSVColorPicker |
+  prototype = HSVColorPicker.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = HSVColorPicker |
+  prototype = HSVColorPicker.Create() |
+}}

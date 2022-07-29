@@ -1,0 +1,25 @@
+{{Lua/Function|
+  prototype = Render:SetClip(bool {{Arg|enabled}}) |
+  description = Turns clipping on or off
+}}
+
+{{Lua/Function|
+  prototype = Render:SetClip(bool {{Arg|enabled}}, [[Lua/Shared/Vector2|Vector2]] {{Arg|position}}, [[Lua/Shared/Vector2|Vector2]] {{Arg|size}}) |
+  description = Turns clipping on or off and sets the area to clip
+}}
+
+==Examples==
+
+<syntaxhighlight>
+function Foo()
+	-- Set the clipping rect.
+	Render:SetClip(true, Render.Size * 0.25, Render.Size * 0.5)
+	-- Try to render a green overlay over the entire screen.
+	Render:FillArea(Vector2.Zero, Render.Size, Color(0, 255, 0, 127))
+end
+
+Events:Subscribe("Render", Foo)
+</syntaxhighlight>
+
+
+<center>[[File:Lua Render Set Clip Example.jpg]]</center>

@@ -1,0 +1,5 @@
+{{Lua/Property |
+  type = number |
+  prototype = Weapon.ammo_clip |
+  description = The number of bullets in the player's current clip.
+}}

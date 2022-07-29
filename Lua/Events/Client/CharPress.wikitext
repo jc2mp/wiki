@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = string character
+}}
+
+==Description==
+
+Fired when a character is pressed. Basically, ''character'' is what would be output to the chat or text box. Arrow keys, function keys, etc aren't fired. shift+key works, so you can detect the ! key, for example. If a character is held down, it repeats.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	Chat:Print("You pressed the "..args.character.." key" , Color(255, 255, 255))
+end
+
+Events:Subscribe("CharPress", Foo)
+</syntaxhighlight>

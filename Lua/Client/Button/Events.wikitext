@@ -1,0 +1,15 @@
+[[Lua/Client/Button/Events/DoubleClick|DoubleClick]]
+
+[[Lua/Client/Button/Events/Down|Down]]
+
+[[Lua/Client/Button/Events/Press|Press]]
+
+[[Lua/Client/Button/Events/RightPress|RightPress]]
+
+[[Lua/Client/Button/Events/Toggle|Toggle]]
+
+[[Lua/Client/Button/Events/ToggleOff|ToggleOff]]
+
+[[Lua/Client/Button/Events/ToggleOn|ToggleOn]]
+
+[[Lua/Client/Button/Events/Up|Up]]

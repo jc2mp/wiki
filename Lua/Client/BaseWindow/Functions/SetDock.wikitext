@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = BaseWindow:SetDock([[Lua/Client/GwenPosition|GwenPosition]] dock) |
+}}

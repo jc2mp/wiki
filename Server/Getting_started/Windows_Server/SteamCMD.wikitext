@@ -1,0 +1,69 @@
+==Introduction==
+
+This is a guide to running the server software for JC2-MP under Windows using SteamCMD.
+
+==Requirements==
+The JC2-MP server '''requires''' the [http://www.microsoft.com/en-us/download/details.aspx?id=30679 Visual C++ Redistributable for Visual Studio 2012]. These are packaged with the server and can be executed from _CommonRedist\vcredist\2012\vcredist_x86.exe.
+
+==Step 1: Installing JC2-MP using SteamCMD==
+First, we need to set up SteamCMD. First make a directory for it somewhere, and download the following file:
+
+http://media.steampowered.com/installer/steamcmd.zip
+
+Unzip the folder, and you should find an executable file called "SteamCMD". Double click this executable, and wait until a CMD prompt appears.
+
+Once it has finished loading, run
+<syntaxhighlight>
+login anonymous
+</syntaxhighlight>
+
+Now we need to set a directory for the server to install to. You can set this to anything you have permission to write to. Therefore, unless you're an administrator, it is recommended to place this somewhere within your user area.
+
+To do this, you would enter the following:
+<syntaxhighlight>
+force_install_dir C:\Users\[yourname]\jcmp
+</syntaxhighlight>
+
+Now we need to download the game itself, this is also the command used to update the game. The validate keyword performs a checksum on the downloaded files to ensure that everything is intact.
+<syntaxhighlight>
+app_update 261140 validate
+</syntaxhighlight>
+
+If you wish to update to the latest beta version, run the following instruction instead:
+<syntaxhighlight>
+app_update 261140 -beta publicbeta validate
+</syntaxhighlight>
+
+Once this has finished, type the following to exit:
+<syntaxhighlight>
+quit
+</syntaxhighlight>
+
+==Step 2: Configuring JC2-MP==
+
+There are a couple of changes to be made to the JC2-MP server itself before running it for the first time.
+
+- First, copy "default_config" to "config", and then open the file with a text editor (such as notepad) to change any settings such as the server's name.
+
+The next step is to install the latest versions of any official scripts you want. The scripts that ship with the server are outdated and usually non-functional, the best way to grab the latest versions are as follows:
+
+- Make a "scripts" directory inside the folder you installed JC2-MP to.
+
+Open the following link in a web browser: https://github.com/jc2mp/scripts
+
+Click on one of the scripts listed (such as Racing, freeroam etc.), then click "Download zip" on the right hand side. Copy the zip folder to the scripts folder, and extract it there.
+
+==Step 3: Running JC2-MP==
+Now that we have successfully downloaded the server and configured it, we can now start it up.
+
+Double click JcmpServer.exe. It should now say that the server has successfully started. This means that the server is running correctly, and you are now ready to play.
+
+==Step 4: Updating the server==
+
+To update the server to the latest version, simply follow the instructions in step 1 from the point where you run SteamCMD.exe.
+
+==FAQ==
+
+Q: The server is running fine, and I can connect, but nobody else can!
+
+A: This likely means that you're running the server from home, and you haven't set up port forwarding correctly. The first thing to do is to find out which port your server is set to run on, to do this, open up the "config" file in the same folder that contains JcmpServer.exe, and look for the line that says "BindPort". Next, find out what model of router you are running (it will say on the router itself somewhere). Finally, head over to www.portforward.com and find instructions on how to forward a port on your router.

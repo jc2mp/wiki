@@ -1,0 +1,87 @@
+== GameSetting ==
+The GameSetting enum is used with Client:GetGameSetting on the client so that scripters can get the value of a particular setting.
+
+{| cellpadding="2" style="border: 1px solid darkgray;"
+! scope="col" | GameSetting member name
+! scope="col" | Values
+|-
+| MusicVolume || 0 - 100
+|-
+| SoundEffectsVolume || 0 - 100
+|-
+| VoiceVolume || 0 - 100
+|-
+| Gamma || 0 - 100
+|-
+| HUDOpacity || 0 - 100
+|-
+| StaticButtons || bool
+|-
+| FloatingButtons || bool
+|-
+| Subtitles || bool
+|-
+| MotionBlur || bool
+|-
+| GamepadVibration || 0 = Off, 1 = Low, 2 = High
+|-
+| GamepadInvertY || bool
+|-
+| GamepadInvertX || bool
+|-
+| GamepadInvertFlightPitch || bool
+|-
+| GamepadAltFireButtons || bool
+|-
+| GamepadSensitivityY || 10 - 100
+|-
+| GamepadSensitivityX || 10 - 100
+|-
+| GamepadInUse || bool
+|-
+| InvertMouseX || bool
+|-
+| InvertMouseY || bool
+|-
+| MouseSensitivityX || 10 - 100
+|-
+| MouseSensitivityY || 10 - 100
+|-
+| AnisotropicFiltering || 
+0 = 2x, 
+1 = 4x, 
+2 = 6x, 
+3 = 8x, 
+4 = 10x, 
+5 = 12x, 
+6 = 16x
+|-
+| ObjectDetail || 
+0 = Low, 
+1 = Medium, 
+2 = High, 
+3 = VeryHigh
+|-
+| ShadowsQuality || 
+0 = Low, 
+1 = Medium, 
+2 = High
+|-
+| TextureDetail || 
+0 = Low, 
+1 = High
+|-
+| Decals || bool
+|-
+| WaterDetail || 
+0 = Low, 
+1 = Medium, 
+2 = High, 
+3 = VeryHigh
+|-
+| FullScreen || bool
+|-
+| FullScreenWidth || int
+|-
+| FullScreenHeight || int
+|}

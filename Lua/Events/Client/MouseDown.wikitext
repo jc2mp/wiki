@@ -1,0 +1,37 @@
+{{Lua/Event|
+  arguments = number {{Arg|button}}
+}}
+
+==Description==
+
+Fired when a mouse button is pressed.
+
+{{Arg|button}} is from 1 to 5:
+# Left click
+# Right click
+# Middle click
+# Back button
+# Forward button
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Mouse button "..args.button.." pressed"
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("MouseDown", Foo)
+</syntaxhighlight>
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.button == 1 then
+		local position = Mouse:GetPosition()
+		local message = "Player left-clicked at position x: " .. position.x .. " y: " .. position.y
+		Chat:Print(message, Color(255, 255, 255))
+	end
+end
+
+Events:Subscribe("MouseDown", Foo)
+</syntaxhighlight>

@@ -1,0 +1,16 @@
+{{Lua/Function|
+  returns = string |
+  prototype = Player:GetIP() |
+  description = Returns the IP address of the player. |
+}}
+
+==Example==
+
+<syntaxhighlight>
+function PlayerJoin(args)
+	local ip = args.player:GetIP()
+	Chat:Broadcast(args.player:GetName().." joined, their IP is "..ip, Color(255, 255, 255))
+end
+
+Events:Subscribe("PlayerJoin", PlayerJoin)
+</syntaxhighlight>

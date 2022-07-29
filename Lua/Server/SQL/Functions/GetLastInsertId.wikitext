@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = SQL:GetLastInsertId() |
+  description = Returns the row id of the most recent, successful INSERT.
+}}

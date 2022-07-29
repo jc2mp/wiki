@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/ListBox|ListBox]] |
+  prototype = SortedList:GetListBox()
+}}

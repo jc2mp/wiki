@@ -1,0 +1,6 @@
+{{Lua/GUIEvent
+ | description = Called after the panel is rendered.
+}}
+
+==Additional Notes==
+*This is called after all childs have been rendered.

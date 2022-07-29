@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Player:GetWeatherSeverity() |
+}}
+
+==See also==
+
+* [[Lua/Tutorials/Reference/Weather]]

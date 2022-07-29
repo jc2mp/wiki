@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = TabButton |
+  prototype = TabButton.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = TabButton |
+  prototype = TabButton.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = TabButton |
+  prototype = TabButton.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = TabButton |
+  prototype = TabButton.Create() |
+}}

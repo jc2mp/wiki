@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = TextBoxNumeric |
+  prototype = TextBoxNumeric.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxNumeric |
+  prototype = TextBoxNumeric.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxNumeric |
+  prototype = TextBoxNumeric.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxNumeric |
+  prototype = TextBoxNumeric.Create() |
+}}

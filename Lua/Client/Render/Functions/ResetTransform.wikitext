@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Render:ResetTransform() |
+  description = Resets the rendering transform back to normal.
+}}
+
+==See Also==
+*[[Lua/Client/Render/Functions/SetTransform|Render:SetTransform]]

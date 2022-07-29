@@ -1,0 +1,8 @@
+{|
+!width="150" align="right"|<font size="3">Name</font> &nbsp;&nbsp;
+|<font size="3">{{{name|{{SUBPAGENAME}}}}}</font>
+|-
+!width="150" align="right"|<font size="3">Description</font> &nbsp;&nbsp;
+|<font size="3">{{{description|[[Category:NoDescription]]No description}}}</font>
+|}
+<br/>

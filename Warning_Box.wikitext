@@ -1,0 +1,7 @@
+<center>
+{| border="1"
+|- style="background:#e02020; color:white"
+!width="800" height="50"|
+<font size="3">{{{text}}}</font>
+|}
+</center>

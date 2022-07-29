@@ -1,0 +1,6 @@
+{{Lua/GUIEvent
+ | description = Called when the button was toggled off.
+}}
+
+==Additional Notes==
+*Only called when the button is in toggle mode.

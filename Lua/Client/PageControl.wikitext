@@ -1,0 +1,101 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+[[Lua/Client/PageControl/Events/Finish|Finish]]
+
+[[Lua/Client/PageControl/Events/PageChanged|PageChanged]]
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | PageControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | PageControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | PageControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | PageControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/Finish|Finish]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Button|Button]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetBackButton|GetBackButton]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetCurrentPage|GetCurrentPage]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Button|Button]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetFinishButton|GetFinishButton]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Label|Label]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetLabel|GetLabel]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Button|Button]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetNextButton|GetNextButton]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetPage|GetPage]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetPageCount|GetPageCount]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetPageNumber|GetPageNumber]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/GetUseFinishButton|GetUseFinishButton]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/NextPage|NextPage]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/PreviousPage|PreviousPage]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/SetPageCount|SetPageCount]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/SetUseFinishButton|SetUseFinishButton]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/PageControl/Functions/ShowPage|ShowPage]](number)
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | PageControl == PageControl
+|} {{Lua/Table_Suffix}}

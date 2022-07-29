@@ -1,0 +1,17 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:DrawCircle([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, number {{arg|radius}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a 1 pixel thick circular outline at the given position, radius and color in 2D space.
+}}
+
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:DrawCircle([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, number {{arg|radius}}, [[Lua/Shared/Color|Color]] {{arg|draw_color}}) |
+  description = Draws a 1 pixel thick circular outline at the given position, radius and color in 3D space.
+}}
+
+==See also==
+*[[Lua/Client/Render/Functions/FillCircle|Render:FillCircle]]

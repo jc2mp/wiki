@@ -1,0 +1,30 @@
+{{Lua/Function
+ | prototype = Game:ShowPopup(string {{Arg|message}}, boolean {{arg|shouldShowBlueIcon}})
+ | description = Shows a notification on the top-left of the screen, using the game's GUI.
+}}
+
+==Example==
+
+<syntaxhighlight line highlight="2,6">
+function Popup(args)
+	Game:ShowPopup(args.text, false)
+end
+
+function PopupIcon(args)
+	Game:ShowPopup(args.text, true)
+end
+
+Console:Subscribe("popup", Popup)
+Console:Subscribe("popupicon", PopupIcon)
+</syntaxhighlight>
+
+====Console input====
+
+<syntaxhighlight lang="text">
+> popup Hello, I'm some popup text
+> popupicon With icon
+</syntaxhighlight>
+
+====Result====
+
+<center>[[File:Lua Game ShowPopup Example.png]]</center>

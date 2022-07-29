@@ -1,0 +1,16 @@
+{{Lua/Function |
+  prototype = TabControl:AddPage([[Lua/Client/TabButton|TabButton]]) |
+  description = Adds the TabButton and its page.
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/TabButton|TabButton]] |
+  prototype = TabControl:AddPage(string {{Arg|title}}, [[Lua/Client/BaseWindow|BaseWindow]] {{Arg|page}}) |
+  description = Adds a new TabButton with text {{Arg|title}} page {{Arg|page}}.
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/TabButton|TabButton]] |
+  prototype = TabControl:AddPage(string {{Arg|title}}) |
+  description = Adds a new TabButton with text {{Arg|title}} and creates a new page.
+}}

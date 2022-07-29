@@ -1,0 +1,16 @@
+{{Lua/Function |
+  returns = number or string|
+  prototype = table.find(table {{Arg|table}}, object {{Arg|object}}) |
+  description = Returns the index of the first found {{Arg|object}} in {{Arg|table}}
+}}
+
+==Examples==
+<syntaxhighlight>
+local tbl = {}
+tbl["someindex"] = 123
+tbl[54] = "test"
+tbl["index2"] = "needle"
+
+print(table.find(tbl, "needle"))
+-->index2
+</syntaxhighlight>

@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = Events:Fire(string name, object argument) |
+}}
+
+
+
+{{Lua/Function |
+  returns = boolean |
+  prototype = Events:Fire(string name) |
+}}

@@ -1,0 +1,4 @@
+{{Lua/Function
+ | prototype = Game:ResetHeat()
+ | description = Resets the heat level and heat percent to zero.
+}}

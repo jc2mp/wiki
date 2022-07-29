@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = PageControl |
+  prototype = PageControl.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = PageControl |
+  prototype = PageControl.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = PageControl |
+  prototype = PageControl.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = PageControl |
+  prototype = PageControl.Create() |
+}}

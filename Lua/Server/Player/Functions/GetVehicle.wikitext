@@ -1,0 +1,10 @@
+{{Lua/Function |
+  returns = [[Lua/Server/Vehicle|Vehicle]] |
+  prototype = Player:GetVehicle() |
+}}
+
+==Description==
+Returns the vehicle the player is occupying, or nil if the player is not in a vehicle.
+
+==See also==
+* [[Lua/Server/Player/Functions/InVehicle|Player:InVehicle]]

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Server/World|World]] |
+  prototype = StreamableObject:GetWorld() |
+}}

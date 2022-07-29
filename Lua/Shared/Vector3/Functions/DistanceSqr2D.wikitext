@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3:DistanceSqr2D(Vector3 {{arg|b}}) |
+  description = Calculates the squared 2D distance between the subject and {{arg|b}} ignoring the y-axis value.
+}}
+
+==Additional Notes==
+*This function is faster than [[Lua/Shared/Vector3/Functions/Distance2D|Vector:Distance2D()]], as no square root is required.

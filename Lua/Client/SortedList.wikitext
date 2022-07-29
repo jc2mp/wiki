@@ -1,0 +1,122 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+[[Lua/Client/SortedList/Events/RowSelected|RowSelected]]
+
+[[Lua/Client/SortedList/Events/SortPress|SortPress]]
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | SortedList
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | SortedList
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | SortedList
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | SortedList
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/AddColumn|AddColumn]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/AddColumn|AddColumn]](string, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TableRow|TableRow]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/AddItem|AddItem]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TableRow|TableRow]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/AddItem|AddItem]](string, string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/Clear|Clear]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/ListBox|ListBox]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/GetListBox|GetListBox]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/GetMultiSelect|GetMultiSelect]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TableRow|TableRow]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/GetSelectedRow|GetSelectedRow]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/GetSelectedRowName|GetSelectedRowName]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/GetSelectedRows|GetSelectedRows]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/RemoveItem|RemoveItem]]([[Lua/Client/TableRow|TableRow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SelectByString|SelectByString]](string, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SelectByString|SelectByString]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetButtonsVisible|SetButtonsVisible]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetMultiSelect|SetMultiSelect]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetSelectRow|SetSelectRow]]([[Lua/Client/BaseWindow|BaseWindow]], boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetSelectRow|SetSelectRow]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetSort|SetSort]](object, object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/SetSort|SetSort]](object)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/Sort|Sort]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/Sort|Sort]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/SortedList/Functions/UnselectAll|UnselectAll]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | SortedList == SortedList
+|} {{Lua/Table_Suffix}}

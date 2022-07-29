@@ -1,0 +1,5 @@
+{{Lua/Property |
+  type = number |
+  prototype = Weapon.ammo_reserve |
+  description = The number of bullets in the player's reserve storage (i.e. bullets not in the current clip)
+}}

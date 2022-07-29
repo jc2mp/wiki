@@ -1,0 +1,54 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+{{Lua/Client/TextBox/Events}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | TextBox
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TextBox/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TextBox
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TextBox/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TextBox
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TextBox/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | TextBox
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TextBox/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Client/TextBox/Functions}}
+
+===Functions inherited from [[Lua/Client/Label|Label]]===
+
+{{Lua/Client/Label/Functions}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | TextBox == TextBox
+|} {{Lua/Table_Suffix}}

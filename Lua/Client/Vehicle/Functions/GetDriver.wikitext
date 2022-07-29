@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/Player|Player]] |
+  prototype = Vehicle:GetDriver() |
+}}

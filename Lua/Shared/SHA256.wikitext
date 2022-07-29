@@ -1,0 +1,44 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/SHA256/Static Functions/ComputeHash|ComputeHash]](string)
+|} {{Lua/Table_Suffix}}
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/SHA256/Constructor|SHA256]]()
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/SHA256/Functions/Final|Final]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/SHA256/Functions/Restart|Restart]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/SHA256/Functions/Update|Update]](string)
+|} {{Lua/Table_Suffix}}
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/SHA256/Properties/digest|digest]]
+|{{Lua/Cell_Style/Property_List_Type}} | string
+|} {{Lua/Table_Suffix}}

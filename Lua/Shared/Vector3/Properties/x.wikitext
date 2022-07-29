@@ -1,0 +1,4 @@
+{{Lua/Property |
+  type = number |
+  prototype = Vector3.x |
+}}

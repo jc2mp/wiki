@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ResizableControl |
+  prototype = ResizableControl.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ResizableControl |
+  prototype = ResizableControl.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ResizableControl |
+  prototype = ResizableControl.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ResizableControl |
+  prototype = ResizableControl.Create() |
+}}

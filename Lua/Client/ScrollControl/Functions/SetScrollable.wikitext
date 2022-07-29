@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = ScrollControl:SetScrollable(boolean {{arg|horizontal}}, boolean {{arg|vertical}}) |
+  description = Sets whether the control should allow horizontal and vertical scrolling.
+}}

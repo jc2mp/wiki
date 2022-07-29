@@ -1,0 +1,685 @@
+'''Note: As of 0.1.2, the statics are part of VirtualKey, not Key. This was an oversight and it will likely be merged into Key.'''
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Key/Functions/IsDown|IsDown]](number)
+|} {{Lua/Table_Suffix}}
+==Statics==
+
+These are based on virtual-key codes used by the Windows API. [http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731%28v=vs.85%29.aspx See here for reference].
+
+====Common====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Add
+|{{Lua/Cell_Style/Enum_List_Value}} | 107
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Back
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Control
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Decimal
+|{{Lua/Cell_Style/Enum_List_Value}} | 110
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Delete
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Divide
+|{{Lua/Cell_Style/Enum_List_Value}} | 111
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Down
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | End
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Escape
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F1
+|{{Lua/Cell_Style/Enum_List_Value}} | 112
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F2
+|{{Lua/Cell_Style/Enum_List_Value}} | 113
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F3
+|{{Lua/Cell_Style/Enum_List_Value}} | 114
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F4
+|{{Lua/Cell_Style/Enum_List_Value}} | 115
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F5
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F6
+|{{Lua/Cell_Style/Enum_List_Value}} | 117
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F7
+|{{Lua/Cell_Style/Enum_List_Value}} | 118
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F8
+|{{Lua/Cell_Style/Enum_List_Value}} | 119
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F9
+|{{Lua/Cell_Style/Enum_List_Value}} | 120
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F10
+|{{Lua/Cell_Style/Enum_List_Value}} | 121
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F11
+|{{Lua/Cell_Style/Enum_List_Value}} | 122
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F12
+|{{Lua/Cell_Style/Enum_List_Value}} | 123
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Home
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Insert
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LControl
+|{{Lua/Cell_Style/Enum_List_Value}} | 162
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LMenu
+|{{Lua/Cell_Style/Enum_List_Value}} | 164
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LShift
+|{{Lua/Cell_Style/Enum_List_Value}} | 160
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Left
+|{{Lua/Cell_Style/Enum_List_Value}} | 37
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Menu
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Multiply
+|{{Lua/Cell_Style/Enum_List_Value}} | 106
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Next
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numlock
+|{{Lua/Cell_Style/Enum_List_Value}} | 144
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad0
+|{{Lua/Cell_Style/Enum_List_Value}} | 96
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad1
+|{{Lua/Cell_Style/Enum_List_Value}} | 97
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad2
+|{{Lua/Cell_Style/Enum_List_Value}} | 98
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad3
+|{{Lua/Cell_Style/Enum_List_Value}} | 99
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad4
+|{{Lua/Cell_Style/Enum_List_Value}} | 100
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad5
+|{{Lua/Cell_Style/Enum_List_Value}} | 101
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad6
+|{{Lua/Cell_Style/Enum_List_Value}} | 102
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad7
+|{{Lua/Cell_Style/Enum_List_Value}} | 103
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad8
+|{{Lua/Cell_Style/Enum_List_Value}} | 104
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad9
+|{{Lua/Cell_Style/Enum_List_Value}} | 105
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Prior
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RControl
+|{{Lua/Cell_Style/Enum_List_Value}} | 163
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RMenu
+|{{Lua/Cell_Style/Enum_List_Value}} | 165
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RShift
+|{{Lua/Cell_Style/Enum_List_Value}} | 161
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Return
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Right
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Scroll
+|{{Lua/Cell_Style/Enum_List_Value}} | 145
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Shift
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Snapshot
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Space
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Subtract
+|{{Lua/Cell_Style/Enum_List_Value}} | 109
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Tab
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Up
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XButton1
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XButton2
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|} {{Lua/Table_Suffix}}
+
+====Full list====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Accept
+|{{Lua/Cell_Style/Enum_List_Value}} | 30
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Add
+|{{Lua/Cell_Style/Enum_List_Value}} | 107
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Apps
+|{{Lua/Cell_Style/Enum_List_Value}} | 93
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Attn
+|{{Lua/Cell_Style/Enum_List_Value}} | 246
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Back
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserBack
+|{{Lua/Cell_Style/Enum_List_Value}} | 166
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserFavorites
+|{{Lua/Cell_Style/Enum_List_Value}} | 171
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserForward
+|{{Lua/Cell_Style/Enum_List_Value}} | 167
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserHome
+|{{Lua/Cell_Style/Enum_List_Value}} | 172
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserRefresh
+|{{Lua/Cell_Style/Enum_List_Value}} | 168
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserSearch
+|{{Lua/Cell_Style/Enum_List_Value}} | 170
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BrowserStop
+|{{Lua/Cell_Style/Enum_List_Value}} | 169
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Cancel
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Capital
+|{{Lua/Cell_Style/Enum_List_Value}} | 20
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Clear
+|{{Lua/Cell_Style/Enum_List_Value}} | 12
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Control
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Convert
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Crsel
+|{{Lua/Cell_Style/Enum_List_Value}} | 247
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Decimal
+|{{Lua/Cell_Style/Enum_List_Value}} | 110
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Delete
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Divide
+|{{Lua/Cell_Style/Enum_List_Value}} | 111
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Down
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | End
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Ereof
+|{{Lua/Cell_Style/Enum_List_Value}} | 249
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Escape
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Execute
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Exsel
+|{{Lua/Cell_Style/Enum_List_Value}} | 248
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F1
+|{{Lua/Cell_Style/Enum_List_Value}} | 112
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F10
+|{{Lua/Cell_Style/Enum_List_Value}} | 121
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F11
+|{{Lua/Cell_Style/Enum_List_Value}} | 122
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F12
+|{{Lua/Cell_Style/Enum_List_Value}} | 123
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F13
+|{{Lua/Cell_Style/Enum_List_Value}} | 124
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F14
+|{{Lua/Cell_Style/Enum_List_Value}} | 125
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F15
+|{{Lua/Cell_Style/Enum_List_Value}} | 126
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F16
+|{{Lua/Cell_Style/Enum_List_Value}} | 127
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F17
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F18
+|{{Lua/Cell_Style/Enum_List_Value}} | 129
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F19
+|{{Lua/Cell_Style/Enum_List_Value}} | 130
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F2
+|{{Lua/Cell_Style/Enum_List_Value}} | 113
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F20
+|{{Lua/Cell_Style/Enum_List_Value}} | 131
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F21
+|{{Lua/Cell_Style/Enum_List_Value}} | 132
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F22
+|{{Lua/Cell_Style/Enum_List_Value}} | 133
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F23
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F24
+|{{Lua/Cell_Style/Enum_List_Value}} | 135
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F3
+|{{Lua/Cell_Style/Enum_List_Value}} | 114
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F4
+|{{Lua/Cell_Style/Enum_List_Value}} | 115
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F5
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F6
+|{{Lua/Cell_Style/Enum_List_Value}} | 117
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F7
+|{{Lua/Cell_Style/Enum_List_Value}} | 118
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F8
+|{{Lua/Cell_Style/Enum_List_Value}} | 119
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | F9
+|{{Lua/Cell_Style/Enum_List_Value}} | 120
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Final
+|{{Lua/Cell_Style/Enum_List_Value}} | 24
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Hangeul
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Hangul
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Hanja
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Help
+|{{Lua/Cell_Style/Enum_List_Value}} | 47
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Home
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Ico00
+|{{Lua/Cell_Style/Enum_List_Value}} | 228
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | IcoHelp
+|{{Lua/Cell_Style/Enum_List_Value}} | 227
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Insert
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Junja
+|{{Lua/Cell_Style/Enum_List_Value}} | 23
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Kana
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Kanji
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LControl
+|{{Lua/Cell_Style/Enum_List_Value}} | 162
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LMenu
+|{{Lua/Cell_Style/Enum_List_Value}} | 164
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LShift
+|{{Lua/Cell_Style/Enum_List_Value}} | 160
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LWin
+|{{Lua/Cell_Style/Enum_List_Value}} | 91
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LaunchApp1
+|{{Lua/Cell_Style/Enum_List_Value}} | 182
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LaunchApp2
+|{{Lua/Cell_Style/Enum_List_Value}} | 183
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LaunchMail
+|{{Lua/Cell_Style/Enum_List_Value}} | 180
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | LaunchMediaSelect
+|{{Lua/Cell_Style/Enum_List_Value}} | 181
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Left
+|{{Lua/Cell_Style/Enum_List_Value}} | 37
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MediaNextTrack
+|{{Lua/Cell_Style/Enum_List_Value}} | 176
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MediaPlayPause
+|{{Lua/Cell_Style/Enum_List_Value}} | 179
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MediaPrevTrack
+|{{Lua/Cell_Style/Enum_List_Value}} | 177
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MediaStop
+|{{Lua/Cell_Style/Enum_List_Value}} | 178
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Menu
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Modechange
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Multiply
+|{{Lua/Cell_Style/Enum_List_Value}} | 106
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Next
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Noname
+|{{Lua/Cell_Style/Enum_List_Value}} | 252
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Nonconvert
+|{{Lua/Cell_Style/Enum_List_Value}} | 29
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numlock
+|{{Lua/Cell_Style/Enum_List_Value}} | 144
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad0
+|{{Lua/Cell_Style/Enum_List_Value}} | 96
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad1
+|{{Lua/Cell_Style/Enum_List_Value}} | 97
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad2
+|{{Lua/Cell_Style/Enum_List_Value}} | 98
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad3
+|{{Lua/Cell_Style/Enum_List_Value}} | 99
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad4
+|{{Lua/Cell_Style/Enum_List_Value}} | 100
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad5
+|{{Lua/Cell_Style/Enum_List_Value}} | 101
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad6
+|{{Lua/Cell_Style/Enum_List_Value}} | 102
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad7
+|{{Lua/Cell_Style/Enum_List_Value}} | 103
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad8
+|{{Lua/Cell_Style/Enum_List_Value}} | 104
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Numpad9
+|{{Lua/Cell_Style/Enum_List_Value}} | 105
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem1
+|{{Lua/Cell_Style/Enum_List_Value}} | 186
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem102
+|{{Lua/Cell_Style/Enum_List_Value}} | 226
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem2
+|{{Lua/Cell_Style/Enum_List_Value}} | 191
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem3
+|{{Lua/Cell_Style/Enum_List_Value}} | 192
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem4
+|{{Lua/Cell_Style/Enum_List_Value}} | 219
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem5
+|{{Lua/Cell_Style/Enum_List_Value}} | 220
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem6
+|{{Lua/Cell_Style/Enum_List_Value}} | 221
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem7
+|{{Lua/Cell_Style/Enum_List_Value}} | 222
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Oem8
+|{{Lua/Cell_Style/Enum_List_Value}} | 223
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemAttn
+|{{Lua/Cell_Style/Enum_List_Value}} | 240
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemAuto
+|{{Lua/Cell_Style/Enum_List_Value}} | 243
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemAx
+|{{Lua/Cell_Style/Enum_List_Value}} | 225
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemBacktab
+|{{Lua/Cell_Style/Enum_List_Value}} | 245
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemClear
+|{{Lua/Cell_Style/Enum_List_Value}} | 254
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemComma
+|{{Lua/Cell_Style/Enum_List_Value}} | 188
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemCopy
+|{{Lua/Cell_Style/Enum_List_Value}} | 242
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemCusel
+|{{Lua/Cell_Style/Enum_List_Value}} | 239
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemEnlw
+|{{Lua/Cell_Style/Enum_List_Value}} | 244
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFinish
+|{{Lua/Cell_Style/Enum_List_Value}} | 241
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFjJisho
+|{{Lua/Cell_Style/Enum_List_Value}} | 146
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFjLoya
+|{{Lua/Cell_Style/Enum_List_Value}} | 149
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFjMasshou
+|{{Lua/Cell_Style/Enum_List_Value}} | 147
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFjRoya
+|{{Lua/Cell_Style/Enum_List_Value}} | 150
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemFjTouroku
+|{{Lua/Cell_Style/Enum_List_Value}} | 148
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemJump
+|{{Lua/Cell_Style/Enum_List_Value}} | 234
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemMinus
+|{{Lua/Cell_Style/Enum_List_Value}} | 189
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemNecEqual
+|{{Lua/Cell_Style/Enum_List_Value}} | 146
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemPa1
+|{{Lua/Cell_Style/Enum_List_Value}} | 235
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemPa2
+|{{Lua/Cell_Style/Enum_List_Value}} | 236
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemPa3
+|{{Lua/Cell_Style/Enum_List_Value}} | 237
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemPeriod
+|{{Lua/Cell_Style/Enum_List_Value}} | 190
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemPlus
+|{{Lua/Cell_Style/Enum_List_Value}} | 187
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemReset
+|{{Lua/Cell_Style/Enum_List_Value}} | 233
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | OemWsctrl
+|{{Lua/Cell_Style/Enum_List_Value}} | 238
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Pa1
+|{{Lua/Cell_Style/Enum_List_Value}} | 253
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Packet
+|{{Lua/Cell_Style/Enum_List_Value}} | 231
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Pause
+|{{Lua/Cell_Style/Enum_List_Value}} | 19
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Play
+|{{Lua/Cell_Style/Enum_List_Value}} | 250
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Print
+|{{Lua/Cell_Style/Enum_List_Value}} | 42
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Prior
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Processkey
+|{{Lua/Cell_Style/Enum_List_Value}} | 229
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RButton
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RControl
+|{{Lua/Cell_Style/Enum_List_Value}} | 163
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RMenu
+|{{Lua/Cell_Style/Enum_List_Value}} | 165
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RShift
+|{{Lua/Cell_Style/Enum_List_Value}} | 161
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RWin
+|{{Lua/Cell_Style/Enum_List_Value}} | 92
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Return
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Right
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Scroll
+|{{Lua/Cell_Style/Enum_List_Value}} | 145
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Select
+|{{Lua/Cell_Style/Enum_List_Value}} | 41
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Separator
+|{{Lua/Cell_Style/Enum_List_Value}} | 108
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Shift
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Sleep
+|{{Lua/Cell_Style/Enum_List_Value}} | 95
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Snapshot
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Space
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Subtract
+|{{Lua/Cell_Style/Enum_List_Value}} | 109
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Tab
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Up
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VolumeDown
+|{{Lua/Cell_Style/Enum_List_Value}} | 174
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VolumeMute
+|{{Lua/Cell_Style/Enum_List_Value}} | 173
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VolumeUp
+|{{Lua/Cell_Style/Enum_List_Value}} | 175
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XButton1
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | XButton2
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Zoom
+|{{Lua/Cell_Style/Enum_List_Value}} | 251
+|} {{Lua/Table_Suffix}}

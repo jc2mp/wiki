@@ -1,0 +1,42 @@
+__NOTOC__
+
+Weather severity values go from '''0''' to '''2'''. '''0''' is clear weather with no low-altitude clouds. '''2''' is the maximum weather possible.
+
+It is region-dependent; it will never snow in desert areas.
+
+Panau's weather is stubborn and will often not do what you tell it to. You can set the weather severity to 2 and it may refuse to rain for a few minutes, even in a rain forest. Then suddenly it will start pouring. Sometimes it starts raining with a value of 0.5.
+
+==Changing weather==
+
+====By World====
+
+[[Lua/Server/World/Functions/SetWeatherSeverity]]
+
+====By Player====
+
+[[Lua/Server/Player/Functions/SetWeatherSeverity]]
+
+==Example==
+
+====Use '/weather 1.2345' to change the weather for the default world====
+
+<syntaxhighlight line highlight="10">
+function PlayerChat(args)
+	local words = args.text:split(" ")
+	if #words ~= 2 then
+		return
+	end
+	
+	local value = tonumber(words[2])
+	
+	if words[1] == "/weather" and value then
+		DefaultWorld:SetWeatherSeverity(value)
+		Chat:Broadcast("Setting weather to "..value, Color(255, 255, 255))
+		return false
+	else
+		return true
+	end
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>

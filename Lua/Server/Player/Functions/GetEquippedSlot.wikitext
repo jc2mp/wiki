@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/WeaponSlot|WeaponSlot]] |
+  prototype = Player:GetEquippedSlot() |
+  description = Returns the slot of the currently equipped weapon.
+}}
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetEquippedWeapon|Player:GetEquippedWeapon]]

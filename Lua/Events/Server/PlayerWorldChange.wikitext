@@ -1,0 +1,4 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] {{Arg|player}}, [[Lua/Server/World|World]] {{Arg|old_world}}, [[Lua/Server/World|World]] {{Arg|new_world}} |
+  description = Fired when a player's world changes.
+}}

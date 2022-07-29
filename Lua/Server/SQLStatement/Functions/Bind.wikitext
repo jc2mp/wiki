@@ -1,0 +1,15 @@
+{{Lua/Function |
+  prototype = SQLStatement:Bind(string, string) |
+}}
+
+{{Lua/Function |
+  prototype = SQLStatement:Bind(number, string) |
+}}
+
+{{Lua/Function |
+  prototype = SQLStatement:Bind(string, number) |
+}}
+
+{{Lua/Function |
+  prototype = SQLStatement:Bind(number, number) |
+}}

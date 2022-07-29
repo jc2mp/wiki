@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3.Distance2D(Vector3, Vector3) |
+  description = Calculates the 2D distance between the given vectors ignoring the y-axis value.
+}}

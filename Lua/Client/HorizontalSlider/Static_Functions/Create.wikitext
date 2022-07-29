@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = HorizontalSlider |
+  prototype = HorizontalSlider.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = HorizontalSlider |
+  prototype = HorizontalSlider.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = HorizontalSlider |
+  prototype = HorizontalSlider.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = HorizontalSlider |
+  prototype = HorizontalSlider.Create() |
+}}

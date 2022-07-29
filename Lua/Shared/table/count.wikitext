@@ -1,0 +1,15 @@
+{{Lua/Function |
+  returns = number |
+  prototype = table.count(table {{Arg|table}}) |
+  description = Returns the number of entries in ({{Arg|table}}). Unlike the # operator, this counts non-sequential/numeric indexes.
+}}
+
+==Examples==
+
+<syntaxhighlight>
+local t = {"one", "two"}
+table.insert(t, "three")
+t.apple = "four"
+print(#t) -- 3
+print(table.count(t)) -- 4
+</syntaxhighlight>

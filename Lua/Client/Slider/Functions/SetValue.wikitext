@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Slider:SetValue(number, boolean) |
+}}
+
+{{Lua/Function |
+  prototype = Slider:SetValue(number) |
+}}

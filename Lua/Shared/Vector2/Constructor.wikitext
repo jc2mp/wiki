@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = Vector2 |
+  prototype = Vector2(number {{arg|x}}, number {{arg|y}}) |
+  description = Constructs a new vector with the given values.
+}}
+
+{{Lua/Function |
+  returns = Vector2 |
+  prototype = Vector2() |
+  description = Constructs a new zero vector.
+}}

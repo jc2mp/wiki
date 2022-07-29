@@ -1,0 +1,13 @@
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Bone/Properties/name|name]]
+|{{Lua/Cell_Style/Property_List_Type}} | string
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Bone/Properties/position|position]]
+|{{Lua/Cell_Style/Property_List_Type}} | [[Lua/Shared/Vector3|Vector3]]
+|} {{Lua/Table_Suffix}}

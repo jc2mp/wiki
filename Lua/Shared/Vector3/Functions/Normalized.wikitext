@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = Vector3 |
+  prototype = Vector3:Normalized() |
+  description = Returns the normalized vector.
+}}

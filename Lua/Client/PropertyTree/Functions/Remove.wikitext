@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = PropertyTree:Remove([[Lua/Client/Properties|Properties]]) |
+}}

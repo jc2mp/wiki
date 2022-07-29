@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = World:GetTime() |
+  description = Gets the time, in hours.
+}}

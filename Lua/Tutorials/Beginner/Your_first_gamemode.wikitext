@@ -1,0 +1,194 @@
+For this tutorial, we will be creating an extremely simple gamemode called Last Rico Standing. When a game starts, players will spawn inside the dome and be given machine guns. When they die, they will spawn above the dome without weapons. When there is only one person left, they are declared the winner and the game restarts.
+
+It is assumed you have read the [[Lua/Tutorials/Beginner/Beginner|Beginner's Tutorial]].
+
+==Setup==
+
+As before, we will create the lua file in the required directory structure: ''scripts/MyFirstGamemode/server/LastRicoStanding.lua''
+
+==Spawn points==
+
+First, we need some spawn points. It will be useful to have a way to print our position. This can be done in a few ways, shown below. Either way, you can open server.log to copy their output.
+
+====Chat command====
+
+<syntaxhighlight>
+function PlayerChat(args)
+	if args.text == "/pos" then
+		print(args.player:GetPosition())
+		return false
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", PlayerChat)
+</syntaxhighlight>
+
+====Server console====
+
+If you want to play around with the server console, type this: (assuming the module is loaded and you're the only person in the server)
+
+<syntaxhighlight>
+lua MyFirstGamemode print(Player.GetById(0):GetPosition())
+</syntaxhighlight>
+
+==Spawning everyone on module load==
+
+For our first test, we will make it so when the module is loaded everyone in the server is teleported to a random spawn. You can test it by reloading the module from the console.
+
+<syntaxhighlight>
+spawns = {
+	Vector3(14197.319336, 458.649567, 14382.654297),
+	Vector3(14053.989258, 451.647766, 14313.827148),
+	Vector3(14192.114258, 438.649567, 14359.311523),
+	Vector3(14109.357422, 423.588654, 14350.410156),
+	Vector3(14162.669922, 434.653503, 14290.238281)
+}
+
+function StartGame()
+	for player in Server:GetPlayers() do
+		local randomIndex = math.random(1, #spawns)
+		local spawnPosition = spawns[randomIndex]
+		player:SetPosition(spawnPosition)
+	end
+end
+
+Events:Subscribe("ModuleLoad", StartGame)
+</syntaxhighlight>
+
+''spawns'' is a table used like an array. You can also declare it as an empty table, like ''spawns = {}'', then use ''table.insert(spawns, Vector3(1, 2, 3))'', but either syntax works. You can get the third spawn point by doing ''local position = spawns[3]''. Note that arrays in Lua start at 1, not 0 like most other languages.
+
+You can use ''Server:GetPlayers()'' to iterate through every player in the server. It doesn't return a table as you might expect, it returns a fancy iterator function. (You don't need to know that, you can simply use it like above.)
+
+==Adding functionality==
+
+This script will start a game when you reload the module from the console. Players spawn with machine guns and full health. If someone respawns while a game is in progress, they are teleported to the top of the dome with no weapons. The game won't end, however; we'll fix that later.
+
+<syntaxhighlight>
+spawns = {
+	Vector3(14197.319336, 458.649567, 14382.654297),
+	Vector3(14053.989258, 451.647766, 14313.827148),
+	Vector3(14192.114258, 438.649567, 14359.311523),
+	Vector3(14109.357422, 423.588654, 14350.410156),
+	Vector3(14162.669922, 434.653503, 14290.238281)
+}
+deathSpawn = Vector3(14130.737305, 528.022278, 14341.015625)
+textColor = Color(115, 170, 220)
+
+function StartGame()
+	local message = "Starting game with "..Server:GetPlayerCount().." players"
+	Chat:Broadcast("[Last Rico Standing] "..message, textColor)
+	
+	for player in Server:GetPlayers() do
+		local randomIndex = math.random(1, #spawns)
+		local spawnPosition = spawns[randomIndex]
+		player:SetPosition(spawnPosition)
+		-- Give them a machine gun in the primary slot (2).
+		player:ClearInventory()
+		local weapon = Weapon(28)
+		player:GiveWeapon(2, weapon)
+		-- Reset their health to 100%, just in case.
+		player:SetHealth(1)
+	end
+end
+
+function PlayerSpawn(args)
+	-- Remove all of their weapons.
+	args.player:ClearInventory()
+	-- Teleport them to the top of the dome.
+	args.player:SetPosition(deathSpawn)
+	-- Send them a chat message.
+	local message = "[Last Rico Standing] A game in progress, please wait"
+	args.player:SendChatMessage(message, textColor)
+	-- Return false to override the default spawn position set in config.lua.
+	return false
+end
+
+Events:Subscribe("ModuleLoad", StartGame)
+Events:Subscribe("PlayerSpawn", PlayerSpawn)
+</syntaxhighlight>
+
+==Tracking players and declaring a winner==
+
+In order to declare a winner, we need to store which players are currently in the game and, when someone dies or quits, check if there's only one left. This is done in our PlayerDeathOrQuit function, called by both the PlayerDeath and PlayerQuit events. Then the game restarts.
+
+<syntaxhighlight>
+spawns = {
+	Vector3(14197.319336, 458.649567, 14382.654297),
+	Vector3(14053.989258, 451.647766, 14313.827148),
+	Vector3(14192.114258, 438.649567, 14359.311523),
+	Vector3(14109.357422, 423.588654, 14350.410156),
+	Vector3(14162.669922, 434.653503, 14290.238281)
+}
+deathSpawn = Vector3(14130.737305, 528.022278, 14341.015625)
+textColor = Color(115, 170, 220)
+players = {}
+
+function StartGame()
+	local message = "Starting game with "..Server:GetPlayerCount().." players"
+	Chat:Broadcast("[Last Rico Standing] "..message, textColor)
+	
+	for player in Server:GetPlayers() do
+		table.insert(players, player)
+		
+		local randomIndex = math.random(1, #spawns)
+		local spawnPosition = spawns[randomIndex]
+		player:SetPosition(spawnPosition)
+		-- Give them a machine gun in the primary slot (2).
+		player:ClearInventory()
+		local weapon = Weapon(28)
+		player:GiveWeapon(2, weapon)
+		-- Reset their health to 100%, just in case.
+		player:SetHealth(1)
+	end
+end
+
+function PlayerSpawn(args)
+	-- If the current game doesn't have enough players and the server has enough
+	-- to create a game, do so.
+	if #players < 2 and Server:GetPlayerCount() >= 2 then
+		StartGame()
+	-- Otherwise, a game is currently running fine and we either joined the server
+	-- or died and respawned.
+	else
+		-- Remove all of their weapons.
+		args.player:ClearInventory()
+		-- Teleport them to the top of the dome.
+		args.player:SetPosition(deathSpawn)
+		-- Send them a chat message.
+		local message = "[Last Rico Standing] A game is in progress, please wait."
+		args.player:SendChatMessage(message, textColor)
+	end
+	
+	-- Return false to override the default spawn position set in config.lua.
+	return false
+end
+
+function PlayerDeathOrQuit(args)
+	-- If they're in the players table, remove them.
+	for index, player in ipairs(players) do
+		if player == args.player then
+			table.remove(players, index)
+			break
+		end
+	end
+	-- If there is only one player left, declare them the winner.
+	if #players == 1 then
+		local message =
+			"[Last Rico Standing] "..players[1]:GetName().." has won the game!"
+		Chat:Broadcast(message , textColor)
+	end
+end
+
+Events:Subscribe("ModuleLoad", StartGame)
+Events:Subscribe("PlayerSpawn", PlayerSpawn)
+Events:Subscribe("PlayerDeath", PlayerDeathOrQuit)
+Events:Subscribe("PlayerQuit", PlayerDeathOrQuit)
+</syntaxhighlight>
+
+==Conclusion==
+
+Get someone else to test with you and have fun with it. Add a score system to track who has won the most. Create a table of [[Lua/Shared/Weapon|weapons]] and assign people random ones when a game starts. The possibilities are endless.
+
+As you may have noticed, this is an entirely server-sided script. Adding a client-side component would be extremely powerful; we could add a player counter, scoreboard text, replace the chat messages with text on screen, or add a spectator camera. But client-side scripts will be part of another tutorial.

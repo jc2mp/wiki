@@ -1,0 +1,5 @@
+[[Lua/Client/CheckBox/Events/Checked|Checked]]
+
+[[Lua/Client/CheckBox/Events/CheckChanged|CheckChanged]]
+
+[[Lua/Client/CheckBox/Events/UnChecked|UnChecked]]

@@ -1,0 +1,3 @@
+{{Lua/GUIEvent
+ | description = Called whenever the button was pressed using the right mouse button.
+}}

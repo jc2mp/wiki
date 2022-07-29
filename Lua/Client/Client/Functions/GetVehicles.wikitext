@@ -1,0 +1,13 @@
+{{Lua/Function |
+  returns = [[Lua/Tutorials/Intermediate/Iterators|iterator]] |
+  prototype = Client:GetVehicles() |
+}}
+
+==Description==
+Returns an [[Lua/Tutorials/Intermediate/Iterators|iterator]] containing all vehicles currently streamed to the client.
+
+==See also==
+
+* [[Lua/Server/Server/Functions/GetVehicles|Server:GetVehicles]]
+* [[Lua/Client/Client/Functions/GetPlayers|Client:GetPlayers]]
+* [[Lua/Client/Client/Functions/GetStreamedPlayers|Client:GetStreamedPlayers]]

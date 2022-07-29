@@ -1,0 +1,68 @@
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetAlignment|GetAlignment]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetText|GetText]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Color|Color]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextColor|GetTextColor]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextHeight|GetTextHeight]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextLength|GetTextLength]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextPadding|GetTextPadding]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextSize|GetTextSize]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetTextWidth|GetTextWidth]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/GetWrap|GetWrap]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetAlignment|SetAlignment]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetColorBright|SetColorBright]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetColorDark|SetColorDark]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetColorHighlight|SetColorHighlight]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetColorNormal|SetColorNormal]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetText|SetText]](string, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetText|SetText]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetTextColor|SetTextColor]]([[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetTextPadding|SetTextPadding]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetTextSize|SetTextSize]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SetWrap|SetWrap]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Label/Functions/SizeToContents|SizeToContents]]()
+|} {{Lua/Table_Suffix}}

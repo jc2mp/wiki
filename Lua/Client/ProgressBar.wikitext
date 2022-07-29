@@ -1,0 +1,77 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | ProgressBar
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | ProgressBar
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | ProgressBar
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | ProgressBar
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/GetCycleSpeed|GetCycleSpeed]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/GetValue|GetValue]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/SetAutoLabel|SetAutoLabel]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/SetCycleSpeed|SetCycleSpeed]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/SetHorizontal|SetHorizontal]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/SetValue|SetValue]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ProgressBar/Functions/SetVertical|SetVertical]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/Label|Label]]===
+
+{{Lua/Client/Label/Functions}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | ProgressBar == ProgressBar
+|} {{Lua/Table_Suffix}}

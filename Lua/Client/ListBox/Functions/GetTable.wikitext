@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/Table|Table]] |
+  prototype = ListBox:GetTable() |
+}}

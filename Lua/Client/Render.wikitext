@@ -1,0 +1,125 @@
+Render functions currently have no [http://en.wikipedia.org/wiki/Z-buffering depth testing]. This means that '''everything will always be drawn over the game world'''.
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawCircle|DrawCircle]]([[Lua/Shared/Vector2|Vector2]], number, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawCircle|DrawCircle]]([[Lua/Shared/Vector3|Vector3]], number, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawLine|DrawLine]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawLine|DrawLine]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector2|Vector2]], string, [[Lua/Shared/Color|Color]], number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector3|Vector3]], string, [[Lua/Shared/Color|Color]], number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector2|Vector2]], string, [[Lua/Shared/Color|Color]], number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector3|Vector3]], string, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector3|Vector3]], string, [[Lua/Shared/Color|Color]], number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/DrawText|DrawText]]([[Lua/Shared/Vector2|Vector2]], string, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillArea|FillArea]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillArea|FillArea]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillCircle|FillCircle]]([[Lua/Shared/Vector2|Vector2]], number, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillCircle|FillCircle]]([[Lua/Shared/Vector3|Vector3]], number, [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillTriangle|FillTriangle]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/FillTriangle|FillTriangle]]([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Color|Color]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextHeight|GetTextHeight]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextHeight|GetTextHeight]](string, number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextHeight|GetTextHeight]](string, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextSize|GetTextSize]](string, number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextSize|GetTextSize]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextSize|GetTextSize]](string, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextWidth|GetTextWidth]](string, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextWidth|GetTextWidth]](string, number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/GetTextWidth|GetTextWidth]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/ResetTransform|ResetTransform]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/ScreenToWorldDirection|ScreenToWorldDirection]]([[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/SetClip|SetClip]](bool)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/SetClip|SetClip]](bool, [[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/SetTransform|SetTransform]]([[Lua/Shared/Transform2|Transform2]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/SetTransform|SetTransform]]([[Lua/Shared/Transform3|Transform3]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]], boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/WorldToMinimap|WorldToMinimap]]([[Lua/Shared/Vector3|Vector3]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector2|Vector2]], boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Render/Functions/WorldToScreen|WorldToScreen]]([[Lua/Shared/Vector3|Vector3]])
+|} {{Lua/Table_Suffix}}
+
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Render/Properties/Height|Height]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Render/Properties/Size|Size]]
+|{{Lua/Cell_Style/Property_List_Type}} | [[Lua/Shared/Vector2|Vector2]]
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Client/Render/Properties/Width|Width]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|} {{Lua/Table_Suffix}}

@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = ClientLight.Play(table {{arg|arguments}}) |
+  description = Creates a ClientLight using the same arguments as [[Lua/Client/ClientLight/Static Functions/Create|Create]].
+}}
+
+==Notes==
+
+* There is an extra argument, {{Arg|timeout}}, which removes the light after the specified seconds.
+* If {{Arg|timeout}} is not specified, it defaults to 5 seconds.

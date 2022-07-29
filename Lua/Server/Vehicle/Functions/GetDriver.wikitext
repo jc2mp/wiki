@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = [[Lua/Server/Player|Player]] |
+  prototype = Vehicle:GetDriver() |
+}}
+
+
+== Description ==
+Returns the player that is currently the driver of the vehicle.

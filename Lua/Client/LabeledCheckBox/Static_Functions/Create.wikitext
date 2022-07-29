@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = CheckBoxWithLabel |
+  prototype = LabeledCheckBox.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = CheckBoxWithLabel |
+  prototype = LabeledCheckBox.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = CheckBoxWithLabel |
+  prototype = LabeledCheckBox.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = CheckBoxWithLabel |
+  prototype = LabeledCheckBox.Create() |
+}}

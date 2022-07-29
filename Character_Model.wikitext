@@ -1,0 +1,7 @@
+<center>
+[[File:{{{file_name}}}.png|190px|center|{{{alt_text}}}]]
+
+<font size="6">{{{id}}}</font>
+
+<font size="3">{{{description|{{{file_name}}}}}}</font>
+</center>

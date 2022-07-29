@@ -1,0 +1,27 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}, number {{arg|fontsize}}, number {{arg|scale}}) |
+}}
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}, number {{arg|fontsize}}) |
+}}
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}) |
+}}
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}, number {{arg|fontsize}}, number {{arg|scale}}) |
+}}
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}, number {{arg|fontsize}}) |
+}}
+
+{{Lua/Function |
+  prototype = Render:DrawText([[Lua/Shared/Vector3|Vector3]] {{arg|position}}, string {{arg|text}}, [[Lua/Shared/Color|Color]] {{arg|color}}) |
+}}

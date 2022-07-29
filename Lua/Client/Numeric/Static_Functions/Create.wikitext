@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = NumericUpDown |
+  prototype = Numeric.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = NumericUpDown |
+  prototype = Numeric.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = NumericUpDown |
+  prototype = Numeric.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = NumericUpDown |
+  prototype = Numeric.Create() |
+}}

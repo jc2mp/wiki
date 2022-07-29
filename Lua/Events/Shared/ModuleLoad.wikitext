@@ -1,0 +1,19 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired after all scripts have been loaded.
+
+==Example==
+
+<syntaxhighlight>
+function Foo(args)
+	-- This prints second.
+	print("Module loaded")
+end
+
+Events:Subscribe("ModuleLoad", Foo)
+
+-- This prints first.
+print("Script loaded")
+</syntaxhighlight>

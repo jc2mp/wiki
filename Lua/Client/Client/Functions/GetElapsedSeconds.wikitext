@@ -1,0 +1,7 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Client:GetElapsedSeconds() |
+}}
+
+==Description==
+Returns the number of seconds since the client was started up ('''not''' since the client joined the current server).

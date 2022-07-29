@@ -1,0 +1,14 @@
+{{Lua/Function |
+  prototype = Player:GiveWeapon([[Lua/Shared/WeaponSlot|WeaponSlot]] {{arg|slot}}, [[Lua/Shared/Weapon|Weapon]] {{arg|weapon}}) |
+  description = Gives the player a weapon.
+}}
+
+==Notes==
+
+* Any weapon can go in any slot; anyone can one-hand a rocket launcher like a badass.
+* Dual-wielding is not synced. People will only see you firing one weapon.
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetInventory|Player:GetInventory]]
+* [[Lua/Server/Player/Functions/ClearInventory|Player:ClearInventory]]

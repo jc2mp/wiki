@@ -1,0 +1,280 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v001Sedan
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v002Combi
+|{{Lua/Cell_Style/Enum_List_Value}} | 15
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v002Police
+|{{Lua/Cell_Style/Enum_List_Value}} | 60
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v002Sedan
+|{{Lua/Cell_Style/Enum_List_Value}} | 29
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v002SedanTaxi
+|{{Lua/Cell_Style/Enum_List_Value}} | 70
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v002Sport
+|{{Lua/Cell_Style/Enum_List_Value}} | 55
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Cover
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Hardtop
+|{{Lua/Cell_Style/Enum_List_Value}} | 73
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Icecream
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Icecreamdlc
+|{{Lua/Cell_Style/Enum_List_Value}} | 82
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Lorry
+|{{Lua/Cell_Style/Enum_List_Value}} | 68
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Tourist
+|{{Lua/Cell_Style/Enum_List_Value}} | 23
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v003Work
+|{{Lua/Cell_Style/Enum_List_Value}} | 63
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v004TruckBuss
+|{{Lua/Cell_Style/Enum_List_Value}} | 41
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v004TruckGarbage
+|{{Lua/Cell_Style/Enum_List_Value}} | 71
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v004TruckRegular
+|{{Lua/Cell_Style/Enum_List_Value}} | 42
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v004TruckTransport
+|{{Lua/Cell_Style/Enum_List_Value}} | 49
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v005TuktukCiv
+|{{Lua/Cell_Style/Enum_List_Value}} | 22
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v005TuktukDlc
+|{{Lua/Cell_Style/Enum_List_Value}} | 75
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v005TuktukTaxi
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v006Moped
+|{{Lua/Cell_Style/Enum_List_Value}} | 47
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v006Vespa
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v007ClassicMc
+|{{Lua/Cell_Style/Enum_List_Value}} | 89
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v007Heavy
+|{{Lua/Cell_Style/Enum_List_Value}} | 74
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v007Military
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v007Sport
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v009CivilHelicopter
+|{{Lua/Cell_Style/Enum_List_Value}} | 67
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v009CivilHelicopter2
+|{{Lua/Cell_Style/Enum_List_Value}} | 14
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v009MilitaryHelicopter
+|{{Lua/Cell_Style/Enum_List_Value}} | 62
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v010PersonalPropellerplane
+|{{Lua/Cell_Style/Enum_List_Value}} | 59
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v011Charter
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v011Houseboat
+|{{Lua/Cell_Style/Enum_List_Value}} | 19
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v011Sailboat
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v011Yacht
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v012MilitaryTankSmall
+|{{Lua/Cell_Style/Enum_List_Value}} | 56
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v014Jeep
+|{{Lua/Cell_Style/Enum_List_Value}} | 84
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v015MilitaryVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 72
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v016MilitaryApc
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v017MilitaryJeep
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v018MilitaryBuggy
+|{{Lua/Cell_Style/Enum_List_Value}} | 48
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v020Sugga
+|{{Lua/Cell_Style/Enum_List_Value}} | 52
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v020SuggaBlaine
+|{{Lua/Cell_Style/Enum_List_Value}} | 10
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v022HeavydropJeep
+|{{Lua/Cell_Style/Enum_List_Value}} | 77
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v023Customcar
+|{{Lua/Cell_Style/Enum_List_Value}} | 7
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v024Sportscar
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v025Sportcar
+|{{Lua/Cell_Style/Enum_List_Value}} | 91
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v027DlcCustomcar
+|{{Lua/Cell_Style/Enum_List_Value}} | 58
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v028LuxuarySportcar
+|{{Lua/Cell_Style/Enum_List_Value}} | 78
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v030SuperSportcar
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v034SportBuggy
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v035SportCustom
+|{{Lua/Cell_Style/Enum_List_Value}} | 54
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v036CityJeep
+|{{Lua/Cell_Style/Enum_List_Value}} | 86
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v037SheldonTruck
+|{{Lua/Cell_Style/Enum_List_Value}} | 79
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v041Tractor
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v044truck
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v045Firetruck
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v046Buscoach
+|{{Lua/Cell_Style/Enum_List_Value}} | 12
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v047JeepSmall
+|{{Lua/Cell_Style/Enum_List_Value}} | 87
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v048BusCiv
+|{{Lua/Cell_Style/Enum_List_Value}} | 66
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v050LargeSuperTruck
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v052Classic
+|{{Lua/Cell_Style/Enum_List_Value}} | 90
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v052Motorcross
+|{{Lua/Cell_Style/Enum_List_Value}} | 61
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v054Sportbike
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v055Vespa
+|{{Lua/Cell_Style/Enum_List_Value}} | 83
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v056Atv
+|{{Lua/Cell_Style/Enum_List_Value}} | 11
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v056AtvWorld
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v059CivilianHelicopter
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v060Attackheli
+|{{Lua/Cell_Style/Enum_List_Value}} | 64
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v061Attackheli
+|{{Lua/Cell_Style/Enum_List_Value}} | 57
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v061Blackmarket
+|{{Lua/Cell_Style/Enum_List_Value}} | 37
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v062Chopper
+|{{Lua/Cell_Style/Enum_List_Value}} | 65
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v064PersonalJet
+|{{Lua/Cell_Style/Enum_List_Value}} | 51
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v067Speedplane
+|{{Lua/Cell_Style/Enum_List_Value}} | 81
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v071JetFighter
+|{{Lua/Cell_Style/Enum_List_Value}} | 30
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v072CargoPlane
+|{{Lua/Cell_Style/Enum_List_Value}} | 85
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v073DlcJet
+|{{Lua/Cell_Style/Enum_List_Value}} | 24
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v076JetBlackplane
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v082MotorboatStandardSmall
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v083MotorboatSmall
+|{{Lua/Cell_Style/Enum_List_Value}} | 80
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v086Barge
+|{{Lua/Cell_Style/Enum_List_Value}} | 50
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v087CatamaranSpeedboat
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v088Djonk
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v089Raceboat
+|{{Lua/Cell_Style/Enum_List_Value}} | 88
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v098Indo
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v104AttackBoat
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v105MilitaryBoat
+|{{Lua/Cell_Style/Enum_List_Value}} | 69
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v108ArmoredTransport
+|{{Lua/Cell_Style/Enum_List_Value}} | 76
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v109Limo
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v114Jumbojet
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v458Dlc_hovercraft
+|{{Lua/Cell_Style/Enum_List_Value}} | 53
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | v999Dlc_monstertruck
+|{{Lua/Cell_Style/Enum_List_Value}} | 20
+|} {{Lua/Table_Suffix}}

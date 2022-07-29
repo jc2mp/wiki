@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Physics:GetTerrainHeight([[Lua/Shared/Vector3|Vector3]]) |
+}}
+
+{{Lua/Function |
+  returns = number |
+  prototype = Physics:GetTerrainHeight([[Lua/Shared/Vector2|Vector2]]) |
+}}

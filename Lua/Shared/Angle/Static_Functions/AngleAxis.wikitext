@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle.AngleAxis(number, [[Lua/Shared/Vector3|Vector3]]) |
+}}

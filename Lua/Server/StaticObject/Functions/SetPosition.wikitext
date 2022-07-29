@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns =  |
+  prototype = StaticObject:SetPosition([[Lua/Shared/Vector3|Vector3]]) |
+}}

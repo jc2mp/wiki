@@ -1,0 +1,36 @@
+==Server and client==
+{{Lua/Function |
+  returns = boolean |
+  prototype = IsValid(object {{Arg|object}}) |
+  description = Returns true if {{Arg|object}} exists.
+}}
+
+
+==Client only==
+{{Lua/Function |
+  returns = boolean |
+  prototype = IsValid(object {{Arg|object}}, boolean) |
+  description = Returns true if {{Arg|object}} exists. The boolean is whether to check if the object is also streamed in (near the local player). Default is true.
+}}
+
+==Description==
+
+A common use of this function is to make sure Player references are still around. For instance, if you store a Player somewhere and they disconnect, you still have that Player variable. If you try to call functions on it, you will get a null reference error. You can use IsValid to determine if your Player variable is still good or not.
+
+==Examples==
+Simple test to see if the default world is valid.
+<syntaxhighlight>
+print(IsValid(DefaultWorld))
+--> true
+</syntaxhighlight>
+
+==Additional Notes==
+* Works for all types.
+* Returns false if the argument is nil.
+* Types that can become invalid references:
+** Player
+** Vehicle
+** Checkpoint
+** World
+** StaticObject
+** GWEN classes

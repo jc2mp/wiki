@@ -1,0 +1,21 @@
+Client-side scripts work very similarly to server scripts. The server automatically sends clients scripts when they join, and also when a module is reloaded. But other than that, the only difference is the classes and functions available. Clients cannot spawn vehicles or set their own health, for example; server scripts must do that.
+
+==Render event==
+
+An important feature of client-side scripts is the ability to render text, images, and primitives. The Render and PostRender events are where you should call [[Lua/Client/Render|drawing functions]]. They will not work anywhere else.
+
+====Draw a red dot in the center of the screen====
+
+<syntaxhighlight>
+function Foo()
+	Render:FillCircle(Render.Size / 2, 5, Color(255, 0, 0))
+end
+
+Events:Subscribe("Render", Foo)
+</syntaxhighlight>
+
+This is the most simple example. The Render:FillCircle function takes a [[Lua/Shared/Vector2|Vector2]] for screen position in pixels, a number for the circle radius, and a color. Render.Size is a Vector2 that is the size of the screen in pixels. If we divide that by two, we get the center of the screen. The radius is also in pixels.
+
+==See also==
+
+[[Lua/Tutorials/Intermediate/Creating a speedometer|Creating a speedometer]]

@@ -1,0 +1,50 @@
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | TreeNode
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/AddNode|AddNode]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/Close|Close]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/DeselectAll|DeselectAll]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/Expand|Expand]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/GetChildNodes|GetChildNodes]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | Label
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/GetLabel|GetLabel]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/GetSelected|GetSelected]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/GetText|GetText]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/Open|Open]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/RemoveNode|RemoveNode]](TreeNode)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/SetRoot|SetRoot]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/SetSelectable|SetSelectable]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/SetSelected|SetSelected]](boolean, boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/SetText|SetText]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TreeNode/Functions/SetTreeControl|SetTreeControl]]([[Lua/Client/Tree|Tree]])
+|} {{Lua/Table_Suffix}}

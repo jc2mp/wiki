@@ -1,0 +1,7 @@
+== Does my version of the game work with JC2-MP? ==
+The retail boxed version and the Steam version are the same.
+You should have 1.0.0.2 by default, as Steam maintains this version. This is the only version the mod supports. Moreover, the game tests and development are conducted on the English version of the game; your mileage may vary with other languages.
+== Non-Steam versions ==
+Non-Steam installs or cracked installs will '''NOT''' be supported. 
+
+'''Buy the game: [[Where to Buy]]'''

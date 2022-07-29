@@ -1,0 +1,19 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player
+}}
+
+==Description==
+
+Fired when a player becomes fully authenticated by Steam. Until a player is authenticated, it cannot be guaranteed that their identity is genuine.
+
+For example, if you have an admin script that uses Steam ids to give certain players admin access, you should wait until this is fired until they receive access.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." has been authenticated by Steam")
+end
+
+Events:Subscribe("PlayerAuthenticate", Foo)
+</syntaxhighlight>

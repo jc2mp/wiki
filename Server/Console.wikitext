@@ -1,0 +1,41 @@
+{| class="wikitable"
+!width="90" | '''Command'''
+!width="140" | Parameters
+!width="400" | Description
+|-
+| '''announce'''||0/1||Toggle the server's ability to announce its presence to the world.
+|-
+| '''ban'''||playername||Ban a player.
+|-
+| '''description'''||string||Changes the server description as shown in the server browser.
+|-
+| '''exit'''||||Stop the server.
+|-
+| '''kick'''||playername||Kick a player.
+|-
+| '''load'''||modulename||Load a Lua module.
+|-
+| '''loadall'''||||Load all Lua modules.
+|-
+| '''lua'''||modulename code||Execute Lua code for a given module.
+|-
+| '''name'''||string||Changes the server name as shown in the server browser.
+|-
+| '''quit'''||||Stop the server.
+|-
+| '''reload'''||modulename||Reload a Lua module.
+|-
+| '''reloadall'''||||Reload all Lua modules.
+|-
+| '''reloadbans'''||||Reload banlist from bans.txt.
+|-
+| '''password'''||string||Changes the password.
+|-
+| '''say'''||text||Output a message to the chat.
+|-
+| '''unload'''||modulename||Unload a Lua module.
+|-
+| '''unloadall'''||||Unload all Lua modules.
+|-
+| '''x'''||||Stop the server.
+|}

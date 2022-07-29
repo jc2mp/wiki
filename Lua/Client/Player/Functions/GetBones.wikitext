@@ -1,0 +1,30 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player:GetBones() |
+  description = Returns a table of bone positions and angles.
+}}
+
+==Example==
+
+==Render bones as primitive lines==
+
+<syntaxhighlight line highlight="2">
+function RenderBones()
+	local bones = LocalPlayer:GetBones()
+	for boneName, bone in pairs(bones) do
+		local point1 = bone.position
+		local point2 = point1 + bone.angle * Vector3.Right * 0.25
+		Render:DrawLine(point1, point2, Color.Red)
+	end
+end
+
+Events:Subscribe("Render", RenderBones)
+</syntaxhighlight>
+
+====Result====
+
+<center>[[File:Lua_Player_GetBones_Example.jpg]]</center>
+
+==Bones reference==
+
+<center>[[File:Bones Reference.jpg]]</center>

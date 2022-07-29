@@ -1,0 +1,6 @@
+Disable all overlays, common overlays:
+*Xfire
+*Fraps
+*MSI Afterburner
+*Steam
+**This shouldn't cause too many issues, but if you have no options left, try to disable it.

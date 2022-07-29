@@ -1,0 +1,18 @@
+{{Lua/Event|
+  arguments = number delta
+}}
+
+==Description==
+
+Fired when the mouse wheel is used. ''delta'' is usually 1 or -1, but it can be greater if you scroll fast enough.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Mouse wheel: "..args.delta
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("MouseScroll", Foo)
+</syntaxhighlight>

@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector2:Distance(Vector2 {{arg|b}}) |
+  description = Calculates the distance between the subject and {{arg|b}}.
+}}

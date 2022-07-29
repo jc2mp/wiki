@@ -1,0 +1,9 @@
+{{Lua/Function
+ | returns = [[Lua/Shared/Angle|Angle]]
+ | prototype = Player:GetBoneAngle(string)
+ | description = Returns the angle of the bone specified.
+}}
+
+==Bones reference==
+
+<center>[[File:Bones Reference.jpg]]</center>

@@ -1,0 +1,22 @@
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Client/Functions/GetElapsedSeconds|GetElapsedSeconds]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Client/Functions/GetPlayers|GetPlayers]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Client/Functions/GetStaticObjects|GetStaticObjects]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Client/Functions/GetStreamedPlayers|GetStreamedPlayers]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Client/Functions/GetVehicles|GetVehicles]]()
+|} {{Lua/Table_Suffix}}

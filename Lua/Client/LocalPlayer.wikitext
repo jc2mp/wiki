@@ -1,0 +1,116 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Static Functions/GetById|GetById]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Static Functions/Match|Match]](string)
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | table
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Functions/GetAimTarget|GetAimTarget]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Functions/GetMoney|GetMoney]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Functions/SetBaseState|SetBaseState]]([[Lua/Shared/AnimationState|AnimationState]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LocalPlayer/Functions/SetUpperBodyState|SetUpperBodyState]]([[Lua/Shared/AnimationState|AnimationState]])
+|} {{Lua/Table_Suffix}}
+===Functions inherited from [[Lua/Client/Player|Player]]===
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Angle|Angle]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetAngle|GetAngle]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/AnimationState|AnimationState]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetBaseState|GetBaseState]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetBonePosition|GetBonePosition]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetBones|GetBones]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Color|Color]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetColor|GetColor]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetEquippedSlot|GetEquippedSlot]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Weapon|Weapon]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetEquippedWeapon|GetEquippedWeapon]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetHealth|GetHealth]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetId|GetId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | object
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetInventory|GetInventory]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetLinearVelocity|GetLinearVelocity]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetModelId|GetModelId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetName|GetName]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/PlayerState|PlayerState]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetState|GetState]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/SteamId|SteamId]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetSteamId|GetSteamId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/AnimationState|AnimationState]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetUpperBodyState|GetUpperBodyState]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Vehicle|Vehicle]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetVehicle|GetVehicle]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/World|World]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/GetWorld|GetWorld]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/InVehicle|InVehicle]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player/Functions/IsValid|IsValid]]()
+|} {{Lua/Table_Suffix}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Player|Player]] == [[Lua/Client/Player|Player]]
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | tostring([[Lua/Client/Player|Player]])
+|} {{Lua/Table_Suffix}}

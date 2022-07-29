@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/PlayerState|PlayerState]] |
+  prototype = Player:GetState() |
+}}

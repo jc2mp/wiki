@@ -1,0 +1,51 @@
+{{Lua/Event |
+  arguments = [[Lua/Server/Player|Player]] {{Arg|player}}, string {{Arg|key}}, object {{Arg|value}}
+}}
+
+==Description==
+
+Fired when a player's value changes. Player values are persistent across modules, but not between server/client.
+
+The event is fired when Player:SetValue is called from any module. It is '''not''' fired by calling [[Lua/Server/Player/Functions/SetNetworkValue|Player:SetNetworkValue]].
+
+==Example==
+
+====Client====
+
+Use '/set key value' and '/get key' to play around with it.
+
+<syntaxhighlight>
+
+function Foo(args)
+	Chat:Print(
+		tostring(args.player).."'s "..args.key.." was set to "..tostring(args.value),
+		Color.Yellow
+	)
+end
+
+Events:Subscribe("PlayerValueChange", Foo)
+
+function LocalPlayerChat(args)
+	local words = args.text:split(" ")
+	
+	if words[1] == "/set" and #words == 3 then
+		LocalPlayer:SetValue(words[2], words[3])
+	elseif words[1] == "/get" and #words == 2 then
+		local value = LocalPlayer:GetValue(words[2])
+		Chat:Print(
+			words[2].." is currently set to "..tostring(value),
+			Color.Yellow
+		)
+	end
+end
+
+Events:Subscribe("LocalPlayerChat", LocalPlayerChat)
+</syntaxhighlight>
+
+==Additional notes==
+
+* If you set a key to the value it's already set to, the event will still fire.
+
+==See also==
+
+* [[Lua/Tutorials/Player values|Player values tutorial]]

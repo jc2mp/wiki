@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ComboBox |
+  prototype = ComboBox.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ComboBox |
+  prototype = ComboBox.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ComboBox |
+  prototype = ComboBox.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ComboBox |
+  prototype = ComboBox.Create() |
+}}

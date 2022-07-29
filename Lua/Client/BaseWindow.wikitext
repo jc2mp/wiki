@@ -1,0 +1,42 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Static Functions/Create|Create]](BaseWindow, string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Static Functions/Create|Create]](BaseWindow)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Base
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/BaseWindow/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | BaseWindow == BaseWindow
+|} {{Lua/Table_Suffix}}

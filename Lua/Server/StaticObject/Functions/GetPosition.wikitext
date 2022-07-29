@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector3|Vector3]] |
+  prototype = StaticObject:GetPosition() |
+}}

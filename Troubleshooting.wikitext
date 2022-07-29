@@ -1,0 +1,22 @@
+This page lists problems that people have encountered along with known solutions. Only issues that relate to the current Steam version will be added. [[Troubleshooting in old versions | The old troubleshooting page can be found here]].
+
+If you have problems launching the game or otherwise find the mod unplayable, please post in the [http://www.jc-mp.com/forums/index.php/board,316.0.html troubleshooting forum] or ask for help from a developer or moderator on [http://www.jc-mp.com/chat/ our IRC channel]. Solutions that have been known to work will be added here.
+
+----
+
+==== List of common issues ====
+[[Troubleshooting/Invalid Install path|Invalid install path]]
+
+[[Troubleshooting/Requested operation requires elevation|Failed to create Just Cause 2 process: The requested operation requires elevation]]
+
+[[Troubleshooting/Game crashes on startup|Game crashes on startup]]
+
+[[Troubleshooting/SteamAPI failed to initialize|SteamAPI failed to initialize]]
+
+[[Troubleshooting/Failed to create effect|Renderer Failed to initialize: Failed to create effect]]
+
+[[Troubleshooting/Black or white screen|Black or white screen]]
+
+[[Troubleshooting/Waiting_for_remote_thread_failed|Fatal exception occurred when launching  JC2MP: Waiting for remote thread failed: the operation completed successfully]]
+
+[[Troubleshooting/Not enough storage to complete this operation |Not enough storage to complete this operation]]

@@ -1,0 +1,5 @@
+{{Lua/Function
+ | returns = Label
+ | prototype = TreeNode:GetLabel()
+ | description = Returns the label containing the node text. 
+}}

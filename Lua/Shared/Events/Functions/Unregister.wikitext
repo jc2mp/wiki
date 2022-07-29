@@ -1,0 +1,6 @@
+{{Lua/Deprecated | version = 0.1.1}}
+
+
+{{Lua/Function |
+  prototype = Events:Unregister(string) |
+}}

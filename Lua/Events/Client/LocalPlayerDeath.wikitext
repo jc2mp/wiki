@@ -1,0 +1,26 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] attacker, [[Lua/Shared/DamageEntity|DamageEntity]] type
+}}
+
+==Description==
+
+Fired when you die. ''attacker'' is not guaranteed to exist.
+
+==Examples==
+
+<syntaxhighlight>
+damageTypes = {
+	"Physics",
+	"Bullet",
+	"Explosion"
+}
+
+Foo = function(args)
+	local message = tostring(args.attacker).." killed you with damage type "..
+		tostring(damageTypes[args.type])
+	print(message)
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerDeath", Foo)
+</syntaxhighlight>

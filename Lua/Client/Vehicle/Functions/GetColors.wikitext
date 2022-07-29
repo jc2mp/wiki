@@ -1,0 +1,5 @@
+{{Lua/Function
+ | returns = [[Lua/Shared/Color|Color]], [[Lua/Shared/Color|Color]]
+ | prototype = Vehicle:GetColors()
+ | description = Returns the 2 colors of the vehicle.
+}}

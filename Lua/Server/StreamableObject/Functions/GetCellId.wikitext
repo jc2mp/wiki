@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Server/CellID|CellID]] |
+  prototype = StreamableObject:GetCellId() |
+}}

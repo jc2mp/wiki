@@ -1,0 +1,7 @@
+{{Lua/Deprecated | version = 0.1.1 | text = It has been replaced by [[Lua/Shared/Events/Functions/Fire|Fire]]}}
+
+
+{{Lua/Function |
+  returns = boolean |
+  prototype = Events:FireRegisteredEvent(string, object) |
+}}

@@ -1,0 +1,91 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+[[Lua/Client/TabControl/Events/AddTab|AddTab]]
+
+[[Lua/Client/TabControl/Events/LoseTab|LoseTab]]
+
+[[Lua/Client/TabControl/Events/TabSwitch|TabSwitch]]
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabControl
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/AddPage|AddPage]]([[Lua/Client/TabButton|TabButton]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TabButton|TabButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/AddPage|AddPage]](string, [[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TabButton|TabButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/AddPage|AddPage]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TabButton|TabButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/GetCurrentTab|GetCurrentTab]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/GetReorderAllowed|GetReorderAllowed]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TabButton|TabButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/GetTab|GetTab]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/GetTabCount|GetTabCount]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/RemovePage|RemovePage]]([[Lua/Client/TabButton|TabButton]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/SetCurrentTab|SetCurrentTab]]([[Lua/Client/TabButton|TabButton]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/SetReorderAllowed|SetReorderAllowed]](boolean)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabControl/Functions/SetTabStripPosition|SetTabStripPosition]](number)
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | TabControl == TabControl
+|} {{Lua/Table_Suffix}}

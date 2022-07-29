@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vehicle:GetHealth() |
+}}
+
+
+== Description ==
+Gets vehicle's health. The range is from 0 to 1.

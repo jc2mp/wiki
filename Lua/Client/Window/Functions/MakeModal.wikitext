@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Window:MakeModal() |
+}}
+
+{{Lua/Function |
+  prototype = Window:MakeModal(boolean {{Arg|draw_background}}) |
+}}

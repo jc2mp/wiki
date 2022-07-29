@@ -1,0 +1,42 @@
+==Features==
+
+* Scripting system using the simple but powerful Lua language. Use server-side and client-side scripts to create anything from a spawn menu to entire gamemodes.
+* Server browser allows you to easily find a server and keep track of your favorites.
+* Steam integration
+** Join-on-friend and integration with the steam server list.
+** Servers can track and ban players by Steam ID; if a server has a password-based login system, they're doing it wrong.
+* An optimised network streamer means a server can support thousands of players and vehicles across Panau.
+
+==Synchronization==
+
+With 'synchronization', we mean that some of your actions might not show up on another players screen. For example, "grapple hook is not synced" means that if I use the grapple hook on my screen, other players will not see the grapple hook. 
+
+====What is synced?====
+
+* On-foot movement
+* On-foot weapons
+* Vehicle movement
+* Vehicle weapons
+* Vehicle mounted weapons (such as turrets in jeeps)
+* Vehicle spawns
+* Vehicle colors
+* Vehicle damage
+* Stunt position
+* Time
+* Weather
+* Character models
+* Parachute
+
+====What is not synced?====
+
+* Fixed Mounted Guns (Cannon / Flak Cannon / Fixed Mini-Gun)
+* Grappling hook
+* Firing weapons on bikes/ATVs
+* Persistent destroyed structures
+* Unoccupied vehicles
+* Thrown explosives and melee
+* Dual wielding
+
+==See also==
+
+* [[Development roadmap]]

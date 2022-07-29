@@ -1,0 +1,69 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+[[Lua/Client/RadioButtonController/Events/SelectionChange|SelectionChange]]
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | RadioButtonController
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | RadioButtonController
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | RadioButtonController
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | RadioButtonController
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/LabeledRadioButton|LabeledRadioButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Functions/AddOption|AddOption]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/LabeledRadioButton|LabeledRadioButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Functions/AddOptionWithName|AddOptionWithName]](string, string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/LabeledRadioButton|LabeledRadioButton]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Functions/GetSelected|GetSelected]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Functions/GetSelectedName|GetSelectedName]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/RadioButtonController/Functions/GetSelectedText|GetSelectedText]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | RadioButtonController == RadioButtonController
+|} {{Lua/Table_Suffix}}

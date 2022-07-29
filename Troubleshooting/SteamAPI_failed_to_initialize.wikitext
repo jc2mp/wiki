@@ -1,0 +1,1 @@
+Restarting the Steam client has been known to fix this. Other remedies reportedly include running Steam as administrator.

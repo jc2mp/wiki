@@ -1,0 +1,7 @@
+{{Lua/Function
+  | prototype = StatusBar:AddControl([[Lua/Client/BaseWindow|BaseWindow]] {{arg|control}}, boolean {{arg|align}})
+  | description = Adds the {{arg|control}} to the bar.
+}}
+
+==Additional Notes==
+*If align is false the element will be aligned on the left, otherwise right.

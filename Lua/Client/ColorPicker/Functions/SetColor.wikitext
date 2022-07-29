@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = ColorPicker:SetColor([[Lua/Shared/Color|Color]]) |
+}}

@@ -1,0 +1,22 @@
+{{Lua/Function |
+  returns = [[Lua/Client/PropertyRow|PropertyRow]] |
+  prototype = Properties:Add(string {{Arg|name}}) |
+}}
+
+
+{{Lua/Function |
+  returns = [[Lua/Client/PropertyRow|PropertyRow]] |
+  prototype = Properties:Add(string {{Arg|name}}, string {{Arg|value}}) |
+}}
+
+
+{{Lua/Function |
+  returns = [[Lua/Client/PropertyRow|PropertyRow]] |
+  prototype = Properties:Add(string {{Arg|name}}, [[Lua/Client/PropertyBase|PropertyBase]]) |
+}}
+
+
+{{Lua/Function |
+  returns = [[Lua/Client/PropertyRow|PropertyRow]] |
+  prototype = Properties:Add(string {{Arg|name}}, [[Lua/Client/PropertyBase|PropertyBase]], string {{Arg|value}}) |
+}}

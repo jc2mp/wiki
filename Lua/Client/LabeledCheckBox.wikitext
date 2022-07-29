@@ -1,0 +1,58 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | CheckBoxWithLabel
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | CheckBoxWithLabel
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | CheckBoxWithLabel
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | CheckBoxWithLabel
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/CheckBox|CheckBox]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Functions/GetCheckBox|GetCheckBox]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/LabelClickable|LabelClickable]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/LabeledCheckBox/Functions/GetLabel|GetLabel]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | LabeledCheckBox == LabeledCheckBox
+|} {{Lua/Table_Suffix}}

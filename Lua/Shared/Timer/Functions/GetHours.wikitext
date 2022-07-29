@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Timer:GetHours() |
+  description = Returns the hours passed since the creation or the last reset of the timer.
+}}

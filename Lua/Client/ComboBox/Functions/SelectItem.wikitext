@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = ComboBox:SelectItem([[Lua/Client/MenuItem|MenuItem]]) |
+}}

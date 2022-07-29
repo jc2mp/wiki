@@ -1,0 +1,8 @@
+{{Lua/Function |
+  prototype = CollapsibleList:Add([[Lua/Client/CollapsibleCategory|CollapsibleCategory]]) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/CollapsibleCategory|CollapsibleCategory]] |
+  prototype = CollapsibleList:Add(string) |
+}}

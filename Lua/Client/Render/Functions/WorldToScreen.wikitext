@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]], boolean |
+  prototype = Render:WorldToScreen([[Lua/Shared/Vector3|Vector3]] {{arg|world_position}}) |
+  description = Transforms a position in the world into a screen position.
+}}
+
+==Additional Notes==
+*The resulting position is clamped to the screen area.
+*The boolean indicates whether the resulting position would be visible on the screen or not.

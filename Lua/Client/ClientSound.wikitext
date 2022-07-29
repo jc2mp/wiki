@@ -1,0 +1,57 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | ClientSound
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Static Functions/Create|Create]]([[Lua/Client/AssetLocation|AssetLocation]], table)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Static Functions/Play|Play]]([[Lua/Client/AssetLocation|AssetLocation]], table)
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/GetBankId|GetBankId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/GetSoundId|GetSoundId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/IsPlaying|IsPlaying]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/Play|Play]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/Remove|Remove]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/SetParameter|SetParameter]](number, number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientSound/Functions/Stop|Stop]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/ClientEntity|ClientEntity]]===
+
+{{Lua/Client/ClientEntity/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/ClientEntity|ClientEntity]] == [[Lua/Client/ClientEntity|ClientEntity]]
+|} {{Lua/Table_Suffix}}

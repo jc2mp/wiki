@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector2|Vector2]] |
+  prototype = Image:GetSize() |
+}}

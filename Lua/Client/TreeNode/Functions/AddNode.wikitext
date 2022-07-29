@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = TreeNode |
+  prototype = TreeNode:AddNode(string) |
+}}

@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = Chat:GetActive() |
+}}
+==Description==
+Returns whether the chat entry box is active (opened with T).
+
+==See also==
+
+* [[Lua/Client/Chat/Functions/SetActive|Chat:SetActive]]
+* [[Lua/Client/Chat/Functions/GetEnabled|Chat:GetEnabled]]

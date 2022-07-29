@@ -1,0 +1,152 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | AnisotropicFiltering
+|{{Lua/Cell_Style/Enum_List_Value}} | 22
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | AntiAliasing
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Decals
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Difficulty
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | EdgeFade
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FilmGrain
+|{{Lua/Cell_Style/Enum_List_Value}} | 52
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FloatingButtons
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FullScreen
+|{{Lua/Cell_Style/Enum_List_Value}} | 29
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FullScreenHeight
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | FullScreenWidth
+|{{Lua/Cell_Style/Enum_List_Value}} | 30
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadAltFireButtons
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadDuck
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadInUse
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadInvertFlightPitch
+|{{Lua/Cell_Style/Enum_List_Value}} | 12
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadInvertParachutePitch
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadInvertX
+|{{Lua/Cell_Style/Enum_List_Value}} | 11
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadInvertY
+|{{Lua/Cell_Style/Enum_List_Value}} | 10
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadSensitivityX
+|{{Lua/Cell_Style/Enum_List_Value}} | 15
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadSensitivityY
+|{{Lua/Cell_Style/Enum_List_Value}} | 14
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GamepadVibration
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Gamma
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HBAO
+|{{Lua/Cell_Style/Enum_List_Value}} | 53
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HUDOpacity
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HighResShadows
+|{{Lua/Cell_Style/Enum_List_Value}} | 42
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MotionBlur
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MouseInvertX
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MouseInvertY
+|{{Lua/Cell_Style/Enum_List_Value}} | 19
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MouseSensitivityX
+|{{Lua/Cell_Style/Enum_List_Value}} | 20
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MouseSensitivityY
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MusicVolume
+|{{Lua/Cell_Style/Enum_List_Value}} | 0
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ObjectDetail
+|{{Lua/Cell_Style/Enum_List_Value}} | 23
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PointLightSpecular
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PostEffects
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RefreshRate
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SSAO
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ShadowsQuality
+|{{Lua/Cell_Style/Enum_List_Value}} | 24
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SoftParticles
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SoundEffectsVolume
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | StaticButtons
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Subtitles
+|{{Lua/Cell_Style/Enum_List_Value}} | 7
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | TextureDetail
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Tutorial
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VSync
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VoiceVolume
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | WaterDetail
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | WindowedHeight
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | WindowedWidth
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|} {{Lua/Table_Suffix}}
+
+==See also==
+
+[[GameSetting]]

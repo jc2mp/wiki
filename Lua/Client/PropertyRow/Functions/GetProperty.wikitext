@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/PropertyBase|PropertyBase]] |
+  prototype = PropertyRow:GetProperty() |
+}}

@@ -1,0 +1,35 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | StaticObject
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/StaticObject/Static Functions/GetById|GetById]](number)
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/StaticObject/Functions/GetId|GetId]]()
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseStaticObject|BaseStaticObject]]===
+
+{{Lua/Client/BaseStaticObject/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | StaticObject == StaticObject
+|} {{Lua/Table_Suffix}}

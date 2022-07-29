@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = Player:ClearInventory() |
+  description = Removes every weapon from a player.
+}}
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetInventory|Player:GetInventory]]
+* [[Lua/Server/Player/Functions/GiveWeapon|Player:GiveWeapon]]

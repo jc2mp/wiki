@@ -1,0 +1,11 @@
+{{Lua/Function |
+  returns = Color |
+  prototype = Color.FromHSV(number {{arg|hue}}, number {{arg|saturation}}, number {{arg|value}}) |
+  description = Returns a color with the specified values in HSV color space.
+}}
+*{{arg|hue}} ranges from 0 - 360
+*{{arg|saturation}} ranges from 0 - 1, 0 being greyscale
+*{{arg|value}} ranges from 0 - 1, 0 being completely black
+
+==See Also==
+*See [http://en.wikipedia.org/wiki/HSL_and_HSV Wikipedia] for an in depth description

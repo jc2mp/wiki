@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Camera:SetAngle([[Lua/Shared/Angle|Angle]] {{arg|orientation}}) |
+  description = Sets the orientation of the camera.
+}}
+
+==Additional Notes==
+*This should only be used in the [[Lua/Events/Client/CalcView|CalcView]] event.

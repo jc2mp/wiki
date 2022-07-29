@@ -1,0 +1,270 @@
+==0.1.4a (Available on the publicbeta branch)==
+
+====New features====
+
+* Shared
+** Overhauled the logging system to support unicode (the first of many unicode additions to come)
+** Added console command for profiling Lua modules; usage: profiler_sample {{Arg|number_of_seconds}}
+
+* Server
+** Added [[Lua/Server/SQL/Functions/GetLastInsertId|SQL:GetLastInsertId]]
+
+* Client
+** Added [[Lua/Shared/AssetLocation|AssetLocation]].Base64, which enables images to be loaded from Base64 strings as a temporary solution until Steam Workshop is integrated
+** Added [[Lua/Client/ClientParticleSystem|ClientParticleSystem]]
+** Added [[Lua/Client/ClientLight|ClientLight]]
+** Added {{Arg|timeout}} parameter to [[Lua/Client/ClientSound/Static Functions/Play|ClientSound.Play]] and [[Lua/Client/ClientEffect/Static Functions/Play|ClientEffect.Play]]
+
+====Bug fixes====
+
+* Server
+** Reverted changes to SQL which were causing massive memory leaks
+*** Note: This change was made before release to prevent server crashes related to SQL errors. If you encounter an SQL error which then crashes the server some time later, please report it.
+** Fixed Vector2() and Vector3() returning uninitialized data on linux
+
+* Client
+** Fixed StaticObject related crash
+** Fixed [[Lua/Server/Vehicle/Functions/SetColors|Vehicle:SetColors]] to properly support mounted guns and ailerons
+** Fixed Game:GetState returning 0 for menu and loading screen
+** Fixed ClientEntity:GetId not being exposed
+** GWEN: Fixed crash when unsubscribing from current event
+** GWEN: Removing the active TabButton will now select another available tab
+** GWEN: Fixed BaseWindow's Blur event not always being called
+** GWEN: Fixed crash when using GroupBox:RemoveAllChildren
+** GWEN: BaseWindow functions GetNumChildren, GetChildren, and RemoveAllChildren now only act on user-created controls
+
+==0.1.4 patch - 2014 March 14==
+
+====Bug fixes====
+
+* Client
+** Fixed a very prevalent crash caused by other players having DLC weapons which you don't own
+** Fixed Explosion deaths being incorrectly attributed to the player with the ID of 0
+** Fixed TabButton crash when using TabControl:RemovePage at certain times
+
+==0.1.4 - 2014 March 12==
+
+====New features====
+
+* Shared
+** Added the ability to set custom values on players, which are synchronized across modules and (optionally) server/client
+*** Player:GetValue ([[Lua/Server/Player/Functions/GetValue|server]] and [[Lua/Client/Player/Functions/GetValue|client]])
+*** Player:SetValue ([[Lua/Server/Player/Functions/SetValue|server]] and [[Lua/Client/Player/Functions/SetValue|client]])
+*** [[Lua/Server/Player/Functions/SetNetworkValue|Player:SetNetworkValue]] (server)
+*** [[Lua/Events/Shared/PlayerValueChange|PlayerValueChange]] event
+*** [[Lua/Events/Shared/PlayerNetworkValueChange|PlayerNetworkValueChange]] event
+** Added events [[Lua/Events/Shared/EntitySpawn|EntitySpawn]] and [[Lua/Events/Shared/EntityDespawn|EntityDespawn]]
+** Added vehicle invulnerability
+*** Server: Added invulnerable argument to Vehicle.Create
+*** Server: Added [[Lua/Server/Vehicle/Functions/GetInvulnerable|Vehicle:GetInvulnerable]] and [[Lua/Server/Vehicle/Functions/SetInvulnerable|Vehicle:SetInvulnerable]]
+*** Client: Added [[Lua/Client/Vehicle/Functions/GetInvulnerable|Vehicle:GetInvulnerable]]
+** Added events: 
+*** [[Lua/Events/Shared/EntitySpawn|EntitySpawn]]
+*** [[Lua/Events/Shared/EntityDespawn|EntityDespawn]]
+** Vastly improved Lua error messages and made them much more usable
+** Added a global Lua include directory, under lua/autorun/, that can be used to inject code into other modules under IKnowWhatImDoing
+** [[Lua/Shared/SteamId|SteamId]] can now be passed in Events:Fire and Network:Send/Broadcast
+** [[Lua/Shared/Timer|Timer]] can now be passed in Events:Fire
+** Added an optional second argument to 'class' that lets you specify a parent table
+** Improved Timer accuracy, added [[Lua/Shared/Timer/Functions/GetMinutes|GetMinutes]] and [[Lua/Shared/Timer/Functions/GetHours|GetHours]]
+
+* Server
+** Added [[Lua/Events/Server/EntityRemove|EntityRemove]] event
+** Added [[Lua/Server/Server/Functions/GetModules|Server:GetModules]]
+
+* Client
+** Added [[Lua/Client/ClientEffect|ClientEffect]]
+** Added [[Lua/Client/ClientSound|ClientSound]]
+** Added [[Lua/Client/ClientStaticObject|ClientStaticObject]]
+** Added [[Lua/Client/Player/Functions/GetBoneAngle|Player:GetBoneAngle]]
+** [[Lua/Client/Player/Functions/GetBones|Player:GetBones]] now returns a table of {position, angle} tables
+** Added an 'entity' field to [[Lua/Client/Physics/Functions/Raycast|Physics:Raycast]]
+** Added Vehicle functions:
+*** [[Lua/Client/Vehicle/Functions/GetBoundingBox|GetBoundingBox]]
+*** [[Lua/Client/Vehicle/Functions/GetCenterOfMass|GetCenterOfMass]]
+** Added [[Lua/Client/Game|Game]] functions:
+*** [[Lua/Client/Game/Functions/GetHeat|GetHeat]]
+*** [[Lua/Client/Game/Functions/SetHeat|SetHeat]]
+*** [[Lua/Client/Game/Functions/ResetHeat|ResetHeat]]
+** Added [[Lua/Client/Game/Functions/ShowPopup|Game:ShowPopup]]
+** Added [[Lua/Client/Image/Static Functions/Create|Image.Create]](hash), allowing for loading images from hash
+** Added [[Lua/Client/BaseWindow|BaseWindow]] functions, which make controls automatically resize based on their parent:
+*** [[Lua/Client/BaseWindow/Functions/SetSizeAutoRel|SetSizeAutoRel]]
+*** [[Lua/Client/BaseWindow/Functions/SetWidthAutoRel|SetWidthAutoRel]]
+*** [[Lua/Client/BaseWindow/Functions/SetHeightAutoRel|SetHeightAutoRel]]
+** Added BaseWindow functions:
+*** [[Lua/Client/BaseWindow/Functions/SetWidthRel|SetWidthRel]]
+*** [[Lua/Client/BaseWindow/Functions/SetHeightRel|SetHeightRel]]
+*** [[Lua/Client/BaseWindow/Functions/GetWidthRel|GetWidthRel]]
+*** [[Lua/Client/BaseWindow/Functions/GetHeightRel|GetHeightRel]]
+** Added [[Lua/Client/Button|Button]] functions:
+*** [[Lua/Client/Button/Functions/SetTextNormalColor|SetTextNormalColor]] 
+*** [[Lua/Client/Button/Functions/SetTextPressedColor|SetTextPressedColor]]
+*** [[Lua/Client/Button/Functions/SetTextHoveredColor|SetTextHoveredColor]] 
+*** [[Lua/Client/Button/Functions/SetTextDisabledColor|SetTextDisabledColor]]
+** Split StaticObject into BaseStaticObject and StaticObject
+** Added [[Lua/Client/TreeNode/Functions/GetLabel|TreeNode:GetLabel]]
+** Added [[Lua/Client/TreeNode|TreeNode]] functions for getting/setting various text colors
+** SAM sites no longer spawn in the game
+
+====Bug fixes====
+
+* Shared
+** The hard limit of 65536 entities was increased to ~4 billion
+** Improved player color generation algorithm; the saturation range is now between 0.5 and 0.75
+** Removed Vector3 compression when using Network:Send due to horrible precision loss
+
+* Server
+** Fixed crash when a Lua event was broadcasted during unloadall
+
+* Client
+** Fixed crash when calling GetPosition/GetAngle on a partially-spawned StaticObject
+** Fixed StaticObject crash when updating position of a non-existent model
+** Fixed occasional crash when removing GWEN controls, such as removing a control and its parent at the same time
+** Fixed TabControl related crashes when removing a TabButton or its page, as well as pages sometimes staying around
+** [[Lua/Server/Vehicle/Functions/SetColors|Vehicle:SetColors]] will now update the vehicle's colors immediately
+** Fixed 'connect ip:port' console command not working when a port is provided
+** Added client-side protection against the edge case of spawning invalid weapon models
+** Fixed 'reconnect' not working if server is passworded
+** Aliased 'force_connect' to 'connect'
+** Fixed some GWEN events not working
+** Edited the GWEN skin to give a dark theme to Trees and PropertyTrees
+** Improved TextBox cursor behaviour
+** Fixed mouse cursor not being updated immediately after Mouse:SetVisible
+** Moved [[Lua/Shared/AssetLocation|AssetLocation]] to shared
+** GroupBox:SetPadding no longer affects the title text
+** ListBox and SortedList are now affected by SetBackgroundVisible.
+** Fixed [[Lua/Client/SortedList/Functions/Sort|SortedList:Sort]] crash with bad column
+
+==0.1.3 - 2014 January 30==
+
+====New features====
+
+* Shared
+** Added a __type property to JC2-MP classes that returns the type of the value as a string
+
+* Client
+** Added [[Lua/Client/BaseWindow/Functions/SizeToChildren|BaseWindow:SizeToChildren]]
+** Added [[Lua/Client/StaticObject/Functions/GetBoundingBox|StaticObject:GetBoundingBox]]
+** [[Lua/Client/ScrollControl|ScrollControl]]: Renamed SetScroll/GetScroll to SetScrollable/GetScrollable, removed UpdateScrollBars
+
+====Bug fixes====
+
+* Shared
+** Fixed [[Lua/Shared/Functions/IsValid|IsValid]](StaticObject) not working
+
+* Client
+** Fixed a major crash related to looking at StaticObjects
+** Fixed crash when removing a GWEN object in its own event.
+** Fixed crash when an invalid index was provided to [[Lua/Client/PageControl|PageControl]] functions ShowPage and GetPage
+** Fixed [[Lua/Client/TextBox|TextBox]] and chat window cursors being offset
+** Main menu buttons are now correctly sized
+
+==0.1.2 - 2014 January 23==
+
+====New features====
+
+* Shared
+** Reenabled Lua's debug functions
+** Removed Events functions: FireRegisteredEvent, Register and Unregister
+** Added ([http://en.wikipedia.org/wiki/Web_colors#X11_color_names websafe]) constants to [[Lua/Shared/Color|Color]]
+** Added common vector constants ([[Lua/Shared/Vector2#Statics|Vector2]], [[Lua/Shared/Vector3#Statics|Vector3]])
+** Added [[Lua/Shared/Transform2/Functions/Invert|Transform2:Invert]] and [[Lua/Shared/Transform3/Functions/Invert|Transform3:Invert]]
+** Added [[Lua/Server/StaticObject|StaticObject]], allowing you to spawn most objects from the game
+** [[Lua/Tutorials/Reference/GetAimTarget|Player/LocalPlayer:GetAimTarget]] return table now has an entity variable
+
+* Server
+** Replaced OGP with GameSpy4 query protocol, making it possible to connect to a server when Announce = false, as well as improving server stability
+** Added [[Lua/Server/Player/Functions/GetIP|Player:GetIP]]
+** Unhandled packet warnings now print the source IP address
+** Added [[Lua/Shared/Console/Functions/Run|Console:Run]] allowing scripts to run console commands (requires IKnowWhatImDoing config enabled)
+** Added the [[Lua/Events/Server/PlayerWorldChange|PlayerWorldChange]] Lua event
+** Removed CellSize in config.lua; merged PlayerStreamDistance, VehicleStreamDistance and CheckpointStreamDistance into one StreamDistance variable
+
+* Client
+** Added highlighted servers to server browser ([http://www.jc-mp.com/forums/index.php/topic,4445.0.html request thread])
+** Added [[Lua/Client/BaseWindow|BaseWindow]] functions SetWidth, SetHeight, GetWidth, GetHeight, RelativeToAbsolute and AbsoluteToRelative
+** Added [[Lua/Client/Label|Label]] functions GetTextSize and SetTextSize
+** Added [[Lua/Client/TableRow|TableRow]] functions (Get/Set) BackgroundEvenColor, BackgroundOddColor, BackgroundHoverColor, BackgroundEvenSelectedColor, BackgroundOddSelectedColor
+** Added the [[Lua/Events/Client/LocalPlayerWorldChange|LocalPlayerWorldChange]] Lua event
+** Added [[Lua/Client/BaseWindow/Functions/Subscribe|BaseWindow:Subscribe]] with the events HoverEnter, HoverLeave, Focus, Blur, PreRender, Render, and PostRender
+** Added [[Lua/Client/Render/Functions/SetClip|Render:SetClip]]
+** Added the [[Lua/Events/Client/MouseUp|MouseUp]] Lua event
+** Added [[Lua/Client/Game/Functions/GetTime|Game:GetTime]] to get the time of the current world
+
+====Bug fixes====
+
+* Shared
+** Attempting to access invalid static Lua class variables now returns nil instead of erroring
+** Changed static gettable for Lua classes to also return instance methods; i.e. you can get Player.SendChatMessage without requiring an actual player
+** Fixed Vector2 and Vector3 default constructors having uninitialised components
+** Time is now properly synced across all worlds, not just DefaultWorld; clients also receive the time every 30 seconds to prevent drift
+** Fixed negative timestep from halting at midnight
+
+* Server
+** IKnowWhatImDoing now unlocks more, including os and io functions
+
+* Client
+** Fixed a very prevalent crash related to invalid data being passed into JC2's landscape code
+** Fixed crash when unloading a module with a modal window
+** More crash fixes
+** Player is now made vulnerable after disconnecting from a server
+** Fixed passing LocalPlayer through Events:Fire not working
+** Fixed (parent, name) GWEN constructors not applying the name
+** Changed default server browser sort to lowest ping
+** Fixed vehicles sometimes becoming invulnerable when being repaired
+** Fixed sometimes dying inside terrain after CalcView reenables the local player
+** Fixed Window:DisableResizing not working
+** Clamped font size from 0 to 512
+** Increased font size on main menu
+** Menu/console windows are now resized on resolution change
+** Changed GWEN Slider background line to white to improve visibility
+** Fixed ProgressBar:SetCycleSpeed not updating the auto label
+** Fixed BaseWindow:__eq being undefined
+** Fixed scrollbar being invisible in a GWEN Tree
+** Fixed infinite loop in GWEN when labels with word wrap are too small
+** Fixed labels with word wrap not being docked correctly
+** Fixed cursor not showing up for all corners of a window
+
+==0.1.1 - 2013 December 21==
+
+====New features====
+* Shared
+** Removed registration requirement from events firing; Events:FireRegisteredEvent is now [[Lua/Shared/Events/Functions/Fire|Events:Fire]] and Events:Register/Unregister are deprecated
+** Added argument-less version of Events:Fire
+** Prevented 'load' Lua function from loading bytecode, increasing security
+
+* Client
+** Added [[Lua/Events/Client/GameLoad|GameLoad]] event for exiting the loading screen
+** Exposed [[Lua/Client/PasswordTextBox|PasswordTextBox]] and [[Lua/Client/TextBoxMultiline|TextBoxMultiline]]
+** Added [[Lua/Client/TableRow/Functions/GetCellContents|TableRow:GetCellContents]]
+** Added [[Lua/Client/TabControl/Functions/SetCurrentTab|TabControl:SetCurrentTab]]
+
+* Server
+** Added support for loading C packages in Lua, allowing for the use of LuaSocket, LuaSQL, etc
+** Added IKnowWhatImDoing configuration variable to selectively enable the use of unsafe Lua functionality
+
+====Bug fixes====
+* Client
+** Fixed client deadlocking on exit
+** Fixed evenness in GWEN ListBox backgrounds not being preserved in a sort
+** Fixed [[Lua/Client/ListBox/Functions/Clear|ListBox:Clear]] and [[Lua/Client/SortedList/Functions/Clear|SortedList:Clear]] not working
+** Fixed [[Lua/Client/TableRow/Functions/SetTextColor|TableRow:SetTextColor]] not working
+** Fixed broken world on respawn; collisions with world objects should now work
+** Fixed non-ideal performance for [[Lua/Client/Render/Functions/GetTextWidth|GetTextWidth]]; now optimized
+** Fixed server browser query continuing even after the server browser was closed
+** Fixed bug where the player would be entered into a vehicle before they finished teleporting
+** Fixed crash when attempting to get non-existent userdata on a GWEN object
+** Fixed crash when attempting to get/set non-existent cell contents on [[Lua/Client/TableRow|TableRow]]
+** Fixed DirectX Error Code 4 upon launching; unsupported code for certain graphics cards
+
+* Server
+** Fixed banned players being unable to reconnect upon being unbanned
+** Fixed [[Lua/Server/UDPSocket|UDPSocket]] crashing upon destruction
+
+* Shared
+** Fixed Player.Match only returning results where the query could be found at the start of the name
+
+==0.1.0 - 2013 December 16==
+
+* JC2-MP released on Steam.

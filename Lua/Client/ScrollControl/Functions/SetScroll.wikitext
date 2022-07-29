@@ -1,0 +1,6 @@
+{{Lua/Deprecated | version = 0.1.3}}
+
+{{Lua/Function |
+  prototype = ScrollControl:SetScroll(boolean {{arg|horizontal}}, boolean {{arg|vertical}}) |
+  description = Sets whether the control should allow horizontal and vertical scrolling.
+}}

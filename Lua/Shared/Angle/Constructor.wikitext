@@ -1,0 +1,21 @@
+====Default====
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle() |
+  description = Constructs an angle with no rotation.
+}}
+
+====From Euler angles====
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle(number {{arg|yaw}}, number {{arg|pitch}}, number {{arg|roll}}) |
+  description = Constructs the angle with the specified {{arg|yaw}}, {{arg|pitch}} and {{arg|roll}} in radians.
+}}
+
+
+====From a quaternion====
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle(number {{arg|x}}, number {{arg|y}}, number {{arg|z}}, number {{arg|w}}) |
+  description = Constructs the angle with the specified rotation around the {{arg|x}}, {{arg|y}}, {{arg|z}} and {{arg|w}} axes in radians.
+}}

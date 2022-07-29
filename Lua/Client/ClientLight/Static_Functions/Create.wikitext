@@ -1,0 +1,109 @@
+{{Lua/Function |
+  returns = [[Lua/Client/ClientLight|ClientLight]] |
+  prototype = ClientLight.Create(table {{arg|arguments}}) |
+}}
+
+==Argument table==
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="150" | Name
+!width="480" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| [[Lua/Shared/Color|Color]]
+| color
+|
+|} {{Lua/Table_Suffix}}
+
+====Optional values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="150" | Name
+!width="60" | Default
+!width="420" | Notes
+|-
+| number
+| multiplier
+| 1
+| The brightness. Values above 16 don't affect much.
+|-
+| number
+| radius
+| 2
+|
+|-
+| number
+| constant_attenuation
+| 1
+| [https://developer.valvesoftware.com/wiki/Constant-Linear-Quadratic_Falloff See here]
+|-
+| number
+| linear_attenuation
+| 0.1
+| [https://developer.valvesoftware.com/wiki/Constant-Linear-Quadratic_Falloff See here]
+|-
+| number
+| quadratic_attenuation
+| 0.01
+| [https://developer.valvesoftware.com/wiki/Constant-Linear-Quadratic_Falloff See here]
+|-
+| number
+| fade_in_duration
+| 0.2
+|
+|-
+| number
+| fade_out_duration
+| 0.2
+|
+|} {{Lua/Table_Suffix}}
+
+==Examples==
+
+====Spawn a light where you click====
+
+<syntaxhighlight line highlight="15-23">
+lights = {}
+
+Events:Subscribe("MouseDown", function(args)
+	if args.button ~= 1 then
+		return
+	end
+	
+	local result = Physics:Raycast(
+		Camera:GetPosition(),
+		Camera:GetAngle() * Vector3.Forward,
+		0,
+		100
+	)
+	
+	local light = ClientLight.Create{
+		position = result.position + result.normal * 1.5,
+		color = Color.FromHSV(math.random(1, 360), 1, 1),
+		constant_attenuation = 0,
+		linear_attenuation = 0,
+		quadratic_attenuation = 1,
+		multiplier = 3.0,
+		radius = 15.0,
+	}
+	
+	table.insert(lights, light)
+end)
+
+-- Make sure to clean up all of our lights on ModuleUnload.
+Events:Subscribe("ModuleUnload", function()
+	for index, light in ipairs(lights) do
+		light:Remove()
+	end
+end)
+
+</syntaxhighlight>

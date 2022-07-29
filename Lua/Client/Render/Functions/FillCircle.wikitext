@@ -1,0 +1,12 @@
+====2D====
+
+{{Lua/Function |
+  prototype = Render:FillCircle([[Lua/Shared/Vector2|Vector2]] position, number radius, [[Lua/Shared/Color|Color]] color) |
+}}
+
+
+====3D====
+
+{{Lua/Function |
+  prototype = Render:FillCircle([[Lua/Shared/Vector3|Vector3]] position, number radius, [[Lua/Shared/Color|Color]] color) |
+}}

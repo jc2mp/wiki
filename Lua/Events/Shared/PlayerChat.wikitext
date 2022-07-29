@@ -1,0 +1,51 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, string text|
+  return = Return false to block the message
+}}
+
+==Description==
+
+Fired when a player sends a chat message.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." says "..args.text)
+end
+
+Events:Subscribe("PlayerChat", Foo)
+</syntaxhighlight>
+
+====Creating a chat filter====
+
+<syntaxhighlight>
+blacklist = {
+	"arse",
+	"crap",
+	"heck",
+	"pants",
+	"breasts",
+	"stupid",
+	"fudge",
+	"darn"
+}
+
+function Foo(args)
+	local lowercased = args.text:lower()
+	
+	for index, word in ipairs(blacklist) do
+		if lowercased:find(word) then
+			return false
+		end
+	end
+	
+	return true
+end
+
+Events:Subscribe("PlayerChat", Foo)
+</syntaxhighlight>
+
+==See also==
+
+[[Lua/Events/Client/LocalPlayerChat|LocalPlayerChat]]

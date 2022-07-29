@@ -1,0 +1,17 @@
+{{Lua/Function |
+  returns = string |
+  prototype = string.trim(string {{Arg|string}}) |
+  description = Removes any preceding or succeeding whitespaces from the {{Arg|string}}.
+}}
+
+==Examples==
+<syntaxhighlight>
+local inputstring = "    hi there.   What's up?     "
+local trimmed = string.trim(inputstring)
+
+print("\"" .. inputstring .. "\"")
+--> "    hi there.   What's up?     "
+
+print("\"" .. trimmed .. "\"")
+--> "hi there.   What's up?"
+</syntaxhighlight>

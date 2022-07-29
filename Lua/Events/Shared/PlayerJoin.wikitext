@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player
+}}
+
+==Description==
+
+Fired when a player joins the server.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." joined the server")
+end
+
+Events:Subscribe("PlayerJoin", Foo)
+</syntaxhighlight>

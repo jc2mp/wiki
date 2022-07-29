@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = SQLQuery([[Lua/Server/SQL|SQL]], string) |
+}}

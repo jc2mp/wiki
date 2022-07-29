@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle.Inverse(Angle) |
+}}

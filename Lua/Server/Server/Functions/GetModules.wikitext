@@ -1,0 +1,37 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Server:GetModules()
+}}
+
+==Description==
+
+This returns a table of available modules and whether each one is loaded. The keys are module names, and the values are booleans (true if it is currently loaded).
+
+==Example==
+
+====Print a list of available modules and whether each one is loaded.====
+
+<syntaxhighlight line highlight="2">
+function Foo()
+	local modules = Server:GetModules()
+	print("There are "..table.count(modules).." available modules:")
+	for name, loaded in pairs(modules) do
+		if loaded then
+			print("\tLoaded: "..name)
+		else
+			print("\tUnloaded: "..name)
+		end
+	end
+end
+
+Events:Subscribe("ModulesLoad", Foo)
+</syntaxhighlight>
+
+When you load/reload any module, the output should look something like this:
+
+<syntaxhighlight lang="text">
+01:18:09 | [info ] | [Module3] There are 3 available modules:
+01:18:09 | [info ] | [Module3]  Loaded: Module1
+01:18:09 | [info ] | [Module3]  Unloaded: Module2
+01:18:09 | [info ] | [Module3]  Loaded: Module3
+</syntaxhighlight>

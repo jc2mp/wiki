@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = PropertyCheckbox |
+  prototype = PropertyCheckBox.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = PropertyCheckbox |
+  prototype = PropertyCheckBox.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = PropertyCheckbox |
+  prototype = PropertyCheckBox.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = PropertyCheckbox |
+  prototype = PropertyCheckBox.Create() |
+}}

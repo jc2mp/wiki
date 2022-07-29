@@ -1,0 +1,200 @@
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Weapon/Constructor|Weapon]](WeaponId, number, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Weapon/Constructor|Weapon]](WeaponId, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Weapon/Constructor|Weapon]](WeaponId)
+|} {{Lua/Table_Suffix}}
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Weapon/Properties/ammo_clip|ammo_clip]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Weapon/Properties/ammo_reserve|ammo_reserve]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Weapon/Properties/id|id]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|} {{Lua/Table_Suffix}}
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Airzooka
+|{{Lua/Cell_Style/Enum_List_Value}} | 101
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | AlphaDLCWeapon
+|{{Lua/Cell_Style/Enum_List_Value}} | 100
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Assault
+|{{Lua/Cell_Style/Enum_List_Value}} | 11
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BigCannon
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | BubbleGun
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Cannon
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | CannonARVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | CannonHover
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | CannonLAVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | CannonLAVE_V016
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | CannonTUKTUK
+|{{Lua/Cell_Style/Enum_List_Value}} | 134
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | ClusterBombLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 102
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Flak
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Grapplinghook
+|{{Lua/Cell_Style/Enum_List_Value}} | 52
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | GrenadeLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Handgun
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | HeavyMachineGun
+|{{Lua/Cell_Style/Enum_List_Value}} | 129
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MachineGun
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MachineGunLAVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MachinegunARVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Minigun
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MinigunARVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MinigunLAVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MinigunTank
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MinigunVehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | MultiTargetRocketLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 105
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PanayRocketLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 66
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | QuadRocketLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 104
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Revolver
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RocketARVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RocketLAVE
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | RocketLauncher
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SAM
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SMG
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SawnOffShotgun
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SentryGun
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Shotgun
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | SignatureGun
+|{{Lua/Cell_Style/Enum_List_Value}} | 103
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Sniper
+|{{Lua/Cell_Style/Enum_List_Value}} | 14
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V022_VHLMG_L
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V022_VHLMG_R
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V022_VHLRKT
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V023_VHLMG_L
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V023_VHLMG_R
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V023_VHLRKT
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V024_VHLMG_L
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V024_VHLMG_R
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V039_VHLGL_L
+|{{Lua/Cell_Style/Enum_List_Value}} | 139
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V039_VHLGL_R
+|{{Lua/Cell_Style/Enum_List_Value}} | 139
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V039_VHLMG
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V059_MG
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V089_VHLMG_L
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V089_VHLMG_R
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | V089_VHLRKT
+|{{Lua/Cell_Style/Enum_List_Value}} | 116
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Vulcan
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|} {{Lua/Table_Suffix}}

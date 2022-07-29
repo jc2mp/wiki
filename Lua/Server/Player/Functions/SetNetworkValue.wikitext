@@ -1,0 +1,8 @@
+{{Lua/Function |
+  prototype = Player:SetNetworkValue(string {{Arg|key}}, object {{Arg|value}}) |
+  description = The equivalent of running Player:SetValue on the server and having every client run Player:SetValue.
+}}
+
+==See also==
+
+* [[Lua/Tutorials/Player values|Player values tutorial]]

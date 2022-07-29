@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = Player:SetModelId(number) |
+  description = Sets the player's character model.
+}}
+
+For a list of valid character models, see [[Character Models]]. 
+
+==See also==
+
+* [[Lua/Server/Player/Functions/GetModelId|Player:GetModelId]]

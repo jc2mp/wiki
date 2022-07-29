@@ -1,0 +1,22 @@
+{{Lua/Function |
+  returns = Color |
+  prototype = Color(number {{arg|red}}, number {{arg|green}}, number {{arg|blue}}, number {{arg|alpha}}) |
+}}
+
+{{Lua/Function |
+  returns = Color |
+  prototype = Color(number {{arg|red}}, number {{arg|green}}, number {{arg|blue}}) |
+  description = Constructs a color object with the corresponding color values and alpha being 255.
+}}
+
+{{Lua/Function |
+  returns = Color |
+  prototype = Color() |
+  description = Constructs a black color.
+}}
+
+{{Lua/Function |
+  returns = Color |
+  prototype = Color(number {{arg|AARRGGBB}}) |
+  description = Constructs a color from an unsigned int value, the format is 0xAARRGGBB.
+}}

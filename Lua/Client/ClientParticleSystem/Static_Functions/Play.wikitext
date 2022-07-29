@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = ClientParticleSystem.Play(table {{arg|arguments}}) |
+  description = Creates a ClientParticleSystem using the same arguments as [[Lua/Client/ClientParticleSystem/Static Functions/Create|Create]].
+}}
+
+==Notes==
+
+* There is an extra argument, {{Arg|timeout}}, which removes the particle system after the specified seconds.
+* If {{Arg|timeout}} is not specified, it defaults to 5 seconds.

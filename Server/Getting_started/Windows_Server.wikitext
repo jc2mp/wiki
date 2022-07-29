@@ -1,0 +1,53 @@
+Welcome to the JC2-MP Windows server tutorial. This page will explain the very basics of setting up a Windows server. This tutorial assumes you already have some basic Windows knowledge.
+
+==Downloading the Just Cause 2 Multiplayer mod==
+In your steam client head over to the Store page, then type "Just Cause 2 Multiplayer" in the search bar and click on it.
+
+[[File: Win server step WOET.png]]
+
+
+Now you should arrive and the Just Cause 2 Multiplayer page, proceed to download the mod by clicking on the PLAY button.
+
+[[File: Win tutorial step 3.png]]
+
+==Downloading the server==
+Once you have the Just Cause 2 Multiplayer mod on your computer, we will also automatically have access to the JC2-MP dedicated windows server. Head over to your library and drop down to tools.
+
+
+[[File: Win server step 2.png]]
+
+
+Once you arrived at the tools page type "Just Cause 2" in the search bar.
+
+[[File: Win_server_step_87minus4.png]]
+
+==Editing the server options and starting the server==
+You can now start the server by simply double clicking on "Just Cause 2: Multiplayer - Dedicated server".
+
+But before we do that let's configure our server.
+
+
+Head over to where you have installed Steam, by default this is 
+
+<syntaxhighlight>
+C:\Program Files (x86)\Steam\...
+</syntaxhighlight>
+
+
+Now navigate to where the dedicated server is located.
+
+<syntaxhighlight>
+C:\Program Files(x86)\Steam\steamapps\common\Just Cause 2 - Multiplayer Dedicated Server\...
+</syntaxhighlight>
+
+
+There you will find a file called as followed:
+
+<syntaxhighlight>
+config.lua
+</syntaxhighlight>
+
+We can open it by right clicking and selecting "open with" then choosing notepad or any other text editor.
+
+
+Once you have opened it, you can edit your server slots and many other options there. Simply follow the instructions on screen, have fun with your server!

@@ -1,0 +1,4 @@
+{{Lua/Function
+ | prototype = Game:SetHeat([[Lua/Client/HeatLevel|HeatLevel]] {{Arg|heat_level}}, number {{Arg|heat_percent}})
+ | description = Sets the current heat level and heat percent.
+}}

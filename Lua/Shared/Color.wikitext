@@ -1,0 +1,634 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Color
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Color/Static Functions/FromHSV|FromHSV]](number, number, number)
+|} {{Lua/Table_Suffix}}
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Color/Constructor|Color]](number, number, number, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Color/Constructor|Color]](number, number, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Color/Constructor|Color]]()
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Color/Constructor|Color]](number)
+|} {{Lua/Table_Suffix}}
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | Color + Color
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | Color / number
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | Color * number
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | Color - Color
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | tostring(Color)
+|} {{Lua/Table_Suffix}}
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Color/Properties/a|a]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Color/Properties/b|b]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Color/Properties/g|g]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Color/Properties/r|r]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|} {{Lua/Table_Suffix}}
+
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="180" | Name
+!width="160" | Value
+!width="90" | Color
+|-
+|AliceBlue
+|Color(240, 248, 255)
+|style="background-color:rgb(240, 248, 255);color:rgb(240, 248, 255);" |169
+|-
+|AntiqueWhite
+|Color(250, 235, 215)
+|style="background-color:rgb(250, 235, 215);color:rgb(250, 235, 215);" |1
+|-
+|Aqua
+|Color(0, 255, 255)
+|style="background-color:rgb(0, 255, 255);color:rgb(0, 255, 255);" |86
+|-
+|Aquamarine
+|Color(127, 255, 212)
+|style="background-color:rgb(127, 255, 212);color:rgb(127, 255, 212);" |86
+|-
+|Azure
+|Color(240, 255, 255)
+|style="background-color:rgb(240, 255, 255);color:rgb(240, 255, 255);" |86
+|-
+|Beige
+|Color(245, 245, 220)
+|style="background-color:rgb(245, 245, 220);color:rgb(245, 245, 220);" |1
+|-
+|Bisque
+|Color(255, 228, 196)
+|style="background-color:rgb(255, 228, 196);color:rgb(255, 228, 196);" |1
+|-
+|Black
+|Color(0, 0, 0)
+|style="background-color:rgb(0, 0, 0);color:rgb(0, 0, 0);" |-1
+|-
+|BlanchedAlmond
+|Color(255, 235, 205)
+|style="background-color:rgb(255, 235, 205);color:rgb(255, 235, 205);" |1
+|-
+|Blue
+|Color(0, 0, 255)
+|style="background-color:rgb(0, 0, 255);color:rgb(0, 0, 255);" |170
+|-
+|BlueViolet
+|Color(138, 43, 226)
+|style="background-color:rgb(138, 43, 226);color:rgb(138, 43, 226);" |171
+|-
+|Brown
+|Color(165, 42, 42)
+|style="background-color:rgb(165, 42, 42);color:rgb(165, 42, 42);" |0
+|-
+|BurlyWood
+|Color(222, 184, 135)
+|style="background-color:rgb(222, 184, 135);color:rgb(222, 184, 135);" |1
+|-
+|CadetBlue
+|Color(95, 158, 160)
+|style="background-color:rgb(95, 158, 160);color:rgb(95, 158, 160);" |169
+|-
+|Chartreuse
+|Color(127, 255, 0)
+|style="background-color:rgb(127, 255, 0);color:rgb(127, 255, 0);" |85
+|-
+|Chocolate
+|Color(210, 105, 30)
+|style="background-color:rgb(210, 105, 30);color:rgb(210, 105, 30);" |0
+|-
+|Coral
+|Color(255, 127, 80)
+|style="background-color:rgb(255, 127, 80);color:rgb(255, 127, 80);" |0
+|-
+|CornflowerBlue
+|Color(100, 149, 237)
+|style="background-color:rgb(100, 149, 237);color:rgb(100, 149, 237);" |170
+|-
+|Cornsilk
+|Color(255, 248, 220)
+|style="background-color:rgb(255, 248, 220);color:rgb(255, 248, 220);" |1
+|-
+|Crimson
+|Color(220, 20, 60)
+|style="background-color:rgb(220, 20, 60);color:rgb(220, 20, 60);" |255
+|-
+|Cyan
+|Color(0, 255, 255)
+|style="background-color:rgb(0, 255, 255);color:rgb(0, 255, 255);" |86
+|-
+|DarkBlue
+|Color(0, 0, 139)
+|style="background-color:rgb(0, 0, 139);color:rgb(0, 0, 139);" |170
+|-
+|DarkCyan
+|Color(0, 139, 139)
+|style="background-color:rgb(0, 139, 139);color:rgb(0, 139, 139);" |86
+|-
+|DarkGoldenRod
+|Color(184, 134, 11)
+|style="background-color:rgb(184, 134, 11);color:rgb(184, 134, 11);" |1
+|-
+|DarkGray
+|Color(169, 169, 169)
+|style="background-color:rgb(169, 169, 169);color:rgb(169, 169, 169);" |-1
+|-
+|DarkGreen
+|Color(0, 100, 0)
+|style="background-color:rgb(0, 100, 0);color:rgb(0, 100, 0);" |85
+|-
+|DarkKhaki
+|Color(189, 183, 107)
+|style="background-color:rgb(189, 183, 107);color:rgb(189, 183, 107);" |1
+|-
+|DarkMagenta
+|Color(139, 0, 139)
+|style="background-color:rgb(139, 0, 139);color:rgb(139, 0, 139);" |254
+|-
+|DarkOliveGreen
+|Color(85, 107, 47)
+|style="background-color:rgb(85, 107, 47);color:rgb(85, 107, 47);" |84
+|-
+|DarkOrange
+|Color(255, 140, 0)
+|style="background-color:rgb(255, 140, 0);color:rgb(255, 140, 0);" |1
+|-
+|DarkOrchid
+|Color(153, 50, 204)
+|style="background-color:rgb(153, 50, 204);color:rgb(153, 50, 204);" |171
+|-
+|DarkRed
+|Color(139, 0, 0)
+|style="background-color:rgb(139, 0, 0);color:rgb(139, 0, 0);" |0
+|-
+|DarkSalmon
+|Color(233, 150, 122)
+|style="background-color:rgb(233, 150, 122);color:rgb(233, 150, 122);" |0
+|-
+|DarkSeaGreen
+|Color(143, 188, 143)
+|style="background-color:rgb(143, 188, 143);color:rgb(143, 188, 143);" |85
+|-
+|DarkSlateBlue
+|Color(72, 61, 139)
+|style="background-color:rgb(72, 61, 139);color:rgb(72, 61, 139);" |170
+|-
+|DarkSlateGray
+|Color(47, 79, 79)
+|style="background-color:rgb(47, 79, 79);color:rgb(47, 79, 79);" |86
+|-
+|DarkTurquoise
+|Color(0, 206, 209)
+|style="background-color:rgb(0, 206, 209);color:rgb(0, 206, 209);" |169
+|-
+|DarkViolet
+|Color(148, 0, 211)
+|style="background-color:rgb(148, 0, 211);color:rgb(148, 0, 211);" |171
+|-
+|DeepPink
+|Color(255, 20, 147)
+|style="background-color:rgb(255, 20, 147);color:rgb(255, 20, 147);" |254
+|-
+|DeepSkyBlue
+|Color(0, 191, 255)
+|style="background-color:rgb(0, 191, 255);color:rgb(0, 191, 255);" |169
+|-
+|DimGray
+|Color(105, 105, 105)
+|style="background-color:rgb(105, 105, 105);color:rgb(105, 105, 105);" |-1
+|-
+|DodgerBlue
+|Color(30, 144, 255)
+|style="background-color:rgb(30, 144, 255);color:rgb(30, 144, 255);" |169
+|-
+|FireBrick
+|Color(178, 34, 34)
+|style="background-color:rgb(178, 34, 34);color:rgb(178, 34, 34);" |0
+|-
+|FloralWhite
+|Color(255, 250, 240)
+|style="background-color:rgb(255, 250, 240);color:rgb(255, 250, 240);" |1
+|-
+|ForestGreen
+|Color(34, 139, 34)
+|style="background-color:rgb(34, 139, 34);color:rgb(34, 139, 34);" |85
+|-
+|Fuchsia
+|Color(255, 0, 255)
+|style="background-color:rgb(255, 0, 255);color:rgb(255, 0, 255);" |254
+|-
+|Gainsboro
+|Color(220, 220, 220)
+|style="background-color:rgb(220, 220, 220);color:rgb(220, 220, 220);" |-1
+|-
+|GhostWhite
+|Color(248, 248, 255)
+|style="background-color:rgb(248, 248, 255);color:rgb(248, 248, 255);" |170
+|-
+|Gold
+|Color(255, 215, 0)
+|style="background-color:rgb(255, 215, 0);color:rgb(255, 215, 0);" |1
+|-
+|GoldenRod
+|Color(218, 165, 32)
+|style="background-color:rgb(218, 165, 32);color:rgb(218, 165, 32);" |1
+|-
+|Gray
+|Color(128, 128, 128)
+|style="background-color:rgb(128, 128, 128);color:rgb(128, 128, 128);" |-1
+|-
+|Green
+|Color(0, 128, 0)
+|style="background-color:rgb(0, 128, 0);color:rgb(0, 128, 0);" |85
+|-
+|GreenYellow
+|Color(173, 255, 47)
+|style="background-color:rgb(173, 255, 47);color:rgb(173, 255, 47);" |84
+|-
+|HoneyDew
+|Color(240, 255, 240)
+|style="background-color:rgb(240, 255, 240);color:rgb(240, 255, 240);" |85
+|-
+|HotPink
+|Color(255, 105, 180)
+|style="background-color:rgb(255, 105, 180);color:rgb(255, 105, 180);" |255
+|-
+|IndianRed
+|Color(205, 92, 92)
+|style="background-color:rgb(205, 92, 92);color:rgb(205, 92, 92);" |0
+|-
+|Indigo
+|Color(75, 0, 130)
+|style="background-color:rgb(75, 0, 130);color:rgb(75, 0, 130);" |171
+|-
+|Ivory
+|Color(255, 255, 240)
+|style="background-color:rgb(255, 255, 240);color:rgb(255, 255, 240);" |1
+|-
+|Khaki
+|Color(240, 230, 140)
+|style="background-color:rgb(240, 230, 140);color:rgb(240, 230, 140);" |1
+|-
+|Lavender
+|Color(230, 230, 250)
+|style="background-color:rgb(230, 230, 250);color:rgb(230, 230, 250);" |170
+|-
+|LavenderBlush
+|Color(255, 240, 245)
+|style="background-color:rgb(255, 240, 245);color:rgb(255, 240, 245);" |255
+|-
+|LawnGreen
+|Color(124, 252, 0)
+|style="background-color:rgb(124, 252, 0);color:rgb(124, 252, 0);" |85
+|-
+|LemonChiffon
+|Color(255, 250, 205)
+|style="background-color:rgb(255, 250, 205);color:rgb(255, 250, 205);" |1
+|-
+|LightBlue
+|Color(173, 216, 230)
+|style="background-color:rgb(173, 216, 230);color:rgb(173, 216, 230);" |169
+|-
+|LightCoral
+|Color(240, 128, 128)
+|style="background-color:rgb(240, 128, 128);color:rgb(240, 128, 128);" |0
+|-
+|LightCyan
+|Color(224, 255, 255)
+|style="background-color:rgb(224, 255, 255);color:rgb(224, 255, 255);" |86
+|-
+|LightGoldenRodYellow
+|Color(250, 250, 210)
+|style="background-color:rgb(250, 250, 210);color:rgb(250, 250, 210);" |1
+|-
+|LightGray
+|Color(211, 211, 211)
+|style="background-color:rgb(211, 211, 211);color:rgb(211, 211, 211);" |-1
+|-
+|LightGreen
+|Color(144, 238, 144)
+|style="background-color:rgb(144, 238, 144);color:rgb(144, 238, 144);" |85
+|-
+|LightPink
+|Color(255, 182, 193)
+|style="background-color:rgb(255, 182, 193);color:rgb(255, 182, 193);" |255
+|-
+|LightSalmon
+|Color(255, 160, 122)
+|style="background-color:rgb(255, 160, 122);color:rgb(255, 160, 122);" |0
+|-
+|LightSeaGreen
+|Color(32, 178, 170)
+|style="background-color:rgb(32, 178, 170);color:rgb(32, 178, 170);" |86
+|-
+|LightSkyBlue
+|Color(135, 206, 250)
+|style="background-color:rgb(135, 206, 250);color:rgb(135, 206, 250);" |169
+|-
+|LightSlateGray
+|Color(119, 136, 153)
+|style="background-color:rgb(119, 136, 153);color:rgb(119, 136, 153);" |170
+|-
+|LightSteelBlue
+|Color(176, 196, 222)
+|style="background-color:rgb(176, 196, 222);color:rgb(176, 196, 222);" |170
+|-
+|LightYellow
+|Color(255, 255, 224)
+|style="background-color:rgb(255, 255, 224);color:rgb(255, 255, 224);" |1
+|-
+|Lime
+|Color(0, 255, 0)
+|style="background-color:rgb(0, 255, 0);color:rgb(0, 255, 0);" |85
+|-
+|LimeGreen
+|Color(50, 205, 50)
+|style="background-color:rgb(50, 205, 50);color:rgb(50, 205, 50);" |85
+|-
+|Linen
+|Color(250, 240, 230)
+|style="background-color:rgb(250, 240, 230);color:rgb(250, 240, 230);" |1
+|-
+|Magenta
+|Color(255, 0, 255)
+|style="background-color:rgb(255, 0, 255);color:rgb(255, 0, 255);" |254
+|-
+|Maroon
+|Color(128, 0, 0)
+|style="background-color:rgb(128, 0, 0);color:rgb(128, 0, 0);" |0
+|-
+|MediumAquaMarine
+|Color(102, 205, 170)
+|style="background-color:rgb(102, 205, 170);color:rgb(102, 205, 170);" |86
+|-
+|MediumBlue
+|Color(0, 0, 205)
+|style="background-color:rgb(0, 0, 205);color:rgb(0, 0, 205);" |170
+|-
+|MediumOrchid
+|Color(186, 85, 211)
+|style="background-color:rgb(186, 85, 211);color:rgb(186, 85, 211);" |171
+|-
+|MediumPurple
+|Color(147, 112, 219)
+|style="background-color:rgb(147, 112, 219);color:rgb(147, 112, 219);" |170
+|-
+|MediumSeaGreen
+|Color(60, 179, 113)
+|style="background-color:rgb(60, 179, 113);color:rgb(60, 179, 113);" |85
+|-
+|MediumSlateBlue
+|Color(123, 104, 238)
+|style="background-color:rgb(123, 104, 238);color:rgb(123, 104, 238);" |170
+|-
+|MediumSpringGreen
+|Color(0, 250, 154)
+|style="background-color:rgb(0, 250, 154);color:rgb(0, 250, 154);" |86
+|-
+|MediumTurquoise
+|Color(72, 209, 204)
+|style="background-color:rgb(72, 209, 204);color:rgb(72, 209, 204);" |86
+|-
+|MediumVioletRed
+|Color(199, 21, 133)
+|style="background-color:rgb(199, 21, 133);color:rgb(199, 21, 133);" |254
+|-
+|MidnightBlue
+|Color(25, 25, 112)
+|style="background-color:rgb(25, 25, 112);color:rgb(25, 25, 112);" |170
+|-
+|MintCream
+|Color(245, 255, 250)
+|style="background-color:rgb(245, 255, 250);color:rgb(245, 255, 250);" |86
+|-
+|MistyRose
+|Color(255, 228, 225)
+|style="background-color:rgb(255, 228, 225);color:rgb(255, 228, 225);" |0
+|-
+|Moccasin
+|Color(255, 228, 181)
+|style="background-color:rgb(255, 228, 181);color:rgb(255, 228, 181);" |1
+|-
+|NavajoWhite
+|Color(255, 222, 173)
+|style="background-color:rgb(255, 222, 173);color:rgb(255, 222, 173);" |1
+|-
+|Navy
+|Color(0, 0, 128)
+|style="background-color:rgb(0, 0, 128);color:rgb(0, 0, 128);" |170
+|-
+|OldLace
+|Color(253, 245, 230)
+|style="background-color:rgb(253, 245, 230);color:rgb(253, 245, 230);" |1
+|-
+|Olive
+|Color(128, 128, 0)
+|style="background-color:rgb(128, 128, 0);color:rgb(128, 128, 0);" |1
+|-
+|OliveDrab
+|Color(107, 142, 35)
+|style="background-color:rgb(107, 142, 35);color:rgb(107, 142, 35);" |84
+|-
+|Orange
+|Color(255, 165, 0)
+|style="background-color:rgb(255, 165, 0);color:rgb(255, 165, 0);" |1
+|-
+|OrangeRed
+|Color(255, 69, 0)
+|style="background-color:rgb(255, 69, 0);color:rgb(255, 69, 0);" |0
+|-
+|Orchid
+|Color(218, 112, 214)
+|style="background-color:rgb(218, 112, 214);color:rgb(218, 112, 214);" |254
+|-
+|PaleGoldenRod
+|Color(238, 232, 170)
+|style="background-color:rgb(238, 232, 170);color:rgb(238, 232, 170);" |1
+|-
+|PaleGreen
+|Color(152, 251, 152)
+|style="background-color:rgb(152, 251, 152);color:rgb(152, 251, 152);" |85
+|-
+|PaleTurquoise
+|Color(175, 238, 238)
+|style="background-color:rgb(175, 238, 238);color:rgb(175, 238, 238);" |86
+|-
+|PaleVioletRed
+|Color(219, 112, 147)
+|style="background-color:rgb(219, 112, 147);color:rgb(219, 112, 147);" |255
+|-
+|PapayaWhip
+|Color(255, 239, 213)
+|style="background-color:rgb(255, 239, 213);color:rgb(255, 239, 213);" |1
+|-
+|PeachPuff
+|Color(255, 218, 185)
+|style="background-color:rgb(255, 218, 185);color:rgb(255, 218, 185);" |0
+|-
+|Peru
+|Color(205, 133, 63)
+|style="background-color:rgb(205, 133, 63);color:rgb(205, 133, 63);" |0
+|-
+|Pink
+|Color(255, 192, 203)
+|style="background-color:rgb(255, 192, 203);color:rgb(255, 192, 203);" |255
+|-
+|Plum
+|Color(221, 160, 221)
+|style="background-color:rgb(221, 160, 221);color:rgb(221, 160, 221);" |254
+|-
+|PowderBlue
+|Color(176, 224, 230)
+|style="background-color:rgb(176, 224, 230);color:rgb(176, 224, 230);" |169
+|-
+|Purple
+|Color(128, 0, 128)
+|style="background-color:rgb(128, 0, 128);color:rgb(128, 0, 128);" |254
+|-
+|Red
+|Color(255, 0, 0)
+|style="background-color:rgb(255, 0, 0);color:rgb(255, 0, 0);" |0
+|-
+|RosyBrown
+|Color(188, 143, 143)
+|style="background-color:rgb(188, 143, 143);color:rgb(188, 143, 143);" |0
+|-
+|RoyalBlue
+|Color(65, 105, 225)
+|style="background-color:rgb(65, 105, 225);color:rgb(65, 105, 225);" |170
+|-
+|SaddleBrown
+|Color(139, 69, 19)
+|style="background-color:rgb(139, 69, 19);color:rgb(139, 69, 19);" |0
+|-
+|Salmon
+|Color(250, 128, 114)
+|style="background-color:rgb(250, 128, 114);color:rgb(250, 128, 114);" |0
+|-
+|SandyBrown
+|Color(244, 164, 96)
+|style="background-color:rgb(244, 164, 96);color:rgb(244, 164, 96);" |0
+|-
+|SeaGreen
+|Color(46, 139, 87)
+|style="background-color:rgb(46, 139, 87);color:rgb(46, 139, 87);" |85
+|-
+|SeaShell
+|Color(255, 245, 238)
+|style="background-color:rgb(255, 245, 238);color:rgb(255, 245, 238);" |0
+|-
+|Sienna
+|Color(160, 82, 45)
+|style="background-color:rgb(160, 82, 45);color:rgb(160, 82, 45);" |0
+|-
+|Silver
+|Color(192, 192, 192)
+|style="background-color:rgb(192, 192, 192);color:rgb(192, 192, 192);" |-1
+|-
+|SkyBlue
+|Color(135, 206, 235)
+|style="background-color:rgb(135, 206, 235);color:rgb(135, 206, 235);" |169
+|-
+|SlateBlue
+|Color(106, 90, 205)
+|style="background-color:rgb(106, 90, 205);color:rgb(106, 90, 205);" |170
+|-
+|SlateGray
+|Color(112, 128, 144)
+|style="background-color:rgb(112, 128, 144);color:rgb(112, 128, 144);" |170
+|-
+|Snow
+|Color(255, 250, 250)
+|style="background-color:rgb(255, 250, 250);color:rgb(255, 250, 250);" |0
+|-
+|SpringGreen
+|Color(0, 255, 127)
+|style="background-color:rgb(0, 255, 127);color:rgb(0, 255, 127);" |85
+|-
+|SteelBlue
+|Color(70, 130, 180)
+|style="background-color:rgb(70, 130, 180);color:rgb(70, 130, 180);" |169
+|-
+|Tan
+|Color(210, 180, 140)
+|style="background-color:rgb(210, 180, 140);color:rgb(210, 180, 140);" |1
+|-
+|Teal
+|Color(0, 128, 128)
+|style="background-color:rgb(0, 128, 128);color:rgb(0, 128, 128);" |86
+|-
+|Thistle
+|Color(216, 191, 216)
+|style="background-color:rgb(216, 191, 216);color:rgb(216, 191, 216);" |254
+|-
+|Tomato
+|Color(255, 99, 71)
+|style="background-color:rgb(255, 99, 71);color:rgb(255, 99, 71);" |0
+|-
+|Turquoise
+|Color(64, 224, 208)
+|style="background-color:rgb(64, 224, 208);color:rgb(64, 224, 208);" |86
+|-
+|Violet
+|Color(238, 130, 238)
+|style="background-color:rgb(238, 130, 238);color:rgb(238, 130, 238);" |254
+|-
+|Wheat
+|Color(245, 222, 179)
+|style="background-color:rgb(245, 222, 179);color:rgb(245, 222, 179);" |1
+|-
+|White
+|Color(255, 255, 255)
+|style="background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);" |-1
+|-
+|WhiteSmoke
+|Color(245, 245, 245)
+|style="background-color:rgb(245, 245, 245);color:rgb(245, 245, 245);" |-1
+|-
+|Yellow
+|Color(255, 255, 0)
+|style="background-color:rgb(255, 255, 0);color:rgb(255, 255, 0);" |1
+|-
+|YellowGreen
+|Color(154, 205, 50)
+|style="background-color:rgb(154, 205, 50);color:rgb(154, 205, 50);" |84
+|} {{Lua/Table_Suffix}}

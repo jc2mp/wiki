@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = GroupBox |
+  prototype = GroupBox.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = GroupBox |
+  prototype = GroupBox.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = GroupBox |
+  prototype = GroupBox.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = GroupBox |
+  prototype = GroupBox.Create() |
+}}

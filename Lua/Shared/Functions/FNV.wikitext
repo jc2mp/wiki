@@ -1,0 +1,18 @@
+{{Warning_Box | text = Do not use this for passwords unless you want to be hunted down and mauled.}}
+
+
+
+{{Lua/Function |
+  returns = number |
+  prototype = FNV(string {{Arg|input}}) |
+  description = Calculates the Fowler-Noll-Vo hash of {{Arg|input}}.
+}}
+
+{{Lua/Function |
+  returns = number |
+  prototype = FNV(string {{Arg|input}}, number {{Arg|salt}}) |
+  description = Calculates the Fowler-Noll-Vo hash of {{Arg|input}} with a {{Arg|seed}}.
+}}
+
+==See Also==
+[http://en.wikipedia.org/wiki/Fowler_Noll_Vo_hash Wikipedia]

@@ -1,0 +1,20 @@
+Scripts should be installed to ''scripts/''. They are automatically loaded on server startup. You can reload a script using the ''reload'' console command, such as ''reload nametags''.
+
+If you are installing a script named AwesomeScript, the resulting directory structure should look similar to the following:
+
+* JcmpServer/
+** scripts/
+*** AwesomeScript/
+**** server/
+***** SomeLuaFile.lua
+**** client/
+**** shared/
+
+
+The ''server/'', ''client/'', and ''shared/'' directories may contain .lua files, but none are required; nametags only uses the ''client'' directory, for instance.
+
+The server may come with a ''default_scripts'' directory, which contains some useful and common scripts, such as nametags. You can also find updated scripts on the official GitHub page [https://github.com/jc2mp/]. You will need to either rename the ''default_scripts/'' directory or copy the contents into the ''scripts/'' directory.
+
+==See also==
+* [[Server/Console|Server console]]
+* [[Lua/Tutorials/Beginner/Module loading process|Module loading process]]

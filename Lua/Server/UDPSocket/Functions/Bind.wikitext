@@ -1,0 +1,6 @@
+{{Lua/Function |
+  prototype = UDPSocket:Bind(number {{arg|port}}) |
+}}
+
+==Description==
+Binds an UDPSocket to the given port

@@ -1,0 +1,42 @@
+====Can I spawn objects other than vehicles and checkpoints?====
+
+Yes! Have a look at [[Lua/Server/StaticObject|StaticObject]].
+
+====How do I draw custom images?====
+
+There is an ''images'' directory on the client, you can load any images in there with [[Lua/Client/Image/Static Functions/Create|Image.Create]]. I.e. for ''images/horse.jpg'', the path for Image.Create would be ''horse.jpg''.
+
+You can also use .zip files and a ''dropzone'' directory. (This is '''not''' Just Cause 2's dropzone.) Modules can only use the .zip file with their name. I.e. for ''dropzone/MyModule.zip/images/horse.jpg'', the path for Image.Create would be ''horse.jpg''
+
+====Is it possible to stream images to clients automatically?====
+
+No, they must manually download and install them. We plan on adding Steam Workshop support in a later release, which will allow clients to automatically download assets.
+
+====Can chat messages have multiple colors?====
+
+No, the default chat system currently only supports one color for custom messages.
+
+====Can vehicle handling be changed?====
+
+You cannot do what singleplayer mods can, such as change the top speed to whatever you want. However, for agency vehicles, you can set their upgrades by setting their template. (See [[Lua/Server/Vehicle/Static Functions/Create|Vehicle.Create]]) Agency vehicles are the ones that you can spawn in singleplayer, such as the Silverbolt and Traver-Z.
+
+Most agency vehicles take the following vehicle templates:
+
+* Default
+* WeaponUpgrade0
+* WeaponUpgrade1
+* FullyUpgraded
+
+''Note: WeaponUpgrade0/WeaponUpgrade1 still upgrade the handling, even if the weapon doesn't change.''
+
+====Can weapon stats be changed?====
+
+No, not currently.
+
+====What unit of distance does the game use?====
+
+Everything uses meters.
+
+====Does the API use degrees or radians?====
+
+Everything uses radians. You can use the Lua functions ''math.rad(degrees)'' and ''math.deg(radians)'' to convert numbers between the two. If you want the string representation of an Angle in degrees, you can use [[Lua/Shared/Angle/Functions/DegreesString|Angle:DegreesString]].

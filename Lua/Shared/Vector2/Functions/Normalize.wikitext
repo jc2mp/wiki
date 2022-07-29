@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Vector2:Normalize() |
+  description = Normalizes the vector in place.
+}}
+
+==Additional Notes==
+*This method does not yield a new vector, use [[Lua/Shared/Vector2/Functions/Normalized|Vector2:Normalized()]] instead.

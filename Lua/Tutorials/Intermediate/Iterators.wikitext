@@ -1,0 +1,21 @@
+Some of the functions in the API use iterator functions. These must be used with for statements.
+
+As an example, if you want to use [[Lua/Server/Server/Functions/GetPlayers|Server:GetPlayers]], use the following syntax:
+
+<syntaxhighlight>
+for player in Server:GetPlayers() do
+	print(player)
+end
+</syntaxhighlight>
+
+==See also==
+
+* [[Lua/Server/Server/Functions/GetPlayers|Server:GetPlayers]]
+* [[Lua/Server/Server/Functions/GetVehicles|Server:GetVehicles]]
+* [[Lua/Server/Server/Functions/GetCheckpoints|Server:GetCheckpoints]]
+* [[Lua/Server/World/Functions/GetPlayers|World:GetPlayers]]
+* [[Lua/Server/World/Functions/GetVehicles|World:GetVehicles]]
+* [[Lua/Server/World/Functions/GetCheckpoints|World:GetCheckpoints]]
+* [[Lua/Client/Client/Functions/GetPlayers|Client:GetPlayers]]
+* [[Lua/Client/Client/Functions/GetStreamedPlayers|Client:GetStreamedPlayers]]
+* [[Lua/Client/Client/Functions/GetVehicles|Client:GetVehicles]]

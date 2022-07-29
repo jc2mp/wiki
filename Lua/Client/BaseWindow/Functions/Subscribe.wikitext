@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Event|Event]] |
+  prototype = BaseWindow:Subscribe(string, function) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Shared/Event|Event]] |
+  prototype = BaseWindow:Subscribe(string, object, function) |
+}}

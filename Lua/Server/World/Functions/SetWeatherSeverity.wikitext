@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = World:SetWeatherSeverity(number) |
+}}
+
+== Description ==
+Changes the weather for everyone in the specified world. Values are between 0 and 2.
+
+==See also==
+
+[[Lua/Tutorials/Intermediate/Weather|Weather tutorial]]

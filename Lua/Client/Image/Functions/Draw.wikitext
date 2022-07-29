@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Image:Draw([[Lua/Shared/Vector2|Vector2]] {{arg|position}}, [[Lua/Shared/Vector2|Vector2]] {{arg|size}}, [[Lua/Shared/Vector2|Vector2]] {{arg|uv1}}, [[Lua/Shared/Vector2|Vector2]] {{arg|uv2}}) |
+}}
+
+{{Lua/Function |
+  prototype = Image:Draw() |
+}}

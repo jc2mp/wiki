@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = StaticObject |
+  prototype = StaticObject.GetById(number) |
+}}

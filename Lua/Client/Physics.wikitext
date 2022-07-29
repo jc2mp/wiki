@@ -1,0 +1,16 @@
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Physics/Functions/GetTerrainHeight|GetTerrainHeight]]([[Lua/Shared/Vector3|Vector3]] <span style="color:gray;font-size:80%">position</span>)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Physics/Functions/GetTerrainHeight|GetTerrainHeight]]([[Lua/Shared/Vector2|Vector2]] <span style="color:gray;font-size:80%">position</span>)
+|-
+|{{Lua/Cell_Style/Returns_List}} | table
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Physics/Functions/Raycast|Raycast]]([[Lua/Shared/Vector3|Vector3]] <span style="color:gray;font-size:80%">origin</span>, [[Lua/Shared/Vector3|Vector3]] ''direction'', number <span style="color:gray;font-size:80%">minDistance</span>, number <span style="color:gray;font-size:80%">maxDistance</span>)
+|} {{Lua/Table_Suffix}}

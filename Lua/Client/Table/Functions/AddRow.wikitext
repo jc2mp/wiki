@@ -1,0 +1,8 @@
+{{Lua/Function |
+  prototype = Table:AddRow([[Lua/Client/TableRow|TableRow]]) |
+}}
+
+{{Lua/Function |
+  returns = [[Lua/Client/TableRow|TableRow]] |
+  prototype = Table:AddRow() |
+}}

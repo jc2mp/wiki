@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Color|Color]] |
+  prototype = TableRow:GetBackgroundEvenSelectedColor() |
+}}

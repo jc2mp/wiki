@@ -1,0 +1,17 @@
+*Primitive types
+**boolean
+**number
+**string
+**table
+*JC2 Types
+**Angle
+**Checkpoint
+**Color
+**Player
+**StaticObject
+**Transform2
+**Transform3
+**Vector2
+**Vector3
+**Vehicle
+**World

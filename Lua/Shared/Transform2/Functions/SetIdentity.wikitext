@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Transform2:SetIdentity() |
+  description = Resets the transform's translation, rotation and scaling back to normal.
+}}
+
+==Additional Notes==
+*An identity transform has no effect when applied to anything, see [http://en.wikipedia.org/wiki/Identity_matrix wikipedia].

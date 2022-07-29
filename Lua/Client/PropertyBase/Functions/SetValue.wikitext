@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = PropertyBase:SetValue(string) |
+}}
+
+{{Lua/Function |
+  prototype = PropertyBase:SetValue(string, boolean) |
+}}

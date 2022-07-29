@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Server/Checkpoint|Checkpoint]] checkpoint
+}}
+
+==Description==
+
+Fired when a player exits a checkpoint's trigger zone. They can be in a vehicle, but it uses the player's position.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." exited checkpoint "..args.checkpoint:GetId())
+end
+
+Events:Subscribe("PlayerExitCheckpoint", Foo)
+</syntaxhighlight>

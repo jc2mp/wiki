@@ -1,0 +1,100 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Static Functions/AngleAxis|AngleAxis]](number, [[Lua/Shared/Vector3|Vector3]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Static Functions/Dot|Dot]](Angle, Angle)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Static Functions/FromVectors|FromVectors]]([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Static Functions/Inverse|Inverse]](Angle)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Static Functions/Slerp|Slerp]](Angle, Angle, number)
+|} {{Lua/Table_Suffix}}
+==Constructors==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Constructor_List}} | Constructor
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Angle/Constructor|Angle]]()
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Angle/Constructor|Angle]](number, number, number)
+|-
+|{{Lua/Cell_Style/Constructor_List}} | [[Lua/Shared/Angle/Constructor|Angle]](number, number, number, number)
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Functions/DegreesString|DegreesString]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Functions/Dot|Dot]](Angle)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Shared/Angle/Functions/Inverse|Inverse]]()
+|} {{Lua/Table_Suffix}}
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | Angle == Angle
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | Angle * Angle
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | Angle * [[Lua/Shared/Vector3|Vector3]]
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | tostring(Angle)
+|-
+|{{Lua/Cell_Style/Returns_List}} | Angle
+|{{Lua/Cell_Style/Prototype_List}} | -Angle
+|} {{Lua/Table_Suffix}}
+==Properties==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Property_List_Name}} | Name
+!{{Lua/Column_Style/Property_List_Type}} | Type
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/pitch|pitch]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/roll|roll]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/w|w]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/x|x]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/y|y]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/yaw|yaw]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|-
+|{{Lua/Cell_Style/Property_List_Name}} | [[Lua/Shared/Angle/Properties/z|z]]
+|{{Lua/Cell_Style/Property_List_Type}} | number
+|} {{Lua/Table_Suffix}}

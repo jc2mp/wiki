@@ -1,0 +1,24 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Shared/DamageEntity|DamageEntity]] reason, [[Lua/Server/Player|Player]] killer
+}}
+
+==Description==
+
+Fired when a player dies.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	if args.killer then
+		print(
+			args.killer:GetName().." killed "..args.player:GetName()..
+			" with damage type "..args.reason
+		)
+	else
+		print(args.player:GetName().." died from damage type "..args.reason)
+	end
+end
+
+Events:Subscribe("PlayerDeath", Foo)
+</syntaxhighlight>

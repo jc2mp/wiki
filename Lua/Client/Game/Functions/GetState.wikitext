@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = [[Lua/Client/GUIState|GUIState]] |
+  prototype = Game:GetState() |
+}}
+
+==Description==
+Returns the current [[Lua/Client/GUIState|GUIState]] of the game.
+
+==Examples==
+
+====Don't draw over main menu, map, or loading screen====
+
+<syntaxhighlight>
+function Render()
+	if Game:GetState() == GUIState.Game then
+		-- Do your drawing here
+	end
+end
+</syntaxhighlight>

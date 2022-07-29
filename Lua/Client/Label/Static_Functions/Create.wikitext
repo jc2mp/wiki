@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Label |
+  prototype = Label.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Label |
+  prototype = Label.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Label |
+  prototype = Label.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Label |
+  prototype = Label.Create() |
+}}

@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = TextBoxMultiline |
+  prototype = TextBoxMultiline.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxMultiline |
+  prototype = TextBoxMultiline.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxMultiline |
+  prototype = TextBoxMultiline.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = TextBoxMultiline |
+  prototype = TextBoxMultiline.Create() |
+}}

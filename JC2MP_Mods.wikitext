@@ -1,0 +1,5 @@
+===== Using JC2-MP with mods =====
+
+We've taken preventative measures to stop the game from loading mods from your JC2-MP directory. A lot of people in the Just Cause community have expressed issues with this. These steps have been taken, not to take a stance on people cheating, but for the stability of the game during our testing period. We would ask that you, as a testing participant don't try to circumvent our basic anti-modding attempt specifically for testing, so that any bug reports / crashes you have will actually be useful to us. Basically, if you're modding, and it causes you or someone else to crash and you submit a report, you're wasting our time and delaying the release of JC2-MP further.
+
+Put shortly: '''Do not use any mods while playing JC2-MP!'''

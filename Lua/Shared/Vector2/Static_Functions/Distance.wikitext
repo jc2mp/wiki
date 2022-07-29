@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector2.Distance(Vector2, Vector2) |
+}}

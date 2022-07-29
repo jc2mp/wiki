@@ -1,0 +1,52 @@
+{{Lua/Event|
+  arguments = [[Lua/Client/Key|Key]] key
+}}
+
+==Description==
+
+Fired when a key is pressed down. If the key is held down, it repeats.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message = "Key pressed: "..args.key
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("KeyDown", Foo)
+</syntaxhighlight>
+
+====Detecting for specific keys====
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.key == VirtualKey.F7 then
+		Chat:Print("You pressed the F7 key" , Color(255, 255, 255))
+	end
+end
+ 
+Events:Subscribe("KeyDown", Foo)
+</syntaxhighlight>
+
+[[Lua/Client/Key|Key]] does not list all characters. For letters/numbers, you can use the the functions ''string.byte'' or ''string.char'' instead.
+
+<syntaxhighlight>
+Foo = function(args)
+	if args.key == string.byte("M") then
+		Chat:Print("You pressed the M key" , Color(255, 255, 255))
+	end
+end
+
+Events:Subscribe("KeyDown", Foo)
+</syntaxhighlight>
+
+<syntaxhighlight>
+Foo = function(args)
+	if string.char(args.key) == "M" then
+		Chat:Print("You pressed the M key" , Color(255, 255, 255))
+	end
+end
+ 
+Events:Subscribe("KeyDown", Foo)
+</syntaxhighlight>

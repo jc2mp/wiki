@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = Chat:Print(string, [[Lua/Shared/Color|Color]]) |
+}}
+
+==Description==
+Prints a line to the chat box. The first argument only accepts a string; use tostring(var) if necessary.
+
+==See also==
+
+* [[Lua/Shared/Console/Functions/Print|Console:Print]]

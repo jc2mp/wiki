@@ -1,0 +1,149 @@
+==Introduction==
+
+This is a guide to running the server software for JC2-MP under FreeBSD.
+
+==Package requirements:==
+
+* bash (to use SteamCMD)
+* linux_base-c6
+* tmux (if you want to use my script in step 4)
+* git (to grab the up-to-date versions of the official scripts)
+
+==Step 1: Setting up the Linux compatibility layer==
+
+First, we need to load the linux kernel module, and tell it to start automatically on boot:
+<syntaxhighlight>
+kldload linux
+echo linux_enable=\"YES\" >> /etc/rc.conf
+</syntaxhighlight>
+
+We also need to change the compatability layer OS release sysctl to allow us to use the newer CentOS 6 base (instead of the old Fedora 10 base)
+<syntaxhighlight>
+sysctl compat.linux.osrelease=2.6.18
+</syntaxhighlight>
+
+And also add this to /etc/sysctl.conf to remember across reboots
+<syntaxhighlight>
+echo compat.linux.osrelease=2.6.18 >> /etc/sysctl.conf
+</syntaxhighlight>
+
+Now, we need to install
+<syntaxhighlight>
+emulators/linux_base-c6
+</syntaxhighlight>
+To do this, run the following two commands:
+<syntaxhighlight>
+cd /usr/ports/emulators/linux_base-c6
+make install clean
+</syntaxhighlight>
+
+Finally, we need to mount linprocfs. First, add the following line to /etc/fstab:
+<syntaxhighlight>
+linproc /compat/linux/proc linprocfs rw,late 0 0
+</syntaxhighlight>
+
+Then run the following commands:
+<syntaxhighlight>
+mkdir -p /usr/compat/linux/proc
+ln -s /usr/compat /compat
+mount linproc
+</syntaxhighlight>
+
+==Step 2: Installing JC2-MP using SteamCMD==
+
+NOTE: Before beginning this section, ensure that you have Bash installed.
+
+First, we need to set up SteamCMD. First make a directory for it somewhere, and run the following command:
+<syntaxhighlight>
+fetch http://media.steampowered.com/installer/steamcmd_linux.tar.gz
+</syntaxhighlight>
+
+Next, we need to extract it:
+<syntaxhighlight>
+tar -xvf steamcmd_linux.tar.gz
+</syntaxhighlight>
+
+SteamCMD needs a few edits to work under FreeBSD (mainly changing the path to bash, and forcing it to linux32). I have provided a working script 
+[https://github.com/Pricetx/gravitygunonly/blob/master/steamcmd_freebsd.sh here]:
+
+NOTE: You need to save the script as a name other than "steamcmd.sh", otherwise every time you run it, SteamCMD will overwrite it with the original.
+
+now, run
+<syntaxhighlight>
+./steamcmd_freebsd.sh
+</syntaxhighlight>
+Once it has finished loading, run
+<syntaxhighlight>
+login anonymous
+</syntaxhighlight>
+
+Now we need to set a directory for the server to install to. Personally I always lay out SteamCMD installations as follows. If my username was "server" I would have /home/server/steamcmd containing steamcmd_freebsd.sh, and /home/server/jcmp containing the actual jcmp server. This means that the jcmp folder is one folder up from the steamcmd folder.
+
+To do this, you would enter the following:
+<syntaxhighlight>
+force_install_dir ../jcmp
+</syntaxhighlight>
+However, you can install it wherever you like, as long as you have sufficient permissions.
+
+Now we need to download the game itself, this is also the command used to update the game. The validate keyword performs a checksum on the downloaded files to ensure that everything is intact.
+<syntaxhighlight>
+app_update 261140 validate
+</syntaxhighlight>
+
+If you wish to update to the latest beta version, run the following instruction instead:
+<syntaxhighlight>
+app_update 261140 -beta publicbeta validate
+</syntaxhighlight>
+
+NOTE: if it gets stuck at a certain percentage during the download, simply exit (ctrl+c), and re-run steamcmd_freebsd.sh, following the instructions after that point again.
+
+Once this has finished, type the following to exit:
+<syntaxhighlight>
+quit
+</syntaxhighlight>
+
+==Step 3: Acquiring libraries==
+
+We need to get a working (up-to-date enough) copy of libstdc++.so.6 to be used by libsteam_api.so. The easiest way is to go to the folder where you downloaded SteamCMD, and go into the "linux32" folder. There you will find the file. Run the following command to copy into the folder containing "Jcmp-Server"
+
+<syntaxhighlight>
+cp libstdc++.so.6 /path/to/jcmp/
+</syntaxhighlight>
+
+Also, the versions of steamclient.so and libsteam_api.so distributed via SteamCMD cause some high latency and instability, but slightly older versions taken from HL2:DM work perfectly. Download each of these two files into your jcmp folder (the folder containing the "Jcmp-Server" binary:
+
+http://gravitygunonly.com/files/steamclient.so
+
+http://gravitygunonly.com/files/libsteam_api.so
+
+==Step 4: Configuring JC2-MP==
+
+There are a couple of changes to be made to the JC2-MP server itself before running it for the first time.
+
+- First, we need to copy the default config file to "config.lua", then edit the file to your taste:
+
+<syntaxhighlight>
+cd /path/to/jcmp/
+cp default_config.lua config.lua
+</syntaxhighlight>
+
+- The next step is to install the latest versions of any official scripts you want. The scripts that ship with the server are outdated and usually non-functional, the best way to grab the latest versions are as follows:
+
+<syntaxhighlight>
+cd /path/to/jcmp
+git clone --recursive https://github.com/jc2mp/scripts.git
+</syntaxhighlight>
+
+==Step 5: Running JC2-MP==
+
+I have written a script to easily manage the operation of the JC2-MP server, you can find the thread for it [http://www.jc-mp.com/forums/index.php/topic,4059.msg30179.html here]:
+
+If you attempt this and have any issues, please reply to this thread and I will get back to you as soon as possible.
+
+==Step 6: Updating the server==
+
+To update the server to the latest version, simply follow the instructions in step 2, or if you're using the script linked to in step 5, run:
+
+<syntaxhighlight>
+./jcmp.sh update
+</syntaxhighlight>

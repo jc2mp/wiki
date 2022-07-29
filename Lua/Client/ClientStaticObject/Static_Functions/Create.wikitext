@@ -1,0 +1,105 @@
+{{Lua/Function |
+  returns = ClientStaticObject |
+  prototype = ClientStaticObject.Create(table) |
+  description = Spawns a ClientStaticObject using an argument table.
+}}
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="70" | Name
+!width="570" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| [[Lua/Shared/Angle|Angle]]
+| angle
+| 
+|-
+| string
+| model
+| Path to the model file. See [https://github.com/Philpax/jc2mp-model-viewer/blob/master/client/models.lua#L6 the model viewer] for the full list.
+|} {{Lua/Table_Suffix}}
+
+====Optional values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="90" | Name
+!width="75" | Default
+!width="495" | Notes
+|-
+| string
+| collision
+| ""
+| Path to the collision file. See [https://github.com/Philpax/jc2mp-model-viewer/blob/master/client/models.lua#L6 the model viewer] for the full list.
+|-
+| boolean
+| fixed
+| true
+| If false, the object will move smoothly and players can be transported while standing on it.
+|} {{Lua/Table_Suffix}}
+
+====Notes====
+
+* If {{Arg|collision}} isn't provided, or is invalid, the object will have no collision.
+* If {{Arg|fixed}} is false, you must provide a {{Arg|collision}} argument.
+
+==Example==
+
+====Create a ramp in front of you when the horn button is pressed====
+
+=====Client=====
+
+<syntaxhighlight line highlight="24">
+pressed = false
+objects = {}
+
+function SpawnRamp()
+	local vehicle = LocalPlayer:GetVehicle()
+	
+	-- Make sure they're in a vehicle
+	if not IsValid(vehicle) then
+		return
+	end
+	
+	local angle = vehicle:GetAngle()
+	local direction = angle * Vector3.Forward
+	-- Compensate for velocity. It doesn't always spawn instantly.
+	local position = vehicle:GetPosition() + direction * 35
+	angle = angle * Angle(math.pi * -0.5, 0, 0)
+	
+	spawnArgs = {}
+	spawnArgs.position = position
+	spawnArgs.angle = angle
+	spawnArgs.model = "17x48.fl/go666-b.lod"
+	spawnArgs.collision = "17x48.fl/go666_lod1-b_col.pfx"
+	
+	local object = ClientStaticObject.Create(spawnArgs)
+	table.insert(objects, object)
+end
+
+Events:Subscribe("PreTick", function()
+	local currentlyPressed = Input:GetValue(Action.SoundHornSiren) > 0
+	if currentlyPressed then
+		if pressed == false then
+			SpawnRamp()
+		end
+	end
+	
+	pressed = currentlyPressed
+end)
+
+-- Make sure to clean up everything on module unload.
+Events:Subscribe("ModuleUnload", function()
+	for index, object in ipairs(objects) do
+		object:Remove()
+	end
+end)
+
+</syntaxhighlight>

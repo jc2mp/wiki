@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = Timer |
+  prototype = Timer() |
+  description = Creates a new timer.
+}}

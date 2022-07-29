@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/Topology|Topology]] |
+  prototype = Model:GetTopology() |
+}}

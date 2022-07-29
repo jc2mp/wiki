@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = ClientEntity:SetPosition([[Lua/Shared/Vector3|Vector3]]) |
+}}

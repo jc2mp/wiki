@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = Angle |
+  prototype = Angle.FromVectors([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]]) |
+}}

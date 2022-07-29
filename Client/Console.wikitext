@@ -1,0 +1,30 @@
+The console is opened with the ~ or F4 keys.
+
+{| class="wikitable"
+!width="120" | '''Command'''
+!width="200" | Parameters
+!width="400" | Description
+|-
+| '''clear'''||||Clear the console.
+|-
+| '''connect'''||address:port||Connect to a server. Port is optional.
+|-
+| '''disconnect'''||||Disconnect from the server.
+|-
+| '''exit'''||||Quit the game.
+|-
+| '''gui_hide_fps'''||0 or 1||Show/hide the framerate from the top right.
+|-
+| '''gui_hide_logo'''||0 or 1||Show/hide the version number from the top right.
+|-
+| '''palaver'''||0 or 1||Enable/disable Moonbase Alpha mode.
+|-
+| '''password'''||string||Set password for next connection.
+|-
+| '''quit'''||||Quit the game.
+|-
+| '''reconnect'''||||Reconnect to the server.
+|-
+| '''r_fontscale'''||scale||Changes the scale of all text rendered, default is 1.
+|-
+|}

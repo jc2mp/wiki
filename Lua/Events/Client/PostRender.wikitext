@@ -1,0 +1,16 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired after JC2-MP renders. Anything rendered will be in front of any JC2-MP elements, including the chat, console, and pause menu.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	-- Draw a red dot in the center of the screen.
+	Render:FillCircle(Render.Size / 2, 5, Color(255, 0, 0))
+end
+
+Events:Subscribe("PostRender", Foo)
+</syntaxhighlight>

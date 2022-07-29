@@ -1,0 +1,22 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Bullet
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Explosion
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | None
+|{{Lua/Cell_Style/Enum_List_Value}} | 0
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Physics
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Vehicle
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|} {{Lua/Table_Suffix}}

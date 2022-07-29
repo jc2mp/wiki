@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = StatusBar |
+  prototype = StatusBar.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = StatusBar |
+  prototype = StatusBar.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = StatusBar |
+  prototype = StatusBar.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = StatusBar |
+  prototype = StatusBar.Create() |
+}}

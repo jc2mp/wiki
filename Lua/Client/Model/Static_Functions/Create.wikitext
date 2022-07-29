@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = Model |
+  prototype = Model.Create(object) |
+}}
+
+{{Lua/Function |
+  returns = Model |
+  prototype = Model.Create(number) |
+}}

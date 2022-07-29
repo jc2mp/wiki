@@ -1,0 +1,72 @@
+One of the really simple and cool things you can do on the client is draw a speedometer. In this first test, we'll print the raw velocity vector to the screen. [[Lua/Client/Vehicle/Functions/GetLinearVelocity|Vehicle:GetLinearVelocity]] returns a [[Lua/Shared/Vector3|Vector3]], and we want to turn it into a string, so we can use the ''tostring'' function.
+
+<syntaxhighlight>
+function DrawSpeedometer()
+	local vehicle = LocalPlayer:GetVehicle()
+	-- If vehicle is nil, we're not in a vehicle.
+	if vehicle then
+		local velocity = vehicle:GetLinearVelocity()
+		Render:DrawText(Render.Size / 2, tostring(velocity), Color(255, 255, 255))
+	end
+end
+
+Events:Subscribe("Render", DrawSpeedometer)
+</syntaxhighlight>
+
+[[File:Lua Tutorials Speedometer Image1.jpeg]]
+
+The primary problem with this is that it prints our velocity relative to the world; X is always east, but we want it to be relative to our vehicle. We need to rotate the velocity vector by the vehicle's (inverse) angle:
+
+<syntaxhighlight>
+local velocity = -vehicle:GetAngle() * vehicle:GetLinearVelocity()
+Render:DrawText(Render.Size / 2, tostring(velocity), Color(255, 255, 255))
+</syntaxhighlight>
+
+[[File:Lua Tutorials Speedometer Image2.jpeg]]
+
+If you play around with this change, you will notice that Z matches your negative forward velocity. This is what we want:
+
+<syntaxhighlight>
+local velocity = -vehicle:GetAngle() * vehicle:GetLinearVelocity()
+local forwardVelocity = -velocity.z
+Render:DrawText(Render.Size / 2, tostring(forwardVelocity), Color(255, 255, 255))
+</syntaxhighlight>
+
+[[File:Lua Tutorials Speedometer Image3.jpeg]]
+
+We can use ''string.format'' to make it look better:
+
+<syntaxhighlight>
+local velocity = -vehicle:GetAngle() * vehicle:GetLinearVelocity()
+local forwardVelocity = -velocity.z
+local speedString = string.format("%i", forwardVelocity * 3.6).." km/h"
+Render:DrawText(Render.Size / 2, speedString, Color(255, 255, 255))
+</syntaxhighlight>
+
+[[File:Lua Tutorials Speedometer Image4.jpeg]]
+
+We are going to position the text at the bottom and make it larger. This is the final product:
+
+<syntaxhighlight>
+function DrawSpeedometer()
+	local vehicle = LocalPlayer:GetVehicle()
+	if vehicle then
+		local velocity = -vehicle:GetAngle() * vehicle:GetLinearVelocity()
+		local forwardVelocity = -velocity.z
+		local speedString = string.format("%i", forwardVelocity * 3.6).." km/h"
+		
+		-- Set position to the middle bottom of the screen.
+		local position = Vector2(Render.Width/2, Render.Height)
+		-- Move up by the text height.
+		position.y = position.y - Render:GetTextHeight(speedString, TextSize.Large)
+		-- Center the text.
+		position.x = position.x - Render:GetTextWidth(speedString, TextSize.Large) / 2
+		
+		Render:DrawText(position, speedString, Color(255, 255, 255), TextSize.Large)
+	end
+end
+
+Events:Subscribe("Render", DrawSpeedometer)
+</syntaxhighlight>
+
+[[File:Lua Tutorials Speedometer Image5.jpeg]]

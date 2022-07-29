@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ScrollControl |
+  prototype = ScrollControl.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ScrollControl |
+  prototype = ScrollControl.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ScrollControl |
+  prototype = ScrollControl.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ScrollControl |
+  prototype = ScrollControl.Create() |
+}}

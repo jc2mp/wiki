@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Image:SetPosition([[Lua/Shared/Vector2|Vector2]]) |
+}}

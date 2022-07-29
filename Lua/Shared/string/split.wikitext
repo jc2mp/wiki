@@ -1,0 +1,53 @@
+{{Lua/Function |
+  returns = table |
+  prototype = string.split(string {{Arg|input}}, string {{Arg|delimiter}}[, boolean {{Arg|compress}}]) |
+  description = Splits the {{Arg|input}} string by a {{Arg|delimiter}}, and optionally removes any empty values ({{Arg|compress}}).
+}}
+
+==Examples==
+
+====Basic example====
+<syntaxhighlight>
+string.split("hello|how|are|you||", "|", true)
+-- returns { 1 = "hello", 2 = "how", 3 = "are", 4 = "you", 5 = "" }
+string.split("hello|how|are|you||", "|", false)
+-- returns { 1 = "hello", 2 = "how", 3 = "are", 4 = "you", 5 = "", 6 = "" }
+</syntaxhighlight>
+
+====Kick a specified player====
+<syntaxhighlight>
+Foo = function(args)
+	local arguments = string.split(args.text, " ", true) -- split the player's chat message by spaces
+	
+	if table.count(arguments) == 2 then -- make sure that there's at least two values in the table
+		if arguments[1] == "!kick" then -- then ensure that we're actually trying to kick someone
+			local plr = Player.Match(arguments[2]) -- get a list of all the players that match the input (second argument)
+
+			if table.count(plr) > 1 then -- if we find more than one player, ask the person who ran the command to be more specific
+				local playerlist = ""
+				for k, p in pairs(plr) do
+					playerlist = playerlist..p:GetName()
+					if k ~= table.count(plr) then -- don't append a comma if we don't need to
+						playerlist = playerlist..", "  
+					end
+				end
+
+				args.player:SendChatMessage("Multiple players found, be more specific: "..playerlist, Color(255,0,0))
+			else
+				if plr[1] ~= nil then
+					plr[1]:Kick()
+				else
+					args.player:SendChatMessage("Sorry, could not find "..arguments[2], Color(255,0,0))
+				end
+			end
+		end
+	end
+end
+ 
+Events:Subscribe("PlayerChat", Foo)
+-- args.text = "!kick jmazouri"
+-- arguments = { 1 = "!kick", 2 = "jmazouri" }
+</syntaxhighlight>
+
+==Additional Notes==
+*This method is currently bugged, as despite "compress" being set to true, it still returns an empty value if the delimiter is present at the end of the input string (as shown in the examples).

@@ -1,0 +1,8 @@
+{{Lua/Function |
+  prototype = Console:Run(string {{arg|command}}) |
+  description = Runs the specified string as a console command.
+}}
+
+==Additional Notes==
+* Only available on the server
+* Requires IKnowWhatImDoing config enabled

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = Timer:Restart() |
+  description = Resets the timer to 0.
+}}

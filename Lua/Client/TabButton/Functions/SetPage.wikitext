@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = TabButton:SetPage([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}

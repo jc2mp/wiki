@@ -1,0 +1,35 @@
+==Resource usage==
+
+A server requires very little resources, a $5 VPS from [https://www.digitalocean.com/?refcode=c053cdfd84c5 Digital Ocean] can easily run a few hundred players.
+The main bottlenecks are usually (in order): bandwidth, CPU, uplink, memory and diskspace. For more hosts, please check out our [[Server/Hosts|Server Hosts]] page.
+
+===Bandwidth and network usage===
+While this greatly depends on scripts and sync rates, generally 100 players will use 5 mbit up and 1 mbit down.
+This means a server with 100 players consistently throughout the entire month uses 2 TB of bandwidth.
+
+===CPU Usage===
+This again greatly depends on scripts and sync rates, a server with a few light scripts will use about 10% of an i5 CPU at 3.10 GHz.
+Most servers however will be running huge scripts so it entirely depends on the scripts and their optimisation.
+
+===Memory and disk usage===
+This entirely depends upon your scripts and log file. The server without any scripts or log file uses around 30 MB of disk space and 40 MB of RAM.
+
+==Beta tests==
+We ran the final beta test on a dedicated server with the following specifications:
+* Intel(R) Core(TM) i5-3570S CPU
+* 4 cores at 3.10 GHz
+* 8 GB of RAM
+* 2x 1 TB at 7200 rpm in software RAID 1
+* 100 mbit full-duplex
+
+Please note that most of this was not necessary, on average the server used:
+* 1-2 full cores
+* 400 MB of memory
+* 250 MB of disk space
+* 50 mbit up, 10 mbit down
+
+===Resource graphs===
+[[File:Resources_players.png|200px|top]]
+[[File:Resources_cpu.png|200px|top]]
+[[File:Resources_memory.png|200px|top]]
+[[File:Resources_network.png|200px|top]]

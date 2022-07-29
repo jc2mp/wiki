@@ -1,0 +1,56 @@
+{{Lua/Function |
+  returns = string |
+  prototype = Vehicle:GetTemplate() |
+}}
+
+== Description ==
+Gets a vehicle's template, which can change several attributes about it. Here is a list of valid templates:
+* Armed
+* Buggy
+* BuggyMG
+* Cab
+* Cannon
+* Civil
+* Classic_Cab
+* Classic_Hardtop
+* Combi
+* CombiMG
+* Crane
+* Crate
+* Cutscene
+* Default
+* Djonk01
+* Djonk02
+* Djonk03
+* Djonk04
+* Dome
+* Double
+* Fishing
+* FullyUpgraded
+* Gimp
+* Hardtop
+* HardtopMG
+* Hijack_Rear
+* Ingame
+* Jeep
+* MG
+* MGCannon
+* Military
+* Mission
+* Modern_Cab
+* Modern_Hardtop
+* Police
+* Regular
+* Resource Name
+* Roaches
+* Russian
+* Single
+* Softtop
+* Sport
+* Standard
+* TestAcceleration
+* TestHandling
+* TestTopSpeed
+* UnArmed
+* WeaponUpgrade0
+* WeaponUpgrade1

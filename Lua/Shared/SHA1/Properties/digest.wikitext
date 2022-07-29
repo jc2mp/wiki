@@ -1,0 +1,4 @@
+{{Lua/Property |
+  type = string |
+  prototype = SHA1.digest |
+}}

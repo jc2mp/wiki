@@ -1,0 +1,10 @@
+{{Lua/Function |
+  prototype = Chat:SetActive(boolean) |
+}}
+==Description==
+Opens or closes the chat's entry box.
+
+==See also==
+
+* [[Lua/Client/Chat/Functions/GetActive|Chat:GetActive]]
+* [[Lua/Client/Chat/Functions/SetEnabled|Chat:SetEnabled]]

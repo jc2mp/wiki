@@ -1,0 +1,210 @@
+Welcome to the JC2-MP Linux server tutorial. This page will explain the very basics of setting up a Linux server. This tutorial assumes you already have some basic Linux knowledge.
+
+==64-bit servers==
+SteamCMD and their libraries are currently 32-bit only, so our server is limited to 32-bit.
+You can still run it on a 64-bit server by installing the required packages shown below.
+
+===Debian, Ubuntu, Mint===
+
+<syntaxhighlight>
+dpkg --add-architecture i386
+apt-get update
+apt-get install libc6-i386 lib32gcc1 lib32stdc++6
+</syntaxhighlight>
+
+===CentOS, RHEL, Fedora===
+
+<syntaxhighlight>
+yum install glibc.i686 libstdc++.i686
+</syntaxhighlight>
+
+==Downloading SteamCMD==
+First we need to download SteamCMD. For more information on SteamCMD please [https://developer.valvesoftware.com/wiki/SteamCMD click here]
+
+Login to your server with SSH, then head over to the home directory, we will make our Steam folder there.
+
+<syntaxhighlight>
+cd ~/
+mkdir steam
+cd steam
+</syntaxhighlight>
+
+
+Now we can download SteamCMD and unpack it.
+
+<syntaxhighlight>
+wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
+tar -xvf steamcmd_linux.tar.gz
+rm steamcmd_linux.tar.gz
+</syntaxhighlight>
+
+==Running SteamCMD and downloading the server==
+Now we need to run SteamCMD.
+
+<syntaxhighlight>
+./steamcmd.sh
+</syntaxhighlight>
+
+SteamCMD will now update and it might download some files, wait until it finishes.
+
+
+Then it's time to login with an anonymous Steam account to get access to the server
+<syntaxhighlight>
+login anonymous
+</syntaxhighlight>
+
+Now let's download the latest server version!
+
+<syntaxhighlight>
+force_install_dir ./jcmp
+app_update 261140
+</syntaxhighlight>
+
+To install the public beta. Keep in mind, only players who opt-in to the public beta will be able to join this server
+
+<syntaxhighlight>
+force_install_dir ./jcmp
+app_update 261140 -beta publicbeta
+</syntaxhighlight>
+
+If you get problems with the installation, you may try validating the server files.
+
+<syntaxhighlight>
+app_update 261140 validate
+</syntaxhighlight>
+
+It will now download the latest server version. Once it is done downloading we can safely exit SteamCMD.
+
+<syntaxhighlight>
+quit
+</syntaxhighlight>
+
+==Changing the server options==
+First, let's move to the JC2-MP server directory.
+
+<syntaxhighlight>
+cd jcmp
+</syntaxhighlight>
+
+By default, your server will not come with a config.lua - instead, it comes with a default config. To use it, simply move it into place:
+
+<syntaxhighlight>
+mv default_config.lua config.lua
+</syntaxhighlight>
+
+Now, use your favorite editor to edit the server's configuration file. For most people, nano will be sufficient:
+
+<syntaxhighlight>
+nano config.lua
+</syntaxhighlight>
+
+Every possible server option is explained in the configuration file. Simply follow the instructions.
+
+
+==Starting up the server in screen==
+Now that we have successfully downloaded the server and configured it, we can now start it up. We will do this in a screen.
+
+
+If you do not have screen installed type:
+
+<syntaxhighlight>
+apt-get install screen
+</syntaxhighlight>
+
+on Debian based systems or:
+
+<syntaxhighlight>
+yum install screen
+</syntaxhighlight>
+
+on Redhat based systems.
+
+And follow the instructions. 
+
+
+Now start the screen and the server.
+
+<syntaxhighlight>
+screen -dmS jcmp ./Jcmp-Server
+</syntaxhighlight>
+
+This will run a silent screen in the background. 
+
+
+To access the screen / JC2-MP server type the following:
+
+<syntaxhighlight>
+screen -x jcmp
+</syntaxhighlight>
+
+It should now say that the server has successfully started. 
+
+Your server may say something along the lines of "[S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed." - this is perfectly normal. As long as your server says "Server started up successfully", your server is fine.
+
+You can press CTRL + A then CTRL + D to exit the screen safely without stopping the server.
+
+
+You are now ready to play on your own server and you can start adding scripts and gamemodes.
+
+
+To stop the server and kill the screen type:
+
+<syntaxhighlight>
+screen -S jcmp -X quit
+</syntaxhighlight>
+
+==Updating the server==
+To update the server to the latest version we will need to run SteamCMD again.
+
+
+First cd to your Steam directory.
+
+<syntaxhighlight>
+cd /home/steam
+</syntaxhighlight>
+
+Now run SteamCMD.
+<syntaxhighlight>
+./steamcmd.sh
+</syntaxhighlight>
+
+Then it's time to login with an anonymous Steam account to get access to the server
+<syntaxhighlight>
+login anonymous
+</syntaxhighlight>
+
+Now let's update to the latest server version!
+
+<syntaxhighlight>
+force_install_dir ./jcmp
+app_update 261140
+</syntaxhighlight>
+
+If you get problems with the install, try validating the server files.
+
+<syntaxhighlight>
+app_update 261140 validate
+</syntaxhighlight>
+
+You can now quit SteamCMD.
+
+<syntaxhighlight>
+quit
+</syntaxhighlight>
+
+
+Congratulations, your server is now updated to the latest version!
+
+==FAQ==
+
+Q) When I try to run the server, I get the following error: 
+<syntaxhighlight>
+Jcmp-Server: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15` not found (required by ./libsteam_api.so)
+</syntaxhighlight>
+
+A) This either means that you are running an older version of Debian, or you're running CentOS. To solve this, copy libstdc++.so.6 from the linux32 folder where your steamcmd.sh script is into the folder where your Jcmp-Server binary is located.
+
+
+Q) One of the default scripts are not working on my linux server.
+
+A) This is caused most likely because the scripts that you downloaded with the server are '''outdated''', so you will need to download and install the updated ones from [https://github.com/jc2mp/scripts GitHub].

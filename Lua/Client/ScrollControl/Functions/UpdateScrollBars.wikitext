@@ -1,0 +1,5 @@
+{{Lua/Deprecated | version = 0.1.3}}
+
+{{Lua/Function |
+  prototype = ScrollControl:UpdateScrollBars() |
+}}

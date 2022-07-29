@@ -1,0 +1,11 @@
+{|
+!width="200" align="right"|<font size="3">Name</font> &nbsp;&nbsp;
+|<font size="3">{{{name|{{SUBPAGENAME}}}}}</font>
+|-
+!width="200" align="right"|<font size="3">Arguments <font size="1">(in table)</font></font> &nbsp;&nbsp;
+|<font size="3">{{{arguments|None}}}</font>
+|-
+!width="200" align="right"|<font size="3">Return option</font> &nbsp;&nbsp;
+|<font size="3">{{{return|None}}}</font>
+|}
+<br/>

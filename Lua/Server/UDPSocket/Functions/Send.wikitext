@@ -1,0 +1,6 @@
+{{Lua/Function |
+  prototype = UDPSocket:Send(string {{arg|IP}}, number {{arg|port}}, string {{arg|message}}) |
+}}
+
+==Description==
+Sends the given message to the given IP and port

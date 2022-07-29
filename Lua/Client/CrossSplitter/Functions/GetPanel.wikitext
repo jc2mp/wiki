@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/BaseWindow|BaseWindow]] |
+  prototype = CrossSplitter:GetPanel(number) |
+}}

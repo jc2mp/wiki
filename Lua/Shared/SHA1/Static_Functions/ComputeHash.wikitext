@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = string |
+  prototype = SHA1.ComputeHash(string) |
+}}

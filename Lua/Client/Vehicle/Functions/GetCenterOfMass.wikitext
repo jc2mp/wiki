@@ -1,0 +1,5 @@
+{{Lua/Function
+ | returns = [[Lua/Shared/Vector3|Vector3]]
+ | prototype = Vehicle:GetCenterOfMass()
+ | description = Returns the vehicle's center of mass, in world coordinates.
+}}

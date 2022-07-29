@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Label:SetText(string, boolean) |
+}}
+
+{{Lua/Function |
+  prototype = Label:SetText(string) |
+}}

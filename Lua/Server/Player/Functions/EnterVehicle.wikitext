@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = Player:EnterVehicle([[Lua/Server/Vehicle|Vehicle]], [[Lua/Server/VehicleSeat|VehicleSeat]]) |
+}}

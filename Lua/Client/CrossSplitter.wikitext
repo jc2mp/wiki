@@ -1,0 +1,73 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | CrossSplitter
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | CrossSplitter
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | CrossSplitter
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | CrossSplitter
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/CenterPanels|CenterPanels]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/BaseWindow|BaseWindow]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/GetPanel|GetPanel]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/GetZoomed|GetZoomed]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/SetPanel|SetPanel]](number, [[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/SetSplitterSize|SetSplitterSize]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/Unzoom|Unzoom]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/CrossSplitter/Functions/Zoom|Zoom]](number)
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | CrossSplitter == CrossSplitter
+|} {{Lua/Table_Suffix}}

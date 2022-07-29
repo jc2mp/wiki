@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = boolean |
+  prototype = Player:InVehicle() |
+  description = Returns whether the player is inside a vehicle. It returns true for driving in a vehicle or being a passenger in one; however, it returns false for stunt-position.
+}}
+
+==See also==
+* [[Lua/Server/Player/Functions/GetVehicle|Player:GetVehicle]]

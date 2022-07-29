@@ -1,0 +1,66 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | UDPSocket
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Static Functions/Create|Create]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | UDPSocket
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Static Functions/Create|Create]](number {{arg|port}})
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Functions/Bind|Bind]](number {{arg|port}})
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Functions/Close|Close]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Functions/Receive|Receive]](object {{arg|class}}, function {{arg|callback}})
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Functions/Receive|Receive]](function {{arg|callback}})
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/UDPSocket/Functions/Send|Send]](string {{arg|IP}}, number {{arg|port}}, string {{arg|message}})
+|} {{Lua/Table_Suffix}}
+
+
+==Example of a receiver==
+<syntaxhighlight>
+
+local server = UDPSocket.Create()  -- Creation of the socket
+server:Bind(1734)                  -- Binding of the socket to the port 1734
+
+function Receive(args)
+        print(args.ip)      -- The IP this packet comes from.
+        print(args.port)    -- The port this message comes through.
+        print(args.bytes)   -- The size of the packet.
+        print(args.text)    -- The actual message of the packet (to transfer tables you can use json).
+
+	server:Close()      -- For some reason the socket will only accept one packet, so we have to destroy and recreate it.
+	server = nil
+	server = UDPSocket.Create()
+	server:Bind(1734)
+	server:Receive(Receive)
+end
+server:Receive(Receive)     -- Adding the receive-handler
+</syntaxhighlight>
+
+
+==Example of a sender==
+<syntaxhighlight>
+local client = UDPSocket.Create()               -- Create the socket.
+client:Send("127.0.0.1", 1734, "Hello there.")  -- Send a packet to the IP "127.0.0.1" (to ourselves) on port 1734 with the message "Hello there."
+client:Close()                                  -- Close the socket.
+</syntaxhighlight>

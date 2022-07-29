@@ -1,0 +1,9 @@
+{{Lua/Function |
+  prototype = Player:SetPosition([[Lua/Shared/Vector3|Vector3]] {{arg|position}}) |
+}}
+
+==Description==
+Sets the player's position to {{arg|position}}.
+
+==See also==
+* [[Lua/Server/Player/Functions/SetAngle|Player:SetAngle]]

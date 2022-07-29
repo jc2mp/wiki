@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = Base |
+  prototype = BaseWindow:SizeToChildren(boolean {{arg|horizontal}}, boolean {{arg|vertical}}) |
+}}
+
+{{Lua/Function |
+  returns = Base |
+  prototype = BaseWindow:SizeToChildren() |
+}}

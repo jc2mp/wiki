@@ -1,0 +1,31 @@
+<center>
+{|
+!
+!
+|
+[[File:Lua_Logo.gif| right]]
+|
+[http://www.lua.org/about.html Lua] is a powerful, fast, lightweight, embeddable scripting language.
+
+It is the scripting language used in JC2-MP.
+
+Lua 5.2 is the version supported.
+
+You are welcome to join our IRC channel, [irc://irc.jc-mp.com/#jc2-mp.lua #jc2-mp.lua], on irc.jc-mp.com.
+|}
+</center>
+
+<center>
+<font size="6">
+
+{|
+|[[Lua/Tutorials|Tutorials]]
+|}
+
+{|
+!width ="150" height="80"|[[Lua/Server|Server]]
+!width ="150" height="80"|[[Lua/Client|Client]]
+!width ="150" height="80"|[[Lua/Shared|Shared]]
+|}
+</font>
+</center>

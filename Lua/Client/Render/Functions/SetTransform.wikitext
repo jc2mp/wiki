@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Render:SetTransform([[Lua/Shared/Transform2|Transform2]]) |
+}}
+
+{{Lua/Function |
+  prototype = Render:SetTransform([[Lua/Shared/Transform3|Transform3]]) |
+}}

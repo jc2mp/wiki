@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/RadioButton|RadioButton]] |
+  prototype = LabeledRadioButton:GetRadioButton() |
+}}

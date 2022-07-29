@@ -1,0 +1,14 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Render:GetTextHeight(string text, number fontsize, number scale) |
+}}
+
+{{Lua/Function |
+  returns = number |
+  prototype = Render:GetTextHeight(string text, number fontsize) |
+}}
+
+{{Lua/Function |
+  returns = number |
+  prototype = Render:GetTextHeight(string text) |
+}}

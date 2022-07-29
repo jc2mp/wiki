@@ -1,0 +1,34 @@
+{{Lua/Event}}
+
+==Description==
+
+This event is the only place you should use the [[Lua/Client/Input/Functions/SetValue|Input:SetValue]] function. It is called every frame.
+
+==Examples==
+
+====Force the handbrake on while in any vehicle====
+
+<syntaxhighlight>
+Foo = function(args)
+	Input:SetValue(Action.Handbrake, 1.0)
+end
+
+Events:Subscribe("InputPoll", Foo)
+</syntaxhighlight>
+
+====Simulate broken car steering====
+
+<syntaxhighlight>
+Foo = function(args)
+	if Input:GetValue(Action.TurnRight) == 0 and Input:GetValue(Action.TurnLeft) == 0 then
+		local value = os.clock() + (math.random() - 0.5)
+		if value % 1 > 0.5 then
+			Input:SetValue(Action.TurnRight, 1)
+		else
+			Input:SetValue(Action.TurnLeft, 1)
+		end
+	end
+end
+
+Events:Subscribe("InputPoll", Foo)
+</syntaxhighlight>

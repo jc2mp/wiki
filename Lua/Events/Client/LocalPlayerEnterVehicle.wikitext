@@ -1,0 +1,24 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Vehicle|Vehicle]] vehicle, boolean is_driver
+}}
+
+==Description==
+
+Fired when you enter a vehicle.
+
+==Examples==
+
+<syntaxhighlight>
+Foo = function(args)
+	local message
+	if args.is_driver then
+		message = "You entered a "..args.vehicle:GetName().." as driver"
+	else
+		message = "You entered a "..args.vehicle:GetName()
+	end
+
+	Chat:Print(message, Color(255, 255, 255))
+end
+
+Events:Subscribe("LocalPlayerEnterVehicle", Foo)
+</syntaxhighlight>

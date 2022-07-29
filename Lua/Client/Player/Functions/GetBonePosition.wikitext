@@ -1,0 +1,9 @@
+{{Lua/Function
+ | returns = [[Lua/Shared/Vector3|Vector3]]
+ | prototype = Player:GetBonePosition(string)
+ | description = Returns the position of the bone specified.
+}}
+
+==Bones reference==
+
+<center>[[File:Bones Reference.jpg]]</center>

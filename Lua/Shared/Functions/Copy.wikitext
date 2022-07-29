@@ -1,0 +1,29 @@
+{{Lua/Function|
+  returns = object
+  | prototype = object
+  | description = Returns a copy of the object.
+}}
+
+==In depth description==
+
+Many types, such as tables and the JC2-MP API classes, are copied by reference (''a = b''). This function allows you to copy by value instead. A common use is performing a deep-copy on a large table.
+
+Any type that can be marshalled can be used. That is, anything that [[Lua/Shared/Network/Functions/Send|Network:Send]] and [[Lua/Shared/Events/Functions/Fire|Events:Fire]] can pass along will work. Numbers, Vectors, tables, and so on. See [[Lua/Tutorials/Reference/Marshallable_Types|here]] for the list. Copying Players or Worlds or the like will not actually copy them; this function is not very useful for those types.
+
+==Motivation==
+
+If you have a Color ''color1'' and you want to copy it into ''color2'', simply doing ''color2 = color1'' will make ''color2'' a reference to ''color1''. If you do ''color2.r = 123'', it will change color1, too, which may not be what you want.
+
+You could manually recreate the Color, but it is annoying:
+
+<syntaxhighlight>
+color1 = Color(255, 0, 0, 128)
+color2 = Color(color1.r, color1.g, color1.b, color1.a)
+</syntaxhighlight>
+
+This is where Copy comes in:
+
+<syntaxhighlight>
+color1 = Color(255, 0, 0, 128)
+color2 = Copy(color1)
+</syntaxhighlight>

@@ -1,0 +1,316 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Invisibledoll
+|{{Lua/Cell_Style/Enum_List_Value}} | 20
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc01Rico
+|{{Lua/Cell_Style/Enum_List_Value}} | 51
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc02Jadetan
+|{{Lua/Cell_Style/Enum_List_Value}} | 65
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc03Generalmasayo
+|{{Lua/Cell_Style/Enum_List_Value}} | 70
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc04Karlblaine
+|{{Lua/Cell_Style/Enum_List_Value}} | 9
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc05Babypanay
+|{{Lua/Cell_Style/Enum_List_Value}} | 74
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc05BurnedBabypanay
+|{{Lua/Cell_Style/Enum_List_Value}} | 97
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc05BurnedRocketbaby
+|{{Lua/Cell_Style/Enum_List_Value}} | 67
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc06Sicini
+|{{Lua/Cell_Style/Enum_List_Value}} | 38
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc09Razman
+|{{Lua/Cell_Style/Enum_List_Value}} | 2
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc10Santosi
+|{{Lua/Cell_Style/Enum_List_Value}} | 90
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc11Kane
+|{{Lua/Cell_Style/Enum_List_Value}} | 25
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc12Sheldon
+|{{Lua/Cell_Style/Enum_List_Value}} | 34
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc13Alexandermirikov
+|{{Lua/Cell_Style/Enum_List_Value}} | 84
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Mc14Zhangsun
+|{{Lua/Cell_Style/Enum_List_Value}} | 11
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 41
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageFemale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 102
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageFemale3
+|{{Lua/Cell_Style/Enum_List_Value}} | 31
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 75
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 91
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdArcticvillageMale3
+|{{Lua/Cell_Style/Enum_List_Value}} | 73
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdBlackhand
+|{{Lua/Cell_Style/Enum_List_Value}} | 42
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdBlackmarket
+|{{Lua/Cell_Style/Enum_List_Value}} | 100
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdCityFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 92
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdCityMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 7
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdCityMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 35
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdDesertvillageFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 62
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdDesertvillageMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 99
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdFactioninterestGeneral
+|{{Lua/Cell_Style/Enum_List_Value}} | 61
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdFishervillageMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 56
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdFishervillageMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 29
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdFishervillageMale3
+|{{Lua/Cell_Style/Enum_List_Value}} | 93
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdFishervillageMale4
+|{{Lua/Cell_Style/Enum_List_Value}} | 68
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 46
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericFemale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 47
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericFemale3
+|{{Lua/Cell_Style/Enum_List_Value}} | 94
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericFemale4
+|{{Lua/Cell_Style/Enum_List_Value}} | 14
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericFemale5
+|{{Lua/Cell_Style/Enum_List_Value}} | 72
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 10
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 28
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericMale3
+|{{Lua/Cell_Style/Enum_List_Value}} | 13
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericMale4
+|{{Lua/Cell_Style/Enum_List_Value}} | 24
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericMale5
+|{{Lua/Cell_Style/Enum_List_Value}} | 76
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGenericReligiousMale
+|{{Lua/Cell_Style/Enum_List_Value}} | 37
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGovBase01
+|{{Lua/Cell_Style/Enum_List_Value}} | 66
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGovBase02
+|{{Lua/Cell_Style/Enum_List_Value}} | 52
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdGovElite
+|{{Lua/Cell_Style/Enum_List_Value}} | 77
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsBoatcaptain
+|{{Lua/Cell_Style/Enum_List_Value}} | 26
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsBodyguardchinese
+|{{Lua/Cell_Style/Enum_List_Value}} | 6
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsBodyguardjapanese
+|{{Lua/Cell_Style/Enum_List_Value}} | 96
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsBodyguardrussian
+|{{Lua/Cell_Style/Enum_List_Value}} | 54
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsBombombohilano
+|{{Lua/Cell_Style/Enum_List_Value}} | 64
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsChinabusinessman
+|{{Lua/Cell_Style/Enum_List_Value}} | 19
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsCivStrippersFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 53
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsCivStrippersMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 43
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsCivStrippersMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 81
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsDoorman
+|{{Lua/Cell_Style/Enum_List_Value}} | 48
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsExclusiveguest
+|{{Lua/Cell_Style/Enum_List_Value}} | 80
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsExclusiveguestVariant1
+|{{Lua/Cell_Style/Enum_List_Value}} | 55
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsExclusiveguestVariant2
+|{{Lua/Cell_Style/Enum_List_Value}} | 95
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsFactoryboss
+|{{Lua/Cell_Style/Enum_List_Value}} | 40
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsFactoryworkers
+|{{Lua/Cell_Style/Enum_List_Value}} | 89
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsGambler
+|{{Lua/Cell_Style/Enum_List_Value}} | 33
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsGovDemoexpert
+|{{Lua/Cell_Style/Enum_List_Value}} | 3
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsGovPilot
+|{{Lua/Cell_Style/Enum_List_Value}} | 98
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsGovShielder
+|{{Lua/Cell_Style/Enum_List_Value}} | 101
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsGovcaptain
+|{{Lua/Cell_Style/Enum_List_Value}} | 49
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsHacker
+|{{Lua/Cell_Style/Enum_List_Value}} | 18
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsJapaneseveterans
+|{{Lua/Cell_Style/Enum_List_Value}} | 79
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsPaparazzi
+|{{Lua/Cell_Style/Enum_List_Value}} | 21
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsPolitician
+|{{Lua/Cell_Style/Enum_List_Value}} | 36
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsRacechallengegirl
+|{{Lua/Cell_Style/Enum_List_Value}} | 60
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsReapersTechnician
+|{{Lua/Cell_Style/Enum_List_Value}} | 8
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsRoachesTechnician
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsSaulsukarno
+|{{Lua/Cell_Style/Enum_List_Value}} | 71
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsScientistMale
+|{{Lua/Cell_Style/Enum_List_Value}} | 23
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsStrandedcopilot
+|{{Lua/Cell_Style/Enum_List_Value}} | 30
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsStrippersFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 86
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsStrippersMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 15
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsStrippersMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 17
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsThugboss
+|{{Lua/Cell_Style/Enum_List_Value}} | 78
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsUlarTechnician
+|{{Lua/Cell_Style/Enum_List_Value}} | 22
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsWaiter
+|{{Lua/Cell_Style/Enum_List_Value}} | 45
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsWhitetigers
+|{{Lua/Cell_Style/Enum_List_Value}} | 83
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdMsWitness
+|{{Lua/Cell_Style/Enum_List_Value}} | 69
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdNinja
+|{{Lua/Cell_Style/Enum_List_Value}} | 44
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdOilplatformMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 57
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdOilplatformMale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 50
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdPanaupolice
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdReapersbase1
+|{{Lua/Cell_Style/Enum_List_Value}} | 12
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdReapersbase2
+|{{Lua/Cell_Style/Enum_List_Value}} | 58
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdReaperselite1
+|{{Lua/Cell_Style/Enum_List_Value}} | 63
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdRoachesbase1
+|{{Lua/Cell_Style/Enum_List_Value}} | 85
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdRoachesbase2
+|{{Lua/Cell_Style/Enum_List_Value}} | 59
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdRoacheselite1
+|{{Lua/Cell_Style/Enum_List_Value}} | 5
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdThugs1
+|{{Lua/Cell_Style/Enum_List_Value}} | 1
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdThugs2
+|{{Lua/Cell_Style/Enum_List_Value}} | 39
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdTouristFemale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 4
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdTouristFemale2
+|{{Lua/Cell_Style/Enum_List_Value}} | 82
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdTouristMale1
+|{{Lua/Cell_Style/Enum_List_Value}} | 88
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdUlarboysbase1
+|{{Lua/Cell_Style/Enum_List_Value}} | 27
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdUlarboysbase2
+|{{Lua/Cell_Style/Enum_List_Value}} | 103
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | PdUlarboyselite1
+|{{Lua/Cell_Style/Enum_List_Value}} | 87
+|} {{Lua/Table_Suffix}}

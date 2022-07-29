@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3.Dot(Vector3, Vector3) |
+  description = Calculates the dot product of the given vectors.
+}}

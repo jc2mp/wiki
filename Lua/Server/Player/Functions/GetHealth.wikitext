@@ -1,0 +1,10 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Player:GetHealth() |
+}}
+
+==Description==
+Returns the player's health, as a percentage of maximum health between 0 and 1. If the player's maximum health has been increased, such as by firing the "ply.armorpart.add" [[Lua/Client/Game/Functions/FireEvent|Game Event]], 1 corresponds to the new maximum, not the default maximum.
+
+==See also==
+* [[Lua/Server/Player/Functions/SetHealth|Player:SetHealth]]

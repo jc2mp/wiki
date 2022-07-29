@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Network:Send(Player, string, object) |
+}}
+
+{{Lua/Function |
+  prototype = Network:Send(Player, string) |
+}}

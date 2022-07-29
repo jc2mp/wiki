@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Tree |
+  prototype = Tree.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Tree |
+  prototype = Tree.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Tree |
+  prototype = Tree.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Tree |
+  prototype = Tree.Create() |
+}}

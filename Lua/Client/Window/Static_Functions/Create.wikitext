@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = WindowControl |
+  prototype = Window.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = WindowControl |
+  prototype = Window.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = WindowControl |
+  prototype = Window.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = WindowControl |
+  prototype = Window.Create() |
+}}

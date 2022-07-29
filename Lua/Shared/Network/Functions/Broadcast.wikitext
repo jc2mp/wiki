@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Network:Broadcast(string) |
+}}
+
+{{Lua/Function |
+  prototype = Network:Broadcast(string, object) |
+}}

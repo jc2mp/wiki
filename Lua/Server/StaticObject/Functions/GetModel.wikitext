@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = string |
+  prototype = StaticObject:GetModel() |
+  description = Returns the name of the model file associated with the StaticObject. | 
+}}

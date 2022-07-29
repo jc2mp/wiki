@@ -1,0 +1,5 @@
+* If you are running any kind of third-party overlay or recording software, such as Xfire or Fraps, try disabling them. If that doesn't work, try disabling the Steam overlay.
+
+* Try verifying the game files of '''Just Cause 2''' with steam:
+
+[[File:Verify_Integrity_Of_Game_Cache.png]]

@@ -1,0 +1,104 @@
+{{Lua/Function |
+  returns = ClientSound |
+  prototype = ClientSound.Create([[Lua/Client/AssetLocation|AssetLocation]], table) |
+}}
+
+====Required values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="70" | Name
+!width="570" | Notes
+|-
+| [[Lua/Shared/Vector3|Vector3]]
+| position
+| 
+|-
+| number
+| bank_id
+|
+|-
+| number
+| sound_id
+|
+|} {{Lua/Table_Suffix}}
+
+====Optional values====
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!width="60" | Type
+!width="90" | Name
+!width="495" | Notes
+|-
+| number
+| variable_id_distance
+| 
+|-
+| number
+| variable_id_focus
+| 
+|-
+| number
+| variable_id_rain
+| 
+|-
+| number
+| variable_id_time_of_day
+| 
+|-
+| number
+| variable_id_timeline
+| 
+|} {{Lua/Table_Suffix}}
+
+==Example==
+
+====Create the Mile High Club music where you click====
+
+<syntaxhighlight line highlight="27">
+sound = nil
+
+Events:Subscribe("MouseDown", function(args)
+	if args.button ~= 1 then
+		return
+	end
+	
+	Chat:Print("Creating sound", Color.White)
+	
+	-- If a sound is already playing, remove it. This makes sure only one sound plays at once.
+	CleanUp()
+	
+	local result = Physics:Raycast(
+		Camera:GetPosition(),
+		Camera:GetAngle() * Vector3.Forward,
+		0,
+		100
+	)
+	
+	local spawnArgs = {
+		position = result.position + result.normal * 0.5,
+		bank_id = 25,
+		sound_id = 148,
+		-- This sound seems to only play if the focus is <= 0.5.
+		variable_id_focus = 0,
+	}
+	sound = ClientSound.Create(AssetLocation.Game, spawnArgs)
+end)
+
+function CleanUp()
+	if sound then
+		sound:Remove()
+		sound = nil
+	end
+end
+
+-- Make sure to clean up the sound on module unload.
+Events:Subscribe("ModuleUnload", CleanUp)
+</syntaxhighlight>
+
+==External links==
+
+* [https://github.com/patawic/Jc2-mp-SoundPlayer Sound player]
+* [https://github.com/trixnz/jc2mp-sound-api Sound playing library]

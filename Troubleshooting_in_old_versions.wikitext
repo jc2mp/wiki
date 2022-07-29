@@ -1,0 +1,27 @@
+
+===== Injection Failed when launching the game =====
+Try opening JcmpLauncher.exe with "Run as administrator" ticked in the compatibility tab in properties.
+
+=====  Nothing happens when launching the game ===== 
+Try opening JcmpLauncher.exe with "Run as administrator" ticked in the compatibility tab in properties. Some users have also reported that setting their Steam.exe to run as administrator fixes this issue. If that doesn't work, then try also setting JustCause2.exe to run as administrator. 
+
+=====  Missing d3dx10_42.dll ===== 
+Download and run the [http://www.microsoft.com/en-us/download/details.aspx?id=35 | DirectX End-User Runtime Web Installer].
+
+=====  Missing d3dx10_43.dll! ===== 
+Download and run the [http://www.microsoft.com/en-us/download/details.aspx?id=35 | DirectX End-User Runtime Web Installer].
+
+=====  Missing MSVCP100.dll! ===== 
+Download and run the [http://www.microsoft.com/en-us/download/details.aspx?id=8328 | Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)].
+
+=====  Missing MSVCP110.dll! ===== 
+Download and run the [http://www.microsoft.com/en-us/download/details.aspx?id=30679 | Microsoft Visual C++ 2012 Redistributable Package (x86)].
+
+=====  The launcher is stuck on Waiting for JustCause2.exe! ===== 
+Try restarting Steam.
+
+===== Failed to initialize: Failed to create effect or Crashing when hitting enter at menu screen =====
+Download and run: [http://www.microsoft.com/en-us/download/details.aspx?id=35 | DirectX End-User Runtime Web Installer]
+
+===== Game crashes on launch =====
+Make sure your game is running version 1.0.0.2. (All Steam copies automatically update to this version.)

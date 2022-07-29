@@ -1,0 +1,91 @@
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | Vehicle
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Static Functions/GetById|GetById]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Static Functions/GetMassByModelId|GetMassByModelId]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Static Functions/GetNameByModelId|GetNameByModelId]](number)
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Angle|Angle]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetAngle|GetAngle]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetAngularVelocity|GetAngularVelocity]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetBoundingBox|GetBoundingBox]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetCenterOfMass|GetCenterOfMass]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Color|Color]], [[Lua/Shared/Color|Color]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetColors|GetColors]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetDecal|GetDecal]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/Player|Player]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetDriver|GetDriver]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetHealth|GetHealth]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetId|GetId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetInvulnerable|GetInvulnerable]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetLinearVelocity|GetLinearVelocity]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetMass|GetMass]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetModelId|GetModelId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetName|GetName]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | table
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetOccupants|GetOccupants]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Shared/Vector3|Vector3]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetPosition|GetPosition]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/GetTemplate|GetTemplate]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Vehicle/Functions/IsValid|IsValid]]()
+|} {{Lua/Table_Suffix}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | Vehicle == Vehicle
+|-
+|{{Lua/Cell_Style/Returns_List}} | string
+|{{Lua/Cell_Style/Prototype_List}} | tostring(Vehicle)
+|} {{Lua/Table_Suffix}}

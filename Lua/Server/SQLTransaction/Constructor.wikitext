@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = SQLTransaction([[Lua/Server/SQL|SQL]], boolean, boolean) |
+}}

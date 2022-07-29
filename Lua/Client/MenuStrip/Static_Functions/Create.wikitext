@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = MenuStrip |
+  prototype = MenuStrip.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = MenuStrip |
+  prototype = MenuStrip.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = MenuStrip |
+  prototype = MenuStrip.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = MenuStrip |
+  prototype = MenuStrip.Create() |
+}}

@@ -1,0 +1,11 @@
+IMHO the second example is wrong and the error is reported when I use the example on server with one player only. GetId() will return 0 for the first player on server which will turn the playerlist table into non-sequential - Lua requires sequential table to start with [1]. The result is that randomvalue will not work at all on servers with a single player and it will ALWAYS skip the first player on servers with more players. Solution can be to use table.insert instead. However as I am Lua newbie (learning for few weeks only, can someone validate first?
+<syntaxhighlight>
+local playerlist = {}
+for player in Server:GetPlayers() do
+	table.insert( playerlist, player )
+end
+return table.randomvalue(playerlist)
+</syntaxhighlight>
+--[[User:Orinoco|Orinoco]] ([[User talk:Orinoco|talk]]) 00:49, 4 January 2014 (CET)
+
+Fixed, thanks. [[User:Dreadmullet|dreadmullet]] ([[User talk:Dreadmullet|talk]]) 04:17, 4 January 2014 (CET)

@@ -1,0 +1,66 @@
+'''Note: You can access the default world with the ''DefaultWorld'' global.'''
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | World
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetCheckpoints|GetCheckpoints]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetId|GetId]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetPlayers|GetPlayers]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetStaticObjects|GetStaticObjects]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetTime|GetTime]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetTimeStep|GetTimeStep]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Tutorials/Intermediate/Iterators|iterator]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetVehicles|GetVehicles]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/GetWeatherSeverity|GetWeatherSeverity]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/Remove|Remove]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/SetTime|SetTime]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/SetTimeStep|SetTimeStep]](number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Server/World/Functions/SetWeatherSeverity|SetWeatherSeverity]](number)
+|} {{Lua/Table_Suffix}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | World == World
+|} {{Lua/Table_Suffix}}

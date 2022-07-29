@@ -1,0 +1,20 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, number old_money, number new_money
+}}
+
+==Description==
+
+Fired when a player's money changes.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(
+		args.player:GetName().."'s money changed from "..tostring(args.old_money)..
+		" to "..tostring(args.new_money)
+	)
+end
+
+Events:Subscribe("PlayerMoneyChange", Foo)
+</syntaxhighlight>

@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = Vector3:Length() |
+  description = Returns the length of the vector.
+}}

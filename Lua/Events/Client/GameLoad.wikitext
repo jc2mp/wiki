@@ -1,0 +1,5 @@
+{{Lua/Event}}
+
+==Description==
+
+Fired when you exit the loading screen after spawning.

@@ -1,0 +1,14 @@
+====From game archives or client directory====
+{{Lua/Function |
+  returns = Image |
+  prototype = Image.Create([[Lua/Client/AssetLocation|AssetLocation]], string {{Arg|path}}) |
+  description = Loads an image from the game archives or the client directory.
+}}
+
+====From game archives using a hash====
+
+{{Lua/Function |
+  returns = Image |
+  prototype = Image.Create(number {{Arg|hash}}) |
+  description = Loads an image from the game archives using the hash. Some images have unknown filenames, so you must use the hash.
+}}

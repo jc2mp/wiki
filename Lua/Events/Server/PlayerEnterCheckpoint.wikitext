@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player, [[Lua/Server/Checkpoint|Checkpoint]] checkpoint
+}}
+
+==Description==
+
+Fired when a player enters a checkpoint's trigger zone. They can be in a vehicle, but it will use the player's position.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().." entered checkpoint "..args.checkpoint:GetId())
+end
+
+Events:Subscribe("PlayerEnterCheckpoint", Foo)
+</syntaxhighlight>

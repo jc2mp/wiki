@@ -1,0 +1,12 @@
+{{Lua/Function |
+  returns = table |
+  prototype = Player.Match(string) |
+}}
+
+==Description==
+
+This returns an array of Players whose name contains the string.
+
+==See also==
+
+[[Lua/Server/Player/Static Functions/Match]]

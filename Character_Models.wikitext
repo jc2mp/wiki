@@ -1,0 +1,560 @@
+{|
+|
+{{
+Character_Model |
+file_name = Thug1 |
+alt_text =  |
+id = 1 |
+}}
+|
+{{
+Character_Model |
+file_name = Razak Razman |
+alt_text = Veeeery good my boy! My transformation into a gorilla is almost complete! |
+id = 2 |
+}}
+|
+{{
+Character_Model |
+file_name = Demo Expert |
+alt_text = Prancin' aboot with your head full of eyeballs|
+id = 3 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Roaches Elite |
+alt_text = I will eat you, lah. |
+id = 5 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Chinese Bodyguard |
+alt_text =  |
+id = 6 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Reapers Technician |
+alt_text = You mus keep me proteckad untiw we get to da fwaaaar side of da facilitee |
+id = 8 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Karl Blaine |
+alt_text =  |
+id = 9 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Zhang Sun |
+alt_text = No, Mr. Bond, I expect you to die. |
+id = 11 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Reapers Soldier 1 |
+alt_text = MAN THAT GUN |
+id = 12 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Male Stripper 1 |
+alt_text = Oh yeah baby. Now take off that sexy hat. |
+id = 15 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Panau Police |
+alt_text =  |
+id = 16 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Male Stripper 2 |
+alt_text = Is that a grappling hook in your pants or are you just happy to see me? |
+id = 17 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Hacker |
+alt_text = Don't use hacks in multiplayer games, kids. It stunts your growth. |
+id = 18 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Chinese Businessman |
+alt_text =  |
+id = 19 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Paparazzi |
+alt_text =  |
+id = 21 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Ular Boys Technician |
+alt_text = Beta tester model for the win. |
+id = 22 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Scientist |
+alt_text = I never thought I'd see a resonance cascade, let alone create one. |
+id = 23 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Kane |
+alt_text =  |
+id = 25 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Boat Captain |
+alt_text = I need you to help me transport some veeeeeeeeeeeeeeeeeeeeeery sensitive cargo along this reever. |
+id = 26 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Ular Boys Soldier 1 |
+alt_text = SCORPIO, SCORPIO |
+id = 27 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Stranded Copilot |
+alt_text = Marshall? That guy who died at the beginning? Nope, doesn't ring a bell. |
+id = 30 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Roaches Technician |
+alt_text = You must proteck me so I can ack into dere compootah system, lah. |
+id = 32 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Gambler |
+alt_text =  |
+id = 33 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Tom Sheldon |
+alt_text = SUCCULENT PIG |
+id = 34 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Politician |
+alt_text =  |
+id = 36 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Sicini |
+alt_text = VERY WELL, SERDADU |
+id = 38 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Thug2 |
+alt_text = Shoplifted a bag of chips once. Put some dope-ass spinnahz on his (mom's) old car. THUG LIFE, BITCHES |
+id = 39 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Factory Boss |
+alt_text = What kind of factory are you running here, anyway |
+id = 40 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Black Hand |
+alt_text = The secret to sneaking is not to be seen |
+id = 42 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Ninja |
+alt_text = I AM A NEEEEENJA |
+id = 44 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Waiter |
+alt_text = Fact: All waiters with thin moustaches are French. |
+id = 45 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Door Man |
+alt_text = If you hawwy to da owld gambwing warehouse in da desert, you miwght stiw catch him awive. |
+id = 48 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Government Captain |
+alt_text =  |
+id = 49 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Rico Rodriguez |
+alt_text = Legendary son of Zeus and a hispanic window cleaner |
+id = 51 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Government Soldier 2 |
+alt_text = HE GOT ME WITH HIS WIRE THING |
+id = 52 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Russian Bodyguard |
+alt_text = Developer model. Don't mess with them. |
+id = 54 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Exclusive Guest Variant 1 |
+alt_text =  |
+id = 55 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Reapers Soldier 2 |
+alt_text =  |
+id = 58 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Roaches Soldier 2 |
+alt_text =  |
+id = 59 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Race Challenge Girl |
+alt_text = Model used for racing, yet she can't even see over the steering wheel. |
+id = 60 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Generic Soldier |
+alt_text =  |
+id = 61 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Reapers Elite |
+alt_text =  |
+id = 63 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Bom Bom Bohilano |
+alt_text = the fuck |
+id = 64 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Jade Tan |
+alt_text =  |
+id = 65 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Government Soldier 1 |
+alt_text = HE'S BLEEDING LIKE A PIG |
+id = 66 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Burned Panay (rocket) |
+alt_text =  |
+id = 67 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Witness |
+alt_text = Nice pants. |
+id = 69 |
+
+}}
+|
+{{
+Character_Model |
+file_name = General Masayo |
+alt_text =  |
+id = 70 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Saul Sukarno |
+alt_text =  |
+id = 71 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Baby Panay |
+alt_text = Must be compensating for something. |
+id = 74 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Government Elite |
+alt_text = FOR THE GLORY OF PANAU |
+id = 77 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Thug Boss |
+alt_text =  |
+id = 78 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Japanese Veteran |
+alt_text = How the fuck do you "lose" an island anyway? It's fucking right there, open your eyes. |
+id = 79 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Exclusive Guest |
+alt_text =  |
+id = 80 |
+
+}}
+|
+{{
+Character_Model |
+file_name = White Tigers |
+alt_text =  |
+id = 83 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Alexander Mirikov |
+alt_text = I crush you like tiny bug if you make fun of my acne |
+id = 84 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Roaches Soldier 1 |
+alt_text =  |
+id = 85 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Female Stripper |
+alt_text = The same 2 second animation played over and over. Oh yeah baby. |
+id = 86 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Ular Boys Elite |
+alt_text =  |
+id = 87 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Factory Worker |
+alt_text =  |
+id = 89 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Bolo Santosi |
+alt_text = I am Boloooo Santooosiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii |
+id = 90 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Exclusive Guest Variant 2 |
+alt_text =  |
+id = 95 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Japanese Bodyguard |
+alt_text = |
+id = 96 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Burned Panay |
+alt_text =  |
+id = 97 |
+
+}}
+|-
+|
+{{
+Character_Model |
+file_name = Government Pilot |
+alt_text = Mmmm mmph mmh mmmmph, mmm? |
+id = 98 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Black Market Dealer |
+alt_text = Whoa, I just noticed: "Sloth Demon" is an anagram of "Honest Mold". |
+id = 100 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Government Colonel |
+alt_text = Wait, since when is Yao Ming a colonel of the Panau military?! |
+id = 101 |
+
+}}
+|
+{{
+Character_Model |
+file_name = Ular Boys Soldier 2 |
+alt_text =  |
+id = 103 |
+
+}}
+|}

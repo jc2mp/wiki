@@ -1,0 +1,9 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/Vector3|Vector3]] |
+  prototype = Render:ScreenToWorldDirection([[Lua/Shared/Vector2|Vector2]] {{arg|position}}) |
+  description = Transforms a screenspace position to the corresponding directional vector in 3D space.
+}}
+
+==Examples==
+* Drawing 3D models on the screen, such as an arrow pointing to some position.
+* Raycasting the world to spawn objects wherever you click.

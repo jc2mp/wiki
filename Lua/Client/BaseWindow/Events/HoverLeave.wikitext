@@ -1,0 +1,3 @@
+{{Lua/GUIEvent
+ | description = Called whenever the cursor leaves the window.
+}}

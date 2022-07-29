@@ -1,0 +1,14 @@
+{{Lua/Function |
+  returns = Transform3 |
+  prototype = Transform3:Scale(number {{arg|scale}}) |
+  description = Scales the transform axes uniformly.
+}}
+
+{{Lua/Function |
+  returns = Transform3 |
+  prototype = Transform3:Scale([[Lua/Shared/Vector3|Vector3]] {{arg|scale}}) |
+  description = Scales the transform independently on each axis. 
+}}
+
+==Additional Notes==
+*These operations '''do not''' yield a new transform object, the returned object and the subject are the same.

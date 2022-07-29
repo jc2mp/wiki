@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ColorPicker |
+  prototype = ColorPicker.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ColorPicker |
+  prototype = ColorPicker.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ColorPicker |
+  prototype = ColorPicker.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ColorPicker |
+  prototype = ColorPicker.Create() |
+}}

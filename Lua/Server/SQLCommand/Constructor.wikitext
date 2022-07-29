@@ -1,0 +1,3 @@
+{{Lua/Function |
+  prototype = SQLCommand([[Lua/Server/SQL|SQL]], string) |
+}}

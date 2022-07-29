@@ -1,0 +1,22 @@
+==Statics==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Enum_List_Name}} | Name
+!{{Lua/Column_Style/Enum_List_Value}} | Value
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Default
+|{{Lua/Cell_Style/Enum_List_Value}} | 16
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Large
+|{{Lua/Cell_Style/Enum_List_Value}} | 32
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | VeryLarge
+|{{Lua/Cell_Style/Enum_List_Value}} | 48
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Huge
+|{{Lua/Cell_Style/Enum_List_Value}} | 80
+|-
+|{{Lua/Cell_Style/Enum_List_Name}} | Gigantic
+|{{Lua/Cell_Style/Enum_List_Value}} | 128
+|} {{Lua/Table_Suffix}}

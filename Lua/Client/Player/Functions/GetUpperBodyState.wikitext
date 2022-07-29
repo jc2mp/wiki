@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/AnimationState|AnimationState]] |
+  prototype = Player:GetUpperBodyState() |
+}}

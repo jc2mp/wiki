@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/CheckBox|CheckBox]] |
+  prototype = LabeledCheckBox:GetCheckBox() |
+}}

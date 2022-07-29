@@ -1,0 +1,17 @@
+{{Lua/Event|
+  arguments = [[Lua/Server/Player|Player]] player
+}}
+
+==Description==
+
+Fired when ''player'' is finished loading their client-side scripts, either when they join or when the module is loaded/reloaded. You may want to wait until this is called before sending network messages to a player.
+
+==Examples==
+
+<syntaxhighlight>
+function Foo(args)
+	print(args.player:GetName().."'s client-side scripts have been loaded")
+end
+
+Events:Subscribe("ClientModuleLoad", Foo)
+</syntaxhighlight>

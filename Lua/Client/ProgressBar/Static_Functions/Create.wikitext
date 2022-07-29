@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ProgressBar |
+  prototype = ProgressBar.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ProgressBar |
+  prototype = ProgressBar.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ProgressBar |
+  prototype = ProgressBar.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ProgressBar |
+  prototype = ProgressBar.Create() |
+}}

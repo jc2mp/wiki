@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = ListBox:SetSelectRow([[Lua/Client/BaseWindow|BaseWindow]], boolean {{Arg|clear_selection}}) |
+}}
+
+{{Lua/Function |
+  prototype = ListBox:SetSelectRow([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}

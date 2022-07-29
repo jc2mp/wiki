@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = number |
+  prototype = World:GetTimeStep() |
+  description = Returns the rate that time advances, in game minutes per second.
+}}

@@ -1,0 +1,79 @@
+==Events==
+
+{{Lua/Events_Prefix}}
+
+===Events inherited from [[Lua/Client/Button|Button]]===
+
+{{Lua/Client/Button/Events}}
+
+===Events inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Events}}
+
+{{Lua/Events_Suffix}}
+
+==Static functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabButton
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]], string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabButton
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Static Functions/Create|Create]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabButton
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Static Functions/Create|Create]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | TabButton
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Static Functions/Create|Create]]()
+|} {{Lua/Table_Suffix}}
+
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Functions/GetActive|GetActive]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/BaseWindow|BaseWindow]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Functions/GetPage|GetPage]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/TabControl|TabControl]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Functions/GetTabControl|GetTabControl]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Functions/SetPage|SetPage]]([[Lua/Client/BaseWindow|BaseWindow]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/TabButton/Functions/SetTabControl|SetTabControl]]([[Lua/Client/TabControl|TabControl]])
+|} {{Lua/Table_Suffix}}
+
+===Functions inherited from [[Lua/Client/Button|Button]]===
+
+{{Lua/Client/Button/Functions}}
+
+===Functions inherited from [[Lua/Client/Label|Label]]===
+
+{{Lua/Client/Label/Functions}}
+
+===Functions inherited from [[Lua/Client/BaseWindow|BaseWindow]]===
+
+{{Lua/Client/BaseWindow/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | TabButton == TabButton
+|} {{Lua/Table_Suffix}}

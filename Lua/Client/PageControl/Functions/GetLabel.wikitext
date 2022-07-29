@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/Label|Label]] |
+  prototype = PageControl:GetLabel() |
+}}

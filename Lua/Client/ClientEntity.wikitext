@@ -1,0 +1,14 @@
+==Functions==
+
+{{Lua/Client/ClientEntity/Functions}}
+
+==Operators==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | boolean
+|{{Lua/Cell_Style/Prototype_List}} | ClientEntity == ClientEntity
+|} {{Lua/Table_Suffix}}

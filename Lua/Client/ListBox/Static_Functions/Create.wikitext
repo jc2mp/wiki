@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = ListBox |
+  prototype = ListBox.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = ListBox |
+  prototype = ListBox.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = ListBox |
+  prototype = ListBox.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = ListBox |
+  prototype = ListBox.Create() |
+}}

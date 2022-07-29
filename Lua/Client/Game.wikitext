@@ -1,0 +1,31 @@
+==Functions==
+
+{{Lua/Table_Prefix}}
+{| {{Lua/Table_Header}}
+!{{Lua/Column_Style/Returns_List}} | Returns
+!{{Lua/Column_Style/Prototype_List}} | Prototype
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/FireEvent|FireEvent]](string)
+|-
+|{{Lua/Cell_Style/Returns_List}} | table
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/GetHeat|GetHeat]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/GetSetting|GetSetting]]([[Lua/Client/GameSetting|GameSetting]])
+|-
+|{{Lua/Cell_Style/Returns_List}} | [[Lua/Client/GUIState|GUIState]]
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/GetState|GetState]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | number
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/GetTime|GetTime]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/SetHeat|SetHeat]]([[Lua/Client/HeatLevel|HeatLevel]], number)
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/ResetHeat|ResetHeat]]()
+|-
+|{{Lua/Cell_Style/Returns_List}} | 
+|{{Lua/Cell_Style/Prototype_List}} | [[Lua/Client/Game/Functions/ShowPopup|ShowPopup]](string, boolean)
+|} {{Lua/Table_Suffix}}

@@ -1,0 +1,7 @@
+{{Lua/Function |
+  returns = [[Lua/Shared/SteamId|SteamId]] |
+  prototype = Player:GetSteamId() |
+}}
+
+==Description==
+Returns the player's [[Lua/Shared/SteamId|SteamId]]. You should not use the SteamId directly as a string or integer. Instead, use SteamId.string or SteamId.id.

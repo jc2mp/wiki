@@ -1,0 +1,7 @@
+{{Lua/Function |
+  prototype = Camera:SetPosition([[Lua/Shared/Vector3|Vector3]] {{arg|position}}) |
+  description = Sets the position of the camera.
+}}
+
+==Additional Notes==
+*This should only be used in the [[Lua/Events/Client/CalcView|CalcView]] event.

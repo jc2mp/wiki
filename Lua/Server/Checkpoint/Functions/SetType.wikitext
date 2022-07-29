@@ -1,0 +1,167 @@
+{{Lua/Function |
+  prototype = Checkpoint:SetType(number) |
+}}
+
+== Description ==
+The type of a checkpoint is the icon displayed (if visible).
+
+=== Checkpoint Types === 
+{|
+|Type
+|Icon
+|Distance
+|Text Supported
+|-
+|0
+|Lockon icon
+|
+|Y
+|-
+|1
+|Unknown (last used?)
+|
+|
+|-
+|2
+|Ammo
+|
+|
+|-
+|3
+|Ular Boys
+|
+|-
+|4
+|Roaches
+|
+|
+|-
+|5
+|Reapers
+|
+|
+|-
+|6
+|Agency
+|
+|
+|-
+|7
+|Race finish
+|Y
+|Y
+|-
+|8
+|First aid
+|
+|Y
+|-
+|9
+|Skydiving
+|
+|
+|-
+|10
+|Race checkpoint
+|Y
+|
+|-
+|11
+|Forward arrow
+|
+|-
+|12
+|Cash
+|
+|
+|-
+|13
+|Colonel
+|
+|Y
+|-
+|14
+|Artillery
+|
+|
+|-
+|15
+|Race icon
+|
+|
+|-
+|16
+|Scorpion
+|
+|Y
+|-
+|17
+|Scorpion (follows mouse)
+|
+|Y
+|-
+|18
+|Map checkpoint icon
+|
+|Distance
+|-
+|19
+|Gas station (?)
+|
+|
+|-
+|20
+|Weapons cache
+|
+|
+|-
+|21
+|Health kit icon
+|
+|
+|-
+|22
+|Mounted gun
+|
+|
+|-
+|23
+|Ular Boys Stronghold
+|Y
+|Y + Distance
+|-
+|24
+|Reaper Stronghold
+|Y
+|Y + Distance
+|-
+|25
+|Roaches Stronghold
+|Y
+|Y + Distance
+|-
+|26
+|Incoming missile
+|
+|
+|-
+|27
+|Scorpion
+|
+|
+|-
+|28
+|Scorpion
+|
+|Y
+|-
+|29
+|Black first aid icon
+|
+|Y
+|-
+|30
+|Blue quadrilateral inside a square
+|
+|
+|}

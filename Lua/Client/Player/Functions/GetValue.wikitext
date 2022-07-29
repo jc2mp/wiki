@@ -1,0 +1,8 @@
+{{Lua/Function |
+  returns = object |
+  prototype = Player:GetValue(string {{Arg|key}})
+}}
+
+==See also==
+
+* [[Lua/Tutorials/Player values|Player values tutorial]]

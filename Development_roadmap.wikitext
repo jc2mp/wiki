@@ -1,0 +1,11 @@
+Please note: anything listed here is not set in stone and can be removed or altered at any time.
+
+==Target features==
+
+* Unicode/UTF-8 support
+* Large sync overhaul
+* Client-side data storage
+** Mod settings
+** Storage available per Lua module
+* Steam Workshop support
+** Assets streamed to clients automatically

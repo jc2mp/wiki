@@ -1,0 +1,4 @@
+{{Lua/Function |
+  returns = [[Lua/Client/LabeledRadioButton|LabeledRadioButton]] |
+  prototype = RadioButtonController:AddOptionWithName(string, string) |
+}}

@@ -1,0 +1,4 @@
+{{Lua/Function |
+  prototype = ProgressBar:SetCycleSpeed(number) |
+  description = Sets cycle speed, this will automatically fill the progress bar non-stop in a repetitive way. It will reset to 0% upon hitting 100%. 
+}}

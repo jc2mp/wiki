@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Table |
+  prototype = Table.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Table |
+  prototype = Table.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Table |
+  prototype = Table.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Table |
+  prototype = Table.Create() |
+}}

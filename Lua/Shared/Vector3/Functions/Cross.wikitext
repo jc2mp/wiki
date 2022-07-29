@@ -1,0 +1,5 @@
+{{Lua/Function |
+  returns = Vector3 |
+  prototype = Vector3:Cross(Vector3 {{arg|b}}) |
+  description = Calculates the cross product the subject and {{arg|b}}.
+}}

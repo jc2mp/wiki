@@ -1,0 +1,23 @@
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Vector2|Vector2]]) |
+}}
+
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Vector2|Vector2]]) |
+}}
+
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector3|Vector3]], [[Lua/Shared/Color|Color]]) |
+}}
+
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector2|Vector2]]) |
+}}
+
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector2|Vector2]], [[Lua/Shared/Color|Color]]) |
+}}
+
+{{Lua/Function |
+  prototype = Vertex([[Lua/Shared/Vector3|Vector3]]) |
+}}

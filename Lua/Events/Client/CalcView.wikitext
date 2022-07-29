@@ -1,0 +1,38 @@
+{{Lua/Event|
+  return = Return false to disable the local player.
+}}
+
+==Description==
+
+This event is the only place you should change the camera position and rotation. It is ran every frame.
+
+If false is returned, your character will become disabled; that is, invisible and unable to move. Your character will still be visible to others, however. This is useful if you want to have some sort of spectate mode.
+
+==Examples==
+
+====Rotate the camera around a nice view of Panau====
+
+<syntaxhighlight>
+Foo = function()
+	local angle = Angle(os.clock() * 0.2, -0.2, 0)
+	Camera:SetAngle(angle)
+	local position = angle * Vector3(0, 0, 16384)
+	Camera:SetPosition(position)
+	
+	return false
+end
+
+Events:Subscribe("CalcView", Foo)
+</syntaxhighlight>
+
+====First-person mode====
+
+<syntaxhighlight>
+Foo = function()
+	Camera:SetPosition(LocalPlayer:GetBonePosition("ragdoll_Head"))
+	
+	return true
+end
+
+Events:Subscribe("CalcView", Foo)
+</syntaxhighlight>

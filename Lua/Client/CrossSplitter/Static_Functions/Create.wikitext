@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = CrossSplitter |
+  prototype = CrossSplitter.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = CrossSplitter |
+  prototype = CrossSplitter.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = CrossSplitter |
+  prototype = CrossSplitter.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = CrossSplitter |
+  prototype = CrossSplitter.Create() |
+}}

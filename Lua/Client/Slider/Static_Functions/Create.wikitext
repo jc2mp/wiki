@@ -1,0 +1,19 @@
+{{Lua/Function |
+  returns = Base |
+  prototype = Slider.Create([[Lua/Client/BaseWindow|BaseWindow]], string) |
+}}
+
+{{Lua/Function |
+  returns = Base |
+  prototype = Slider.Create(string) |
+}}
+
+{{Lua/Function |
+  returns = Base |
+  prototype = Slider.Create([[Lua/Client/BaseWindow|BaseWindow]]) |
+}}
+
+{{Lua/Function |
+  returns = Base |
+  prototype = Slider.Create() |
+}}

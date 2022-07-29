@@ -1,0 +1,107 @@
+==Global classes==
+
+<font size="3">
+
+'''[[Lua/Shared/BaseEventManager|BaseEventManager]]'''
+
+:[[Lua/Shared/Console|Console]]
+
+:[[Lua/Shared/Events|Events]]
+
+:[[Lua/Shared/Network|Network]]
+
+</font>
+
+==Classes==
+
+<font size="3">
+
+'''[[Lua/Shared/Angle|Angle]]'''
+
+'''[[Lua/Shared/Color|Color]]'''
+
+'''[[Lua/Shared/Event|Event]]'''
+
+'''[[Lua/Shared/MD5|MD5]]'''
+
+'''[[Lua/Shared/SHA1|SHA1]]'''
+
+'''[[Lua/Shared/SHA256|SHA256]]'''
+
+'''[[Lua/Shared/SteamId|SteamId]]'''
+
+'''[[Lua/Shared/Timer|Timer]]'''
+
+'''[[Lua/Shared/Transform2|Transform2]]'''
+
+'''[[Lua/Shared/Transform3|Transform3]]'''
+
+'''[[Lua/Shared/Vector3|Vector3]]'''
+
+'''[[Lua/Shared/Vector2|Vector2]]'''
+
+'''[[Lua/Shared/Weapon|Weapon]]'''
+
+</font>
+
+==Enums==
+
+<font size="3">
+
+'''[[Lua/Shared/AnimationState|AnimationState]]'''
+
+'''[[Lua/Shared/CharacterId|CharacterId]]'''
+
+'''[[Lua/Shared/DamageEntity|DamageEntity]]'''
+
+'''[[Lua/Shared/PlayerState|PlayerState]]'''
+
+'''[[Lua/Shared/VehicleId|VehicleId]]'''
+
+'''[[Lua/Shared/WeaponSlot|WeaponSlot]]'''
+
+</font>
+
+==Events==
+
+<font size="3">
+
+{{Lua/Events/Shared}}
+
+</font>
+
+==Functions==
+
+<font size="3">
+
+'''[[Lua/Shared/Functions/IsValid|IsValid(object)]]'''
+
+'''[[Lua/Shared/Functions/IsValid|IsValid(object, boolean)]]'''
+
+'''[[Lua/Shared/Functions/Copy|Copy(object)]]'''
+
+'''[[Lua/Shared/Functions/FNV|FNV(string)]]'''
+
+'''[[Lua/Shared/Functions/FNV|FNV(string, number)]]'''
+
+</font>
+
+==Additions to standard Lua libraries==
+
+<font size="3">
+
+'''[[Lua/Shared/string/split|string.split(string, string [, boolean])]]'''
+
+'''[[Lua/Shared/string/trim|string.trim(string)]]'''
+
+'''[[Lua/Shared/table/count|table.count(table)]]'''
+
+'''[[Lua/Shared/table/find|table.find(table, object)]]'''
+
+'''[[Lua/Shared/table/randomvalue|table.randomvalue(table)]]'''
+
+'''[[Lua/Shared/math/clamp|math.clamp(number, number, number)]]'''
+
+'''[[Lua/Shared/math/lerp|math.lerp(object, object, number)]]'''
+
+</font>
